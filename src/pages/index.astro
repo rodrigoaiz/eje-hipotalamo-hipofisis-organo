@@ -1,0 +1,159 @@
+---
+import Layout from "../layouts/Layout.astro";
+import Hero from "../components/Hero.astro";
+import Navigation from "../components/Navigation.astro";
+import Section from "../components/Section.astro";
+import Activity from "../components/Activity.astro";
+import SelfAssessment from "../components/SelfAssessment.astro";
+import References from "../components/References.astro";
+import Objetivo from "../components/Objetivo.astro";
+import Figure from "../components/Figure.astro";
+import VideoYoutube from "../components/VideoYoutube.astro";
+
+import Hotspot from "../components/Hotspot.astro";
+import HotspotV2 from "../components/HotspotV2.astro";
+import HojasDesordenadas from "../components/HojasDesordenadas.astro";
+import Latex from "../components/Latex.astro";
+import { UAPA_CONFIG, formatAuthors } from "../config/uapa-config.ts";
+import {
+  ACTIVITIES_CONFIG,
+  ASSESSMENTS_CONFIG,
+} from "../config/activities-config.ts";
+---
+
+<Layout
+  title={`UAPA. ${UAPA_CONFIG.title}`}
+  description={UAPA_CONFIG.description}
+  keywords={UAPA_CONFIG.keywords}
+  author={formatAuthors.full}
+  resources={["acordeon-vertical", "fichero-vertical", "katex", "fichero-horizontal"]}
+>
+  <Hero
+    title={UAPA_CONFIG.title}
+    subtitle={UAPA_CONFIG.subtitle}
+    authors={formatAuthors.display}
+    imageSrc="img/cont/portada.webp"
+
+    imageCaption={UAPA_CONFIG.hero.imageCaption}
+  />
+
+  <Navigation
+    menuItems={UAPA_CONFIG.navigation.menuItems}
+    showTitle={UAPA_CONFIG.navigation.showTitle}
+    title={UAPA_CONFIG.navigation.title}
+  />
+
+  <main>
+    <Section id="introduccion">
+      <p>Los organismos multicelulares crecen, se desarrollan, regulan su medio interno y responden a estímulos diversos, con el fin último de preservar su integridad; además, se reproducen, con lo que se preserva también la especie. Para que se lleve a cabo todo esto, se necesita que exista una perfecta comunicación entre el sistema endocrino y el sistema nervioso; de tal forma, se genera el sistema neuroendocrino. El hipotálamo y la hipófisis regulan la función de gran parte del sistema neuroendocrino.</p>
+
+      <p>En esta unidad, conocerás más sobre el eje hipotálamo-hipófisis-órgano, un sistema de comunicación entre el hipotálamo, la hipófisis —también llamada glándula pituitaria— y los órganos del cuerpo que responden a las hormonas liberadas por esta glándula. Conocer este eje neuroendocrino es de vital importancia, ya que es un sistema de control jerárquico fundamental en el cuerpo humano que regula la producción y la liberación de muchas hormonas vitales que participan en el crecimiento, la reproducción y el metabolismo.</p>
+
+      <Figure
+        src="img/cont/2_intro.jpg"
+        alt="Se observa la estructura del hipotálamo y la hipófisis."
+        title="Hipotálamo e hipófisis"
+        width="w-750"
+        caption="OpenStax College. (2019). <em>The anterior pituitary complex</em> [imagen]. Tomada de https://n9.cl/bh0tq"
+      />
+  
+      <Objetivo
+        text="Identificar el papel endocrino del hipotálamo y su participación en la regulación de la glándula hipófisis, con el fin de reconocer las hormonas sintetizadas y su función en el cuerpo humano."
+      />
+    </Section>
+    <Section id="contenido1"> 
+      <p>El <strong>hipotálamo</strong> se encuentra en posición ventral al tálamo y contiene centros reguladores de la temperatura corporal, de la ingesta de alimentos y del equilibrio hídrico. Es también una glándula endocrina que controla las secreciones hormonales de la hipófisis. Las hormonas que se producen en el hipotálamo y son liberadas al sistema porta hipofisario son:</p>
+      <ul>      
+        <li>Hormona liberadora de corticotropina (CRH, por sus siglas en inglés)</li>
+        <li>Hormona liberadora de tirotropina (TRH, por sus siglas en inglés)</li>
+        <li>Hormona liberadora de gonadotropina (GnRH, por sus siglas en inglés)</li>
+        <li>Hormona liberadora de la hormona del crecimiento (GHRH, por sus siglas en inglés)</li>
+        <li>Somatostatina (SST)</li>
+      </ul>
+      <p><em>La hipófisis o pituitaria</em></p>
+      <p>Es una glándula compuesta de estructuras nerviosas y epiteliales, se localiza en la línea media de la base del cráneo y parece una prolongación del hipotálamo, al que está unida por un tallo delgado —tallo hipofisiario—.</p>
+      <HojasDesordenadas
+        hojas={[
+          {
+            color: "amarillo",
+            content: `              
+
+            <p>Su peso promedio es de 500 a 600 mg y el lóbulo anterior comprende el 80 % de su volumen. Pesa más en la mujer que en el hombre y su peso aumenta hasta 1 g durante el embarazo y la lactancia.</p>
+            `,
+          }
+        ]}
+      />
+      <section class="fichero-hor my-5" id="fichero-hor-1">
+        <section class="fichero-hor-tabs">
+          <button
+            class="fichero-hor-tab fichero-hor-active"
+            data-actab-group="0"
+            data-actab-id="0">Adenohipófisis</button
+          >
+          <button class="fichero-hor-tab" data-actab-group="0" data-actab-id="1"
+            >Neurohipófisis</button
+          >
+        </section>
+        <section class="slider">
+          <div class="indicator"></div>
+        </section>
+        <section class="fichero-hor-content">
+          <article
+            class="fichero-hor-item fichero-hor-active"
+            data-actab-group="0"
+            data-actab-id="0"
+          >
+            <h4 class="fichero-hor-item__label">
+              Adenohipófisis
+              <div class="icon">
+                <i class="fas fa-chevron-down"></i>
+              </div>
+            </h4>
+            <div class="fichero-hor-item__container">
+              <p>
+                Obtener el promedio de la serie de valores. En este caso, por
+                tratarse de una serie simple de valores, se emplea la fórmula
+                anteriormente revisada:
+              </p>
+              <Latex
+                formula="\\overline{x} = \\frac{\\sum x}{n}"
+                display={true}
+              />
+            </div>
+          </article>
+          <article
+            class="fichero-hor-item"
+            data-actab-group="0"
+            data-actab-id="1"
+          >
+            <h4 class="fichero-hor-item__label">
+              Neurohipófisis
+              <div class="icon">
+                <i class="fas fa-chevron-down"></i>
+              </div>
+            </h4>
+            <div class="fichero-hor-item__container">
+              <p>
+                Calcular la desviación o diferencia de cada valor en relación
+                con el promedio de la serie; es decir, obtener una serie de
+                valores.
+              </p>
+              <Latex formula="(x - \\overline{x})" display={true} />
+            </div>
+          </article>
+        </section>
+        
+        
+        
+      </section>
+
+    </Section>
+    <Activity {...ACTIVITIES_CONFIG.actividad1} />
+    <!-- Actividad 2 -->
+    <Activity {...ACTIVITIES_CONFIG.actividad2} />
+
+    <!-- Autoevaluación -->
+    <SelfAssessment {...ASSESSMENTS_CONFIG.autoevaluacion1} />
+    <References />
+  </main>
+</Layout>

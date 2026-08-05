@@ -1,8 +1,12 @@
 function ficheroHorizontal(idFichero) {
-const labels = document.querySelectorAll("section.fichero-hor#" + idFichero + " .fichero-hor-content .fichero-hor-item__label");
-const tabs = document.querySelectorAll("section.fichero-hor#" + idFichero + " .fichero-hor-tab");
-const slider = document.querySelector("section.fichero-hor#" + idFichero + " .slider");
-// let numTabs = tabs.length;
+const fichero = document.querySelector("section.fichero-hor#" + CSS.escape(idFichero));
+if (!fichero) return;
+
+const labels = fichero.querySelectorAll(".fichero-hor-content .fichero-hor-item__label");
+const tabs = fichero.querySelectorAll(".fichero-hor-tab");
+const slider = fichero.querySelector(".slider");
+if (!tabs.length || !slider) return;
+
 slider.style.setProperty('width', (100 / tabs.length) + '%');
 
 function toggleShow() {
