@@ -26,13 +26,13 @@ import {
   description={UAPA_CONFIG.description}
   keywords={UAPA_CONFIG.keywords}
   author={formatAuthors.full}
-  resources={["acordeon-vertical", "fichero-vertical", "katex", "fichero-horizontal"]}
+  resources={["acordeon-vertical", "fichero-vertical", "katex", "fichero-horizontal", "nota-pin", "triptico", "hoja-bloc"]}
 >
   <Hero
     title={UAPA_CONFIG.title}
     subtitle={UAPA_CONFIG.subtitle}
     authors={formatAuthors.display}
-    imageSrc="img/cont/portada.webp"
+    imageSrc="img/cont/1hipo_portada.jpg"
 
     imageCaption={UAPA_CONFIG.hero.imageCaption}
   />
@@ -56,14 +56,14 @@ import {
         width="w-750"
         caption="OpenStax College. (2019). <em>The anterior pituitary complex</em> [imagen]. Tomada de https://n9.cl/bh0tq"
       />
-  
+
       <Objetivo
         text="Identificar el papel endocrino del hipotálamo y su participación en la regulación de la glándula hipófisis, con el fin de reconocer las hormonas sintetizadas y su función en el cuerpo humano."
       />
     </Section>
-    <Section id="contenido1"> 
+    <Section id="contenido1">
       <p>El <strong>hipotálamo</strong> se encuentra en posición ventral al tálamo y contiene centros reguladores de la temperatura corporal, de la ingesta de alimentos y del equilibrio hídrico. Es también una glándula endocrina que controla las secreciones hormonales de la hipófisis. Las hormonas que se producen en el hipotálamo y son liberadas al sistema porta hipofisario son:</p>
-      <ul>      
+      <ul>
         <li>Hormona liberadora de corticotropina (CRH, por sus siglas en inglés)</li>
         <li>Hormona liberadora de tirotropina (TRH, por sus siglas en inglés)</li>
         <li>Hormona liberadora de gonadotropina (GnRH, por sus siglas en inglés)</li>
@@ -76,13 +76,14 @@ import {
         hojas={[
           {
             color: "amarillo",
-            content: `              
+            content: `
 
             <p>Su peso promedio es de 500 a 600 mg y el lóbulo anterior comprende el 80 % de su volumen. Pesa más en la mujer que en el hombre y su peso aumenta hasta 1 g durante el embarazo y la lactancia.</p>
             `,
           }
         ]}
       />
+      <p>Está compuesta por dos lóbulos: el <strong>anterior —adenohipófisis—</strong> y el <strong>posterior —neurohipófisis—</strong>.</p>
       <section class="fichero-hor my-5" id="fichero-hor-1">
         <section class="fichero-hor-tabs">
           <button
@@ -110,15 +111,7 @@ import {
               </div>
             </h4>
             <div class="fichero-hor-item__container">
-              <p>
-                Obtener el promedio de la serie de valores. En este caso, por
-                tratarse de una serie simple de valores, se emplea la fórmula
-                anteriormente revisada:
-              </p>
-              <Latex
-                formula="\\overline{x} = \\frac{\\sum x}{n}"
-                display={true}
-              />
+              <p>La <strong>hipófisis anterior</strong> —adenohipófisis— produce y secreta tres hormonas glicoproteicas estructuralmente relacionadas; éstas son la hormona foliculoestimulante (FSH, por sus siglas en inglés), la hormona luteinizante (LH, por sus siglas en inglés) y la hormona estimulante del tiroides (TSH, por sus siglas en inglés). Dado que la FSH, la LH y la TSH comparten una subunidad α, sus identidades y funciones biológicas se definen por la subunidad β: FSHβ, LHβ y TSHβ. Otra hormona que se sintetiza en la hipófisis anterior es el péptido proopiomelanocortina (POMC), el cual consta de 241 aminoácidos, que posteriormente sufre modificaciones postraduccionales que dan lugar a hormonas peptídicas que controlan una amplia gama de funciones fisiológicas, desde el estrés, la alimentación y el equilibrio energético hasta la pigmentación y la analgesia; éstas son la hormona adrenocorticotrópica (ACTH, por sus siglas en inglés) y la hormona estimulante de melanocitos (MSH, por sus siglas en inglés).</p>
             </div>
           </article>
           <article
@@ -133,20 +126,153 @@ import {
               </div>
             </h4>
             <div class="fichero-hor-item__container">
-              <p>
-                Calcular la desviación o diferencia de cada valor en relación
-                con el promedio de la serie; es decir, obtener una serie de
-                valores.
-              </p>
-              <Latex formula="(x - \\overline{x})" display={true} />
+              <p>La <strong>hipófisis posterior —neurohipófisis—</strong> constituye uno de los lóbulos de la hipófisis. La principal función de la hipófisis posterior es la transmisión de hormonas producidas en neuronas del núcleo supraóptico (NSO) y del núcleo paraventricular (NPV), ambas localizadas en la región del hipotálamo y secretadas directamente para la circulación periférica. El NSO y el NPV contienen neuronas magnocelulares que sintetizan vasopresina (VP) y oxitocina (OXT), las cuales se proyectan hacia la hipófisis posterior a lo largo del tracto supraóptico-hipofisario, como se puede ver en la siguiente figura:</p>
             </div>
+            <Figure
+              src="img/cont/3vasox_t1.png"
+              alt="Se muestra la hipófisis y las zonas donde se da la secreción de vasopresina y oxitocina."
+              title="Vasopresina y oxitocina"
+              width="w-750"
+              caption="Figura 1. Borrow, Amanda P., Stover, Sally A., Bales, Natalie J. y Handa, Robert J. (2019). <em>Vasopresina y oxitocina</em> [imagen]. Tomada de Litwack, Gerald. (2019). <em>Hormonal signaling in biology and medicine: comprehensive modern endocrinology</em>, p. 204. [Representación del control y de la secreción de vasopresina y oxitocina de la neurohipófisis; la síntesis de vasopresina y oxitocina se realiza en los núcleos supraópticos y paraventriculares del hipotálamo.]"
+            />
+            <p>Cabe mencionar que la VP también es conocida con otros nombres: arginina-vasopresina (AVP) y hormona antidiurética (ADH, por sus siglas en inglés). Los genes de VP y OXT se encuentran en el mismo cromosoma 20 y están organizados de forma consecutiva, separados por una región intergénica corta. A nivel de proteína, la estructura de VP y de OXT es muy similar, ya que ambas son de nueve péptidos y contienen dos residuos de cisteína en las posiciones 1 y 6. La diferencia entre estos péptidos difiere en dos aminoácidos en las posiciones 3 —isoleucina (Ile) en el caso de OXT y fenilalanina (Phe) para VP— y 8 —leucina (Leu) para el caso de OXT y arginina (Arg) para VP—.</p>
+
+            <Figure
+              src="img/cont/4oxvas_t1.png"
+              alt="Se observa la secuencia de aminoácidos de la oxitocina y la vasopresina."
+              title="Diferencias entre los aminoácidos de la oxitocina y la vasopresina"
+              width="w-750"
+              caption="Figura 2. Borrow, Amanda P., Stover, Sally A., Bales, Natalie J. y Handa, Robert J. (2019). <em>Diferencias entre los aminoácidos de la oxitocina y la vasopresina</em> [imagen]. Tomada de Litwack. Gerald. (2019). <em>Hormonal signaling in biology and medicine: comprehensive modern endocrinology</em>, p. 206. [Secuencia de aminoácidos de oxitocina y vasopresina; la oxitocina —lado izquierdo— muestra en azul los aminoácidos que son diferentes a los de la vasopresina en color verde —lado derecho—.]"
+            />
+
+            <p>Tanto la VP como la OXT se unen a diferentes miembros de receptores acoplados a proteínas G —OTR, V1aR, V1bR y V2R—, unidos a G-alfa(q). Estos receptores regulan los niveles de Ca2+ intracelular a través de los receptores de IP3 localizados en el retículo sarcoplásmico, en células de músculo liso, o en el retículo endoplásmico, en células corticotropas de la hipófisis y en otras células como son las neuronas. En las células epiteliales del riñón, la VP activa el receptor V2 a través de G-alfa(s) en la membrana basolateral, lo que resulta en la activación de adenilato-ciclasa e incrementa los niveles de AMP cíclico (AMPc). Esto da lugar a la inserción de la proteína de membrana acuaporina 2 en la membrana apical de la célula, lo que permite que el agua entre en la célula y salga del túbulo renal.</p>
+
+            <p>La expresión de la OXT tiene lugar en las primeras etapas de la vida para favorecer el desarrollo físico y mental, mientras que su posterior disminución, en etapas posteriores de la vida, acompaña el envejecimiento y las enfermedades; asimismo, puede modular el reconocimiento y comportamiento social, el aprendizaje y la memoria, las emociones, la recompensa y otras funciones cerebrales superiores; además, regula la alimentación y la hidratación, el sueño y la vigilia, la nocicepción y la analgesia, el comportamiento sexual, el parto, la lactancia y otros comportamientos instintivos; de la misma forma, la OXT regula el sistema nervioso autónomo y los sentidos somáticos y especializados.</p>
+
+            <p>La VP desempeña un papel fundamental en el control del equilibrio osmótico del organismo, la homeostasis del sodio y el funcionamiento renal; tiene un efecto antidiurético, debido a que aumenta la reabsorción de agua en los túbulos renales, mediante la activación de acuaporinas, lo que concentra la orina y disminuye su volumen; también provoca la contracción de los vasos sanguíneos —vasoconstricción—, lo que aumenta la resistencia vascular periférica y eleva la presión arterial; además, ayuda a recuperar el volumen sanguíneo al ser liberada ante hemorragias o deshidratación. La secreción de VP es regulada principalmente por la osmolaridad plasmática —concentración de sales— y el volumen sanguíneo; sin embargo, hay otros factores que también favorecen la secreción de VP; entre éstos, se incluyen la angiotensina II, el dolor, las náuseas, la hipoglucemia, la nicotina, los opiáceos y ciertos medicamentos.</p>
+
+            <p>La secreción de VP también se ve afectada negativamente por el etanol, los agonistas alfa-adrenérgicos y el péptido natriurético auricular. El efecto inhibidor del etanol ayuda a explicar el aumento de la diuresis que se produce durante los estados de intoxicación, así como el aumento de la pérdida de agua libre; sin una secreción adecuada de VP, los riñones excretan más agua. La deficiencia de VP puede causar diabetes insípida, que genera incapacidad para concentrar la orina, lo que resulta en poliuria —orina excesiva y diluida— y polidipsia —sed intensa—, con riesgo de deshidratación grave e hipernatremia si no se compensa con líquidos.</p>
           </article>
         </section>
-        
-        
-        
+      </section>
+            
+    </Section>
+
+    <Section id="contenido2">
+      <p>Los seres humanos, como los animales, responden a perturbaciones ambientales a través del estrés, lo que les permite adaptarse fisiológicamente al factor estresante para mantener la homeostasis. Un componente fundamental de la respuesta homeostática es el eje hipotálamo-hipófisis-suprarrenal o adrenal (HHS o HHA), un mecanismo neuroendocrino complejo que regula los efectos de los factores estresantes, mediante la regulación de numerosos procesos fisiológicos, como el metabolismo, las respuestas inmunitarias y el sistema nervioso autónomo (SNA).</p>
+
+      <p>El eje HHA, también conocido como CRH-ACTH-cortisol, es el sistema principal de respuesta al estrés. La hormona adrenocorticotrópica (ACTH, por sus siglas en inglés) tiene una relevancia clínica importante porque regula la producción de cortisol, una hormona con amplios efectos fisiológicos, entre los que se incluyen la supresión de la inflamación, la estimulación de la actividad metabólica y el aumento de la glucosa en sangre, que son componentes fundamentales de la respuesta al estrés. La desregulación de la actividad de la ACTH se asocia con trastornos como el síndrome de Cushing y la insuficiencia suprarrenal primaria. A continuación, se hablará con más detalle de este eje.</p>
+
+      <h3>Hormona liberadora de corticotropina</h3>
+      <p>La <strong>hormona liberadora de corticotropina</strong> (<strong>CRH</strong>, por sus siglas en inglés) se sintetiza en el núcleo paraventricular y ejerce un rol central en la respuesta neuroendocrina y en el comportamiento ante el estrés, ya que dirige la activación del eje hipotálamo-hipófisis-adrenal y actúa como neuromodulador en el sistema nervioso central (SNC), como se puede ver en la figura más adelante. Frente a un estímulo estresante, las neuronas hipotalámicas secretan la CRH que actúa estimulando la síntesis y el procesamiento de <strong>POMC</strong> para generar <strong>corticotropina o la ACTH</strong>. La CRH es un péptido de 41 aminoácidos, producto del rompimiento proteolítico de un precursor de 192 aminoácidos en su extremo carboxilo-terminal, seguido por la amidación de dicho extremo; así, ejerce su acción a través de receptores de siete pasos transmembranales acoplados a proteínas G (GPCR, por sus siglas en inglés), CRHR1 y CRHR2. La estimulación de cualquier CRHR1 o CRHR2 se da a través de su acoplamiento a la proteína Gs, la cual conduce a la activación de la adenilato-ciclasa, estimulando las cascadas de señalización mediadas por AMPc.</p>
+
+      <Figure
+        src="img/cont/5hipot_t2.jpg"
+        alt="Se observa el proceso de liberación de la CRH."
+        title="Fisiología del eje hipotálamo-hipófisis-adrenal (HHA)"
+        width="w-750"
+        caption="Figura 3. Hantsoo, Liisa, Jagodnik, Kathleen, Novick, Andrew M., Baweja, Ritika, Di Scalea, Teresa Lanza, Ozerdem, Aysegul, McGlade, Erin C., Simeonova, Diana I., Dekel, Sharon, Kornfield, Sara L., Nazareth, Michelle y Weiss, Sandra J. (2023). <em>Fisiología del eje hipotálamo-hipófisis-adrenal</em> (HHA) [imagen]. Tomada de https://n9.cl/7asph. [En la imagen, se puede observar que, tras el estrés 1) el hipotálamo desencadena la liberación de la CRH, que, a su vez, estimula 2) la hipófisis anterior para que libere la ACTH, que, a su vez, estimula 3) las glándulas suprarrenales para que liberen cortisol, que proporciona una realimentación negativa a nivel de la hipófisis y el hipotálamo para controlar su liberación excesiva.]"
+      />
+
+      <h3>Hormona adrenocorticotrópica</h3>
+      <p>La <strong>ACTH</strong>, también conocida como corticotropina, es una hormona peptídica crucial en la respuesta del cuerpo al estrés. La ACTH es sintetizada en la hipófisis anterior a partir de la proteína precursora POMC. El gen de la hormona es el gen <em>POMC</em>, el cual codifica una proteína de 241 aminoácidos que, a través de la escisión proteolítica, da origen a varias hormonas peptídicas activas, incluida la ACTH. Las células corticotropas son las responsables de producir la ACTH. La síntesis y la liberación de esta hormona es estimulada principalmente por la CRH, que es producida en el hipotálamo y transportada a la hipófisis a través del sistema porta hipofisario. Además de la CRH, otras moléculas, como las catecolaminas, el polipéptido intestinal vasoactivo, el péptido natriurético auricular (ANP, por sus siglas en inglés), la angiotensina II, el polipéptido activador del adenilato-ciclasa hipofisaria y la colecistocinina, también pueden contribuir en la liberación de la ACTH por la hipófisis; asimismo, el estrés, el ejercicio y el ciclo circadiano influyen en su liberación. El receptor de la ACTH es el receptor de la melanocortina tipo 2 (MC2R, por sus siglas en inglés), que se encuentra principalmente en las células de la corteza suprarrenal.</p>
+
+      <p>Este receptor es un acoplado a la proteína G-alfa(s). Al unirse la ACTH al MC2R, se desencadena una cascada de señalización intracelular: la unión de la ACTH provoca un cambio conformacional en el receptor, activando la subunidad G-alfa(s), la cual estimula la enzima adenilato-ciclasa que, posteriormente, cataliza la conversión de trifosfato de adenosina (ATP, por sus siglas en inglés) en AMPc, que actúa como un segundo mensajero. El aumento en los niveles de AMPc activa la proteína-cinasa A (PKA). La PKA fosforila varias enzimas y proteínas en la célula, lo que lleva a la activación de la síntesis de hormonas esteroideas.</p>
+
+      <section class="contenedor-pin">
+        <div class="hoja-pin amarillo">
+          <div class="pin rojo"><div class="shadow"></div><div class="metal"></div><div class="bottom-circle"></div></div>
+          <p>La función principal de la ACTH es estimular la corteza suprarrenal, específicamente la capa fasciculada y reticular, para que produzca y libere glucocorticoides —como el cortisol— y, en menor medida, andrógenos. El cortisol es fundamental para la regulación del metabolismo, la supresión de la respuesta inflamatoria y la respuesta al estrés.</p>
+        </div>
       </section>
 
+      <p>Como puedes darte cuenta, la hormona adrenocorticotrópica es indispensable para el correcto funcionamiento del cuerpo humano; tener una alteración en los niveles de esta hormona puede causar diferentes afecciones. A continuación, se mencionan algunas de ellas y sus causas:</p>
+
+      <p>La exposición crónica resultante de los tejidos a los glucocorticoides provoca diversos trastornos, desde la obesidad y la diabetes hasta la hipertensión y la osteoporosis. En ambos casos, el exceso de ACTH estimula los receptores suprarrenales MC2R, lo que provoca una liberación excesiva de glucocorticoides e hiperplasia suprarrenal.</p>
+
+      <p>En resumen, la ACTH es un componente vital del eje HHA. Cualquier disfunción en su producción, ya sea por deficiencia o por exceso, altera el equilibrio hormonal del cuerpo, lo que resulta en condiciones médicas complejas que requieren un diagnóstico y tratamiento precisos.</p>
+
+      <h3>Glándula adrenal y síntesis de cortisol</h3>
+      <p>La <strong>glándula adrenal o suprarrenal</strong>, ubicada sobre los riñones, es una glándula endocrina vital que produce una variedad de hormonas esteroideas y catecolaminas; está compuesta por la corteza suprarrenal —externa— y la médula suprarrenal —interna—, que influyen mutuamente en el desarrollo, el crecimiento y la función endocrina.</p>
+
+      <p>La corteza suprarrenal sintetiza hormonas esteroideas a partir del colesterol; se divide en tres zonas, cada una responsable de un grupo de hormonas:</p>
+      <ul>
+        <li><strong>Zona glomerular —externa—:</strong> Sintetiza mineralocorticoides; es la aldosterona la más importante; la función de éstos es regular el equilibrio de electrolitos y la presión arterial.</li>
+        <li><strong>Zona fascicular —intermedia—:</strong> Sintetiza glucocorticoides, principalmente el <strong>cortisol</strong>, y son cruciales para la respuesta al estrés, el metabolismo y la supresión de la inflamación.</li>
+        <li><strong>Zona reticular —interna—:</strong> Sintetiza andrógenos suprarrenales como la dehidroepiandrosterona (DHEA); estos andrógenos contribuyen a las características sexuales secundarias.</li>
+      </ul>
+
+      <p>En la zona fascicular, se da la producción y la liberación de cortisol, procesos controlados por la ACTH, mientras que la biosíntesis y la secreción de aldosterona están reguladas por el sistema renina-angiotensina y las concentraciones de potasio circulante. Todas las hormonas de la corteza suprarrenal se derivan del colesterol, como se puede ver en la figura 4 más adelante.</p>
+
+      <p>La síntesis y la liberación de cortisol están principalmente impulsadas por el <strong>eje HHA</strong>, que se activa ante la amenaza de un peligro, el dolor, una cirugía, el ejercicio intenso o la ansiedad. El cortisol es conocido como la “hormona del estrés” porque ayuda al cuerpo a movilizar recursos para enfrentar estas situaciones.</p>
+
+      <section class="contenedor-triptico" id="triptico-1">
+        <div class="triptico">
+          <div class="centro">
+            <div class="contenido">
+              <h1>Bloque intermedio</h1>
+              <hr />
+              <p>Este patrón contribuye a la regulación del ciclo de sueño-vigilia.</p>
+            </div>
+          </div>
+          <div class="derecha">
+            <div class="contenido">
+              <h1>Bloque final</h1>
+              <hr />
+              <p>En respuesta a la hipoglucemia, el cortisol se libera para aumentar la producción de glucosa y asegurar un suministro de energía constante para el cerebro y otros tejidos.</p>
+            </div>
+            <button class="cerrar" title="Cerrar" id="vert">✕</button>
+          </div>
+          <div class="izquierda">
+            <div class="adelante">
+              <div class="contenido">
+                <h1>Los niveles de cortisol</h1>
+                <hr />
+                <button class="mostrar" title="Ver más">Ver más</button>
+              </div>
+            </div>
+            <div class="atras">
+              <div class="contenido">
+                <h1>Bloque inicial</h1>
+                <button class="cerrar" title="Cerrar" id="horiz">✕</button>
+                <hr />
+                <p>Los niveles de cortisol en la sangre no son constantes, siguen un ritmo circadiano; son más altos por la mañana —aproximadamente al despertar— y disminuyen gradualmente a lo largo del día, alcanzando su nivel más bajo por la noche.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <Figure
+        src="img/cont/6sicort_t2.png"
+        alt="Se observa el trayecto que sigue la CRH para liberar la ACTH."
+        title="Síntesis de cortisol desde la ACTH"
+        width="w-750"
+        caption="Figura 4. Nicolaides, Nicolas C. y Chrousos, George, P. (2019). <em>Síntesis de cortisol desde la ACTH</em> [imagen]. Tomada de Litwack, Gerald. (2019). <em>Hormonal signaling in biology and medicine: comprehensive modern endocrinology</em>, p. 622. [Ante un estímulo estresante o según el ritmo circadiano, el hipotálamo libera CRH y ésta viaja a la hipófisis anterior, donde estimula las células corticotropas a liberar ACTH. La unión de la ACTH activa una cascada de señalización intracelular, vía Gs, que conduce a la activación de enzimas. La principal enzima activada por la ACTH es colesterol-desmolasa, que convierte el colesterol en pregnenolona. A partir de esta molécula, otras enzimas, como la 17α-hidroxilasa y la 21-hidroxilasa, catalizan una serie de reacciones que, finalmente, sintetizan el cortisol.]"
+      />
+
+      <p>El cortisol, al ser una hormona esteroidea liposoluble, no se almacena. Una vez sintetizado, se difunde a través de la membrana celular —no necesita un receptor en la superficie— y es liberado directamente al torrente sanguíneo. El cortisol libre en la sangre se difunde pasivamente a través de la membrana celular. Una vez dentro de la célula, el cortisol se une a su receptor intracelular, el receptor de glucocorticoides (GR, por sus siglas en inglés), que se encuentra principalmente en el citoplasma. La unión del cortisol al GR provoca un cambio conformacional en el receptor, liberándolo de las proteínas chaperonas. El complejo cortisol-receptor se transloca al núcleo de la célula. Dentro del núcleo, el complejo se une a secuencias específicas de ADN llamadas elementos de respuesta a glucocorticoides. Esta unión funciona como un factor de transcripción, lo que aumenta o disminuye la transcripción de genes específicos. Esto modula la síntesis de proteínas y, finalmente, produce los efectos fisiológicos del cortisol, como se puede ver en la siguiente figura:</p>
+
+      <Figure
+        src="img/cont/7gluco_t2.png"
+        alt="Se observa la ruta que sigue el cortisol."
+        title="Señalización de los glucocorticoides —cortisol—"
+        width="w-750"
+        caption="Figura 5. Nicolaides, Nicolas C. y Chrousos, George, P. (2019). <em>Señalización de los glucocorticoides —cortisol—</em> [imagen]. Tomada de Litwack, Gerald. (2019). <em>Hormonal signaling in biology and medicine</em>, p. 625. [El cortisol puede atravesar la membrana celular de las células diana y no necesita un receptor en la superficie. El receptor se encuentra en el citoplasma (GR) y se transloca al núcleo, lo que favorece el aumento o la disminución de la transcripción de genes específicos.]"
+      />
+
+      <p>El cortisol ejerce un mecanismo de realimentación negativa para regular su propia producción y evitar niveles excesivamente altos que podrían ser perjudiciales. Este sistema de realimentación actúa en varios niveles del eje HHA.</p>
+
+      <section class="hoja-bloc">
+        <div class="bloc">
+          <div class="superior"></div>
+          <div class="papel">
+            <p>Los niveles elevados de cortisol en la sangre inhiben la liberación de la CRH por parte del hipotálamo. El cortisol también actúa directamente sobre la hipófisis, al inhibir la liberación de la ACTH.</p>
+          </div>
+        </div>
+      </section>
+
+      <p>Estos mecanismos de realimentación aseguran que, una vez que el estrés o la necesidad de cortisol ha pasado, la producción de la hormona disminuya, lo que permite que el cuerpo vuelva a un estado de equilibrio —homeostasis—.</p>
     </Section>
     <Activity {...ACTIVITIES_CONFIG.actividad1} />
     <!-- Actividad 2 -->

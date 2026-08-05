@@ -278,20 +278,12 @@ const AVAILABLE_RESOURCES = {
     },
     init: `
       document.addEventListener('DOMContentLoaded', function() {
-        // Tríptico requiere jQuery
-        if (typeof $ !== 'undefined') {
-          const tripticos = document.querySelectorAll('.triptico');
-          tripticos.forEach((triptico, index) => {
-            if (!triptico.id) {
-              triptico.id = 'triptico-' + (index + 1);
-            }
-            if (typeof iniciarTriptico === 'function') {
-              iniciarTriptico(triptico.id);
-            }
-          });
-        } else {
-          console.warn('jQuery no está disponible para inicializar el tríptico');
-        }
+        const tripticos = document.querySelectorAll('section.contenedor-triptico[id]');
+        tripticos.forEach((tripticoElement) => {
+          if (typeof triptico === 'function') {
+            triptico(tripticoElement.id);
+          }
+        });
       });
     `
   },
