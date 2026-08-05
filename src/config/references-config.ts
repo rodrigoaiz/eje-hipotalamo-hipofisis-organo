@@ -7,20 +7,12 @@ export interface ReferenceCategory {
 // Configuración flexible de referencias por tipo de fuente
 export const REFERENCES_CONFIG = {
   // Control de visualización de títulos
-  showBasicTitle: true,       // Mostrar título "Básicas"
-  showComplementaryTitle: true, // Mostrar título "Complementarias"
+  showBasicTitle: false,
+  showComplementaryTitle: false,
   
   // Estructura flexible que permite diferentes tipos de fuentes
   basic: {
-    sections: [
-      {
-        title: "Bibliografía",
-        references: [
-          "Arredondo Garza, M.T., Mercado Cruz, E., Aguilar Medina, D.F.J. & Magos Guerrero, G.A. (2024). <em>Obesidad, dislipidemias y síndrome metabólico: Guía clínica integral</em>. Editorial Médica Panamericana.",
-          "Instituto Nacional de Salud Pública. (2022). Epidemiología de la obesidad en México. En R. Barquera & J. Rivera (Eds.), <em>Nutrición y salud pública en México</em> (pp. 125-156). Editorial INSP."
-        ]
-      }
-    ]
+    sections: []
   },
   
   complementary: {
@@ -28,27 +20,35 @@ export const REFERENCES_CONFIG = {
       {
         title: "Documentos electrónicos", 
         references: [
-          "Organización Mundial de la Salud. (2023). <strong>Obesidad y sobrepeso</strong>. <em>Fichas descriptivas</em>. Recuperado de <a href='https://www.who.int/es/news-room/fact-sheets/detail/obesity-and-overweight' target='_blank' class='break'>https://www.who.int/es/news-room/fact-sheets/detail/obesity-and-overweight</a>",
-          "Lean, M.E., Han, T.S. & Morrison, C.E. (2022). <strong>Waist circumference as a measure for indicating need for weight management</strong>. <em>British Medical Journal</em>, 311, 158-161. Disponible en: <a href='https://www.bmj.com/content/311/6998/158' target='_blank' class='break'>https://www.bmj.com/content/311/6998/158</a>"
-        ]
-      },
-      {
-        title: "Sitios web",
-        references: [
-          "Instituto Nacional de Estadística y Geografía. (2024). <em>Encuesta Nacional de Salud y Nutrición 2023</em>. Recuperado el 15 de marzo de 2024, de <a href='https://www.inegi.org.mx/programas/ensanut/' target='_blank' class='break'>https://www.inegi.org.mx/programas/ensanut/</a>",
-          "Secretaría de Salud. (2024). <strong>Portal de datos abiertos en salud</strong>. Disponible en: <a href='https://datos.gob.mx/salud' target='_blank' class='break'>https://datos.gob.mx/salud</a>"
+          "Bernard, Daniel J. y Brûlé, Emilie. (2019). Anterior pituitary: glycoprotein hormones from gonadotrope (FSH and LH) and thyrotrope (TSH) cells. En Gerald Litwack (Ed.). <em>Hormonal signaling in biology and medicine: comprehensive modern endocrinology</em> (pp. 119-144). Academic Press. <span class='break'>https://www.sciencedirect.com/science/chapter/edited-volume/abs/pii/B9780128138144000079</span>",
+          "Ergun-Longmire, Berrin y Wajnrajch, Michael P. (2025). Growth and growth disorders. En Kenneth R. Feingold (Ed.). <em>Endotext</em>. MDText.com. <span class='break'>https://www.ncbi.nlm.nih.gov/books/NBK279142/</span>",
+          "Halmos, Gabor, Dobos, Nikoletta, Juhasz, Eva, Szabo, Zsuzsanna y Schally, Andrew V. (2019). Hypothalamic releasing hormones. En Gerald Litwack (Ed.). <em>Hormonal signaling in biology and medicine: comprehensive modern endocrinology</em> (pp. 43-68). Academic Press. <span class='break'>https://www.sciencedirect.com/science/chapter/edited-volume/abs/pii/B9780128138144000031</span>",
+          "Hantsoo, Liisa, Jagodnik, Kathleen, Novick, Andrew M., Baweja, Ritika, Di Scalea, Teresa Lanza, Ozerdem, Aysegul, McGlade, Erin C., Simeonova, Diana I., Dekel, Sharon, Kornfield, Sara L., Nazareth, Michelle y Weiss, Sandra J. (2023, 11 de diciembre). The role of the hypothalamic-pituitary-adrenal axis in depression across the female reproductive lifecycle: current knowledge and future directions. <em>Frontiers in Endocrinology</em>, <em>14</em>. <span class='break'>doi:10.3389/FENDO.2023.1295261/FULL</span>",
+          "Hobeika, Elie, Armouti, Mara, Kala, Hamsini Sudheer y Stocco, Carlos. (2019). Ovarian hormones. En Gerald Litwack (Ed.). <em>Hormonal signaling in biology and medicine: comprehensive modern endocrinology</em> (pp. 565-583). Academic Press. <span class='break'>https://www.sciencedirect.com/science/chapter/edited-volume/abs/pii/B9780128138144000250</span>",
+          "Liu, Yan-Yun, Milanesi, Ana y Brent, Gregory A. (2019). Thyroid hormones. En Gerald Litwack (Ed.). <em>Hormonal signaling in biology and medicine: comprehensive modern endocrinology</em> (pp. 487-506). Academic Press. <span class='break'>https://www.sciencedirect.com/science/chapter/edited-volume/abs/pii/B9780128138144000213</span>",
+          "Nicolaides, Nicolas C. y Chrousos, George, P. (2019). Adrenal cortex hormones. En Gerald Litwack (Ed.). <em>Hormonal signaling in biology and medicine: comprehensive modern endocrinology</em> (pp. 619-633). Academic Press. <span class='break'>https://www.sciencedirect.com/science/chapter/edited-volume/abs/pii/B9780128138144000286</span>",
+          "Rastoldo, Guillaume y Tighilet, Brahim. (2023, 6 de junio). Thyroid axis and vestibular physiopathology: from animal model to pathology. <em>International Journal of Molecular Sciences</em>, <em>24</em>(12). <span class='break'>https://pubmed.ncbi.nlm.nih.gov/37372973/</span>",
+          "Rezzani, Rita, Franco, Caterina, Hardeland, Rüdiger y Rodella, Luigi Fabrizio. (2020, 20 de noviembre). Thymus-pineal gland axis: revisiting its role in human life and ageing. <em>International Journal of Molecular Sciences</em>, <em>21</em>(22). <span class='break'>https://pubmed.ncbi.nlm.nih.gov/33233845/</span>",
+          "Zakharian, Eleonora. (2019). Hormones of the testes. En Gerald Litwack (Ed.). <em>Hormonal signaling in biology and medicine: comprehensive modern endocrinology</em> (pp. 557-564). Academic Press. <span class='break'>https://www.sciencedirect.com/science/chapter/edited-volume/abs/pii/B9780128138144000249</span>"
         ]
       }
     ]
   },
-
-  // Compatibilidad hacia atrás - arrays simples (deprecated pero funcional)
-  basicLegacy: [
-    "Arredondo Garza, M.T., Mercado Cruz, E., Aguilar Medina, D.F.J. & Magos Guerrero, G.A. (2024). <em>Obesidad, dislipidemias y síndrome metabólico: Guía clínica integral</em>. Editorial Médica Panamericana."
-  ],
   
+  // Compatibilidad hacia atrás - arrays simples (deprecated pero funcional)
+  basicLegacy: [],
+
   complementaryLegacy: [
-    "Organización Mundial de la Salud. (2023). <strong>Obesidad y sobrepeso</strong>. <em>Fichas descriptivas</em>. Recuperado de <a href='https://www.who.int/es/news-room/fact-sheets/detail/obesity-and-overweight' target='_blank' class='break'>https://www.who.int/es/news-room/fact-sheets/detail/obesity-and-overweight</a>"
+    "Bernard, Daniel J. y Brûlé, Emilie. (2019). Anterior pituitary: glycoprotein hormones from gonadotrope (FSH and LH) and thyrotrope (TSH) cells. En Gerald Litwack (Ed.). <em>Hormonal signaling in biology and medicine: comprehensive modern endocrinology</em> (pp. 119-144). Academic Press. <span class='break'>https://www.sciencedirect.com/science/chapter/edited-volume/abs/pii/B9780128138144000079</span>",
+    "Ergun-Longmire, Berrin y Wajnrajch, Michael P. (2025). Growth and growth disorders. En Kenneth R. Feingold (Ed.). <em>Endotext</em>. MDText.com. <span class='break'>https://www.ncbi.nlm.nih.gov/books/NBK279142/</span>",
+    "Halmos, Gabor, Dobos, Nikoletta, Juhasz, Eva, Szabo, Zsuzsanna y Schally, Andrew V. (2019). Hypothalamic releasing hormones. En Gerald Litwack (Ed.). <em>Hormonal signaling in biology and medicine: comprehensive modern endocrinology</em> (pp. 43-68). Academic Press. <span class='break'>https://www.sciencedirect.com/science/chapter/edited-volume/abs/pii/B9780128138144000031</span>",
+    "Hantsoo, Liisa, Jagodnik, Kathleen, Novick, Andrew M., Baweja, Ritika, Di Scalea, Teresa Lanza, Ozerdem, Aysegul, McGlade, Erin C., Simeonova, Diana I., Dekel, Sharon, Kornfield, Sara L., Nazareth, Michelle y Weiss, Sandra J. (2023, 11 de diciembre). The role of the hypothalamic-pituitary-adrenal axis in depression across the female reproductive lifecycle: current knowledge and future directions. <em>Frontiers in Endocrinology</em>, <em>14</em>. <span class='break'>doi:10.3389/FENDO.2023.1295261/FULL</span>",
+    "Hobeika, Elie, Armouti, Mara, Kala, Hamsini Sudheer y Stocco, Carlos. (2019). Ovarian hormones. En Gerald Litwack (Ed.). <em>Hormonal signaling in biology and medicine: comprehensive modern endocrinology</em> (pp. 565-583). Academic Press. <span class='break'>https://www.sciencedirect.com/science/chapter/edited-volume/abs/pii/B9780128138144000250</span>",
+    "Liu, Yan-Yun, Milanesi, Ana y Brent, Gregory A. (2019). Thyroid hormones. En Gerald Litwack (Ed.). <em>Hormonal signaling in biology and medicine: comprehensive modern endocrinology</em> (pp. 487-506). Academic Press. <span class='break'>https://www.sciencedirect.com/science/chapter/edited-volume/abs/pii/B9780128138144000213</span>",
+    "Nicolaides, Nicolas C. y Chrousos, George, P. (2019). Adrenal cortex hormones. En Gerald Litwack (Ed.). <em>Hormonal signaling in biology and medicine: comprehensive modern endocrinology</em> (pp. 619-633). Academic Press. <span class='break'>https://www.sciencedirect.com/science/chapter/edited-volume/abs/pii/B9780128138144000286</span>",
+    "Rastoldo, Guillaume y Tighilet, Brahim. (2023, 6 de junio). Thyroid axis and vestibular physiopathology: from animal model to pathology. <em>International Journal of Molecular Sciences</em>, <em>24</em>(12). <span class='break'>https://pubmed.ncbi.nlm.nih.gov/37372973/</span>",
+    "Rezzani, Rita, Franco, Caterina, Hardeland, Rüdiger y Rodella, Luigi Fabrizio. (2020, 20 de noviembre). Thymus-pineal gland axis: revisiting its role in human life and ageing. <em>International Journal of Molecular Sciences</em>, <em>21</em>(22). <span class='break'>https://pubmed.ncbi.nlm.nih.gov/33233845/</span>",
+    "Zakharian, Eleonora. (2019). Hormones of the testes. En Gerald Litwack (Ed.). <em>Hormonal signaling in biology and medicine: comprehensive modern endocrinology</em> (pp. 557-564). Academic Press. <span class='break'>https://www.sciencedirect.com/science/chapter/edited-volume/abs/pii/B9780128138144000249</span>"
   ],
   
 };
