@@ -1,0 +1,101 @@
+---
+// Hotspot.astro - Componente para mostrar recursos interactivos tipo hotspot
+// 
+// Ejemplos de uso:
+// 
+// Inline:
+// <Hotspot 
+//   iframeSrc="path/to/hotspot.html"
+//   iframeHeight="500px"
+//   title="Título opcional"
+// />
+//
+// En modal:
+// <Hotspot 
+//   iframeSrc="path/to/hotspot.html"
+//   iframeHeight="70vh"
+//   showInModal={true}
+//   modalTitle="Hotspot interactivo"
+//   buttonText="Abrir"
+// />
+
+export interface Props {
+  id?: string;
+  title?: string;
+  description?: string;
+  iframeSrc: string;
+  iframeHeight?: string;              // Altura del iframe (ej: "600px", "80vh", "clamp(400px, 60vh, 800px)")
+  buttonText?: string;
+  className?: string;
+  showInModal?: boolean;
+  modalId?: string;
+  modalTitle?: string;
+}
+
+const { 
+  id,
+  title,
+  description,
+  iframeSrc,
+  iframeHeight = "clamp(400px, 60vh, 800px)",  // Altura responsiva por defecto
+  buttonText = "Ver hotspot",
+  className = "",
+  showInModal = false,
+  modalId = `hotspot-modal-${Math.random().toString(36).substr(2, 9)}`,
+  modalTitle = "Hotspot interactivo"
+} = Astro.props;
+---
+
+{showInModal ? (
+  <Fragment>
+    <!-- Hotspot en modal -->
+    {(title || description) && (
+      <div class={`hotspot-wrapper ${className}`.trim()}>
+        {title && <h3>{title}</h3>}
+        {description && <p set:html={description}></p>}
+        
+        <div class="d-flex justify-content-center my-3">
+          <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target={`#${modalId}`}>
+            {buttonText}
+          </button>
+        </div>
+      </div>
+    )}
+    
+    {!title && !description && (
+      <div class="d-flex justify-content-center my-3">
+        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target={`#${modalId}`}>
+          {buttonText}
+        </button>
+      </div>
+    )}
+
+    <!-- Modal hotspot -->
+    <div class="modal fade" id={modalId} tabindex="-1" aria-labelledby={`${modalId}-Label`} aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered modal-xl">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 class="modal-title fs-6" id={`${modalId}-Label`}>{modalTitle}</h1>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+          </div>
+          <div class="modal-body">
+            <div class="embed-iframe-hotspot">
+              <iframe src={iframeSrc} style={`height: ${iframeHeight};`}></iframe>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </Fragment>
+) : (
+  <!-- Hotspot inline -->
+  <div class={`hotspot-inline ${className}`.trim()} {...(id && { id })}>
+    {title && <h3>{title}</h3>}
+    {description && <p set:html={description}></p>}
+    
+    <div class="embed-iframe-hotspot">
+      <iframe src={iframeSrc} style={`height: ${iframeHeight};`}></iframe>
+    </div>
+  </div>
+)}
+

@@ -1,0 +1,22 @@
+@charset "UTF-8";
+/* CSS Document */
+
+/*
+ * ⚠️ ARCHIVO DEPRECADO
+ * 
+ * Este archivo ya NO se usa en el proyecto.
+ * Los estilos personalizados se han movido a: src/styles/personalizado.css
+ * 
+ * Razón del cambio:
+ * - Los archivos en public/ no son procesados por Astro
+ * - Los archivos en src/styles/ son optimizados, minificados y tienen tree-shaking
+ * - Mejor rendimiento y mejores prácticas
+ * 
+ * Este archivo se mantiene aquí solo por compatibilidad temporal.
+ * SE PUEDE ELIMINAR si estás seguro de que nada lo referencia directamente.
+ * 
+ * Fecha de deprecación: 20 de enero de 2026
+ */
+
+/* Si ves este comentario en la consola del navegador, significa que este archivo 
+   aún se está cargando por error. Verifica Layout.astro */

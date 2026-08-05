@@ -1,0 +1,35 @@
+---
+import { getSectionConfig } from '../config/format-utils.ts';
+
+export interface Props {
+  id: string;
+  title?: string;        // Opcional - se obtiene del config si no se provee
+  variant?: 'claro' | 'oscuro';  // Opcional - se calcula automáticamente patrón zebra
+  class?: string;
+}
+
+const { 
+  id,
+  title: providedTitle,
+  variant: providedVariant,
+  class: className = ''
+} = Astro.props;
+
+// Obtener configuración de la sección desde la navegación con patrón zebra automático
+const sectionConfig = getSectionConfig(id);
+
+// Usar título y variant del config/cálculo si no se proveen explícitamente
+const title = providedTitle || sectionConfig?.title || 'Sección Sin Título';
+const variant = providedVariant || sectionConfig?.variant || 'claro';
+---
+
+<section id={id} class={`wrapper-section ${variant} ${className}`}>
+  <div class="container container-section">
+    <div class="row">
+      <div class="col-xs-12 col-sm-12">
+        <h2>{title}</h2>
+        <slot />
+      </div>
+    </div>
+  </div>
+</section>

@@ -1,0 +1,118 @@
+---
+/**
+ * Componente de video de YouTube tradicional (iframe)
+ * Para mejor rendimiento, considera usar VideoYoutubeLite en su lugar
+ */
+export interface Props {
+  videoId: string;
+  title?: string;
+  width?: string;
+  autoplay?: boolean;
+  allowFullscreen?: boolean;
+  className?: string;
+  nocookie?: boolean;
+}
+
+const {
+  videoId,
+  title = "YouTube video player",
+  width = "col-lg-10",
+  autoplay = false,
+  allowFullscreen = true,
+  className = "",
+  nocookie = true,
+} = Astro.props;
+
+const baseUrl = `https://www.youtube.com/embed/${videoId}`;
+const noCookieUrl = `https://www.youtube-nocookie.com/embed/${videoId}`;
+
+// Parámetros recomendados por YouTube para incrustaciones modernas
+const params = new URLSearchParams({
+  rel: "0",
+  modestbranding: "1",
+  playsinline: "1",
+});
+
+if (autoplay) {
+  params.set("autoplay", "1");
+  params.set("mute", "1"); // Autoplay móvil requiere mute
+}
+
+const queryString = params.toString();
+const standardVideoUrl = queryString ? `${baseUrl}?${queryString}` : baseUrl;
+const noCookieVideoUrl = queryString
+  ? `${noCookieUrl}?${queryString}`
+  : noCookieUrl;
+
+const videoUrl = nocookie ? noCookieVideoUrl : standardVideoUrl;
+const fallbackUrl = nocookie ? standardVideoUrl : undefined;
+const captionId = `yt-caption-${videoId}-${Math.random().toString(36).slice(2, 8)}`;
+const iframeId = `yt-iframe-${videoId}-${Math.random().toString(36).slice(2, 8)}`;
+
+// Permisos del iframe
+const permissions = [
+  "accelerometer",
+  "autoplay",
+  "clipboard-write",
+  "encrypted-media",
+  "gyroscope",
+  "picture-in-picture",
+  "web-share",
+].join("; ");
+---
+
+<div class="row">
+  <div class={`${width} mx-auto ${className}`.trim()}>
+    <div class="ratio ratio-16x9">
+      <iframe
+        id={iframeId}
+        width="560"
+        height="315"
+        src={videoUrl}
+        title={title}
+        frameborder="0"
+        allow={permissions}
+        allowfullscreen={allowFullscreen}
+        loading="lazy"
+        fetchpriority="low"
+        referrerpolicy="strict-origin-when-cross-origin"
+        data-fallback-src={fallbackUrl}
+        aria-describedby={captionId}
+      >
+      </iframe>
+    </div>
+    <div class="text-center mt-2">
+      <p id={captionId} class="figcap2" set:html={title}></p>
+    </div>
+  </div>
+</div>
+
+{nocookie && (
+  <script is:inline>
+    {`(() => {
+        const iframe = document.getElementById("${iframeId}");
+        if (!iframe) return;
+        const fallbackSrc = iframe.getAttribute("data-fallback-src");
+        if (!fallbackSrc) return;
+
+        const switchToFallback = () => {
+          if (iframe.dataset.fallbackApplied === "1") return;
+          iframe.dataset.fallbackApplied = "1";
+          iframe.src = fallbackSrc;
+        };
+
+        iframe.addEventListener("error", switchToFallback, { once: true });
+
+        const fallbackTimer = window.setTimeout(() => {
+          if (iframe.dataset.loaded !== "1") {
+            switchToFallback();
+          }
+        }, 4000);
+
+        iframe.addEventListener("load", () => {
+          iframe.dataset.loaded = "1";
+          window.clearTimeout(fallbackTimer);
+        });
+      })();`}
+  </script>
+)}
