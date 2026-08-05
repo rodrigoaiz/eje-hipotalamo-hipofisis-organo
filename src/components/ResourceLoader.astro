@@ -73,17 +73,15 @@ const AVAILABLE_RESOURCES = {
     css: 'css/recursos/fichero_horizontal/css/',
     js: 'css/recursos/fichero_horizontal/js/',
     files: {
-      css: ['estilos-fichero-hor.css'],
+      css: ['all.css', 'estilos-fichero-hor.css'],
       js: ['fichero-hor.js']
     },
     init: `
       document.addEventListener('DOMContentLoaded', function() {
         if (typeof ficheroHorizontal !== 'undefined') {
-          // Inicializar solo los ficheros que existen en la página
-          ['fichero-hor-1', 'fichero-hor-2', 'fichero-hor-desviacion'].forEach(function(id) {
-            if (document.querySelector('section.fichero-hor#' + id)) {
-              ficheroHorizontal(id);
-            }
+          // Inicializar todos los ficheros horizontales presentes en la página
+          document.querySelectorAll('section.fichero-hor[id]').forEach(function(fichero) {
+            ficheroHorizontal(fichero.id);
           });
         }
       });
