@@ -215,6 +215,64 @@ main figcaption,
     background: #fbfdfd;
 }
 
+/* Tabla de hipotiroidismo: las flechas representan la disminución hormonal. */
+.tabla-hipotiroidismo .tabla-flecha-cell,
+.tabla-hipertiroidismo .tabla-flecha-cell {
+    padding: 0.35rem;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.tabla-hipotiroidismo .tabla-flecha,
+.tabla-hipertiroidismo .tabla-flecha {
+    display: block;
+    height: 3rem;
+    margin: 0 auto;
+    width: 2rem;
+}
+
+.tabla-hipotiroidismo .tabla-flecha path,
+.tabla-hipertiroidismo .tabla-flecha path {
+    fill: #fff;
+    stroke: #111;
+    stroke-linejoin: round;
+    stroke-width: 2.5;
+}
+
+.tabla-hipotiroidismo .tabla-hipotiroidismo-terciario {
+    display: grid;
+    grid-template-columns: 42% 58%;
+    padding: 0;
+    vertical-align: middle;
+}
+
+.tabla-hipotiroidismo .tabla-tsh-flecha {
+    align-items: center;
+    border-right: 1px solid #c8d7d9;
+    display: flex;
+    justify-content: center;
+}
+
+.tabla-hipotiroidismo .tabla-trh-celda {
+    display: grid;
+    grid-template-rows: auto 1fr;
+    min-height: 4.3rem;
+    text-align: center;
+}
+
+.tabla-hipotiroidismo .tabla-trh-celda > span {
+    border-bottom: 1px solid #c8d7d9;
+    font-weight: 400;
+    line-height: 1.2;
+    padding: 0.25rem;
+}
+
+.tabla-hipotiroidismo .tabla-trh-celda .tabla-flecha-cell {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+
 @media (max-width: 991px) {
     .tabla-informativa-figure {
         margin: 2.25rem 0;

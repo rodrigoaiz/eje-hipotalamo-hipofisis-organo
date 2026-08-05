@@ -84,6 +84,7 @@ cp scripts/update-from-template.sh ./
 - **[Guía Git Upstream](./docs/GIT-UPSTREAM-GUIDE.md)** - Configuración de remotes
 - **[Configuración Centralizada](./ConfigCentralizada-Guide.md)** - Personalización de contenidos
 - **[ResourceLoader](./ResourceLoader-Guide.md)** - Carga de recursos dinámicos
+- **[Guía de integración de contenido UAPA](./docs/GUIA-INTEGRACION-CONTENIDO-UAPA.md)** - Integración fiel de un DOCX usando los componentes y recursos existentes
 
 ## 🤝 Contribuir
 

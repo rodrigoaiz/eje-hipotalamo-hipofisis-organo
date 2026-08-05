@@ -26,14 +26,26 @@ import {
   description={UAPA_CONFIG.description}
   keywords={UAPA_CONFIG.keywords}
   author={formatAuthors.full}
-  resources={["acordeon-vertical", "fichero-vertical", "katex", "fichero-horizontal", "nota-pin", "triptico", "hoja-bloc"]}
+  resources={[
+    "acordeon-vertical",
+    "fichero-vertical",
+    "katex",
+    "fichero-horizontal",
+    "nota-pin",
+    "triptico",
+    "hoja-bloc",
+    "acordeon-horizontal",
+    "hoja-espiral",
+    "lista-desplegable",
+    "folder-contenidos",
+  ]}
 >
   <Hero
     title={UAPA_CONFIG.title}
     subtitle={UAPA_CONFIG.subtitle}
     authors={formatAuthors.display}
-    imageSrc="img/cont/1hipo_portada.jpg"
-
+    imageSrc="img/cont/portada.jpeg"
+    imageCaption="ScienceDirect. (2021). <em>The hypothalamic–pituitary–target organ axes</em> [imagen]. Tomada de https://n9.cl/7mqic3"
     imageCaption={UAPA_CONFIG.hero.imageCaption}
   />
 
@@ -45,9 +57,26 @@ import {
 
   <main>
     <Section id="introduccion">
-      <p>Los organismos multicelulares crecen, se desarrollan, regulan su medio interno y responden a estímulos diversos, con el fin último de preservar su integridad; además, se reproducen, con lo que se preserva también la especie. Para que se lleve a cabo todo esto, se necesita que exista una perfecta comunicación entre el sistema endocrino y el sistema nervioso; de tal forma, se genera el sistema neuroendocrino. El hipotálamo y la hipófisis regulan la función de gran parte del sistema neuroendocrino.</p>
+      <p>
+        Los organismos multicelulares crecen, se desarrollan, regulan su medio
+        interno y responden a estímulos diversos, con el fin último de preservar
+        su integridad; además, se reproducen, con lo que se preserva también la
+        especie. Para que se lleve a cabo todo esto, se necesita que exista una
+        perfecta comunicación entre el sistema endocrino y el sistema nervioso;
+        de tal forma, se genera el sistema neuroendocrino. El hipotálamo y la
+        hipófisis regulan la función de gran parte del sistema neuroendocrino.
+      </p>
 
-      <p>En esta unidad, conocerás más sobre el eje hipotálamo-hipófisis-órgano, un sistema de comunicación entre el hipotálamo, la hipófisis —también llamada glándula pituitaria— y los órganos del cuerpo que responden a las hormonas liberadas por esta glándula. Conocer este eje neuroendocrino es de vital importancia, ya que es un sistema de control jerárquico fundamental en el cuerpo humano que regula la producción y la liberación de muchas hormonas vitales que participan en el crecimiento, la reproducción y el metabolismo.</p>
+      <p>
+        En esta unidad, conocerás más sobre el eje hipotálamo-hipófisis-órgano,
+        un sistema de comunicación entre el hipotálamo, la hipófisis —también
+        llamada glándula pituitaria— y los órganos del cuerpo que responden a
+        las hormonas liberadas por esta glándula. Conocer este eje
+        neuroendocrino es de vital importancia, ya que es un sistema de control
+        jerárquico fundamental en el cuerpo humano que regula la producción y la
+        liberación de muchas hormonas vitales que participan en el crecimiento,
+        la reproducción y el metabolismo.
+      </p>
 
       <Figure
         src="img/cont/2_intro.jpg"
@@ -62,16 +91,36 @@ import {
       />
     </Section>
     <Section id="contenido1">
-      <p>El <strong>hipotálamo</strong> se encuentra en posición ventral al tálamo y contiene centros reguladores de la temperatura corporal, de la ingesta de alimentos y del equilibrio hídrico. Es también una glándula endocrina que controla las secreciones hormonales de la hipófisis. Las hormonas que se producen en el hipotálamo y son liberadas al sistema porta hipofisario son:</p>
+      <p>
+        El <strong>hipotálamo</strong> se encuentra en posición ventral al tálamo
+        y contiene centros reguladores de la temperatura corporal, de la ingesta de
+        alimentos y del equilibrio hídrico. Es también una glándula endocrina que
+        controla las secreciones hormonales de la hipófisis. Las hormonas que se producen
+        en el hipotálamo y son liberadas al sistema porta hipofisario son:
+      </p>
       <ul>
-        <li>Hormona liberadora de corticotropina (CRH, por sus siglas en inglés)</li>
-        <li>Hormona liberadora de tirotropina (TRH, por sus siglas en inglés)</li>
-        <li>Hormona liberadora de gonadotropina (GnRH, por sus siglas en inglés)</li>
-        <li>Hormona liberadora de la hormona del crecimiento (GHRH, por sus siglas en inglés)</li>
+        <li>
+          Hormona liberadora de corticotropina (CRH, por sus siglas en inglés)
+        </li>
+        <li>
+          Hormona liberadora de tirotropina (TRH, por sus siglas en inglés)
+        </li>
+        <li>
+          Hormona liberadora de gonadotropina (GnRH, por sus siglas en inglés)
+        </li>
+        <li>
+          Hormona liberadora de la hormona del crecimiento (GHRH, por sus siglas
+          en inglés)
+        </li>
         <li>Somatostatina (SST)</li>
       </ul>
-      <p><em>La hipófisis o pituitaria</em></p>
-      <p>Es una glándula compuesta de estructuras nerviosas y epiteliales, se localiza en la línea media de la base del cráneo y parece una prolongación del hipotálamo, al que está unida por un tallo delgado —tallo hipofisiario—.</p>
+      <h3>La hipófisis o pituitaria</h3>
+      <p>
+        Es una glándula compuesta de estructuras nerviosas y epiteliales, se
+        localiza en la línea media de la base del cráneo y parece una
+        prolongación del hipotálamo, al que está unida por un tallo delgado
+        —tallo hipofisiario—.
+      </p>
       <HojasDesordenadas
         hojas={[
           {
@@ -80,10 +129,14 @@ import {
 
             <p>Su peso promedio es de 500 a 600 mg y el lóbulo anterior comprende el 80 % de su volumen. Pesa más en la mujer que en el hombre y su peso aumenta hasta 1 g durante el embarazo y la lactancia.</p>
             `,
-          }
+          },
         ]}
       />
-      <p>Está compuesta por dos lóbulos: el <strong>anterior —adenohipófisis—</strong> y el <strong>posterior —neurohipófisis—</strong>.</p>
+      <p>
+        Está compuesta por dos lóbulos: el <strong
+          >anterior —adenohipófisis—</strong
+        > y el <strong>posterior —neurohipófisis—</strong>.
+      </p>
       <section class="fichero-hor my-5" id="fichero-hor-1">
         <section class="fichero-hor-tabs">
           <button
@@ -111,7 +164,23 @@ import {
               </div>
             </h4>
             <div class="fichero-hor-item__container">
-              <p>La <strong>hipófisis anterior</strong> —adenohipófisis— produce y secreta tres hormonas glicoproteicas estructuralmente relacionadas; éstas son la hormona foliculoestimulante (FSH, por sus siglas en inglés), la hormona luteinizante (LH, por sus siglas en inglés) y la hormona estimulante del tiroides (TSH, por sus siglas en inglés). Dado que la FSH, la LH y la TSH comparten una subunidad α, sus identidades y funciones biológicas se definen por la subunidad β: FSHβ, LHβ y TSHβ. Otra hormona que se sintetiza en la hipófisis anterior es el péptido proopiomelanocortina (POMC), el cual consta de 241 aminoácidos, que posteriormente sufre modificaciones postraduccionales que dan lugar a hormonas peptídicas que controlan una amplia gama de funciones fisiológicas, desde el estrés, la alimentación y el equilibrio energético hasta la pigmentación y la analgesia; éstas son la hormona adrenocorticotrópica (ACTH, por sus siglas en inglés) y la hormona estimulante de melanocitos (MSH, por sus siglas en inglés).</p>
+              <p>
+                La <strong>hipófisis anterior</strong> —adenohipófisis— produce y
+                secreta tres hormonas glicoproteicas estructuralmente relacionadas;
+                éstas son la hormona foliculoestimulante (FSH, por sus siglas en inglés),
+                la hormona luteinizante (LH, por sus siglas en inglés) y la hormona
+                estimulante del tiroides (TSH, por sus siglas en inglés). Dado que
+                la FSH, la LH y la TSH comparten una subunidad α, sus identidades
+                y funciones biológicas se definen por la subunidad β: FSHβ, LHβ y
+                TSHβ. Otra hormona que se sintetiza en la hipófisis anterior es el
+                péptido proopiomelanocortina (POMC), el cual consta de 241 aminoácidos,
+                que posteriormente sufre modificaciones postraduccionales que dan
+                lugar a hormonas peptídicas que controlan una amplia gama de funciones
+                fisiológicas, desde el estrés, la alimentación y el equilibrio energético
+                hasta la pigmentación y la analgesia; éstas son la hormona adrenocorticotrópica
+                (ACTH, por sus siglas en inglés) y la hormona estimulante de melanocitos
+                (MSH, por sus siglas en inglés).
+              </p>
             </div>
           </article>
           <article
@@ -126,45 +195,165 @@ import {
               </div>
             </h4>
             <div class="fichero-hor-item__container">
-              <p>La <strong>hipófisis posterior —neurohipófisis—</strong> constituye uno de los lóbulos de la hipófisis. La principal función de la hipófisis posterior es la transmisión de hormonas producidas en neuronas del núcleo supraóptico (NSO) y del núcleo paraventricular (NPV), ambas localizadas en la región del hipotálamo y secretadas directamente para la circulación periférica. El NSO y el NPV contienen neuronas magnocelulares que sintetizan vasopresina (VP) y oxitocina (OXT), las cuales se proyectan hacia la hipófisis posterior a lo largo del tracto supraóptico-hipofisario, como se puede ver en la siguiente figura:</p>
+              <p>
+                La <strong>hipófisis posterior —neurohipófisis—</strong> constituye
+                uno de los lóbulos de la hipófisis. La principal función de la hipófisis
+                posterior es la transmisión de hormonas producidas en neuronas del
+                núcleo supraóptico (NSO) y del núcleo paraventricular (NPV), ambas
+                localizadas en la región del hipotálamo y secretadas directamente
+                para la circulación periférica. El NSO y el NPV contienen neuronas
+                magnocelulares que sintetizan vasopresina (VP) y oxitocina (OXT),
+                las cuales se proyectan hacia la hipófisis posterior a lo largo del
+                tracto supraóptico-hipofisario, como se puede ver en la siguiente
+                figura:
+              </p>
+              <Figure
+                src="img/cont/3vasox_t1.png"
+                alt="Se muestra la hipófisis y las zonas donde se da la secreción de vasopresina y oxitocina."
+                title="Vasopresina y oxitocina"
+                width="w-750"
+                caption="Figura 1. Borrow, Amanda P., Stover, Sally A., Bales, Natalie J. y Handa, Robert J. (2019). <em>Vasopresina y oxitocina</em> [imagen]. Tomada de Litwack, Gerald. (2019). <em>Hormonal signaling in biology and medicine: comprehensive modern endocrinology</em>, p. 204. [Representación del control y de la secreción de vasopresina y oxitocina de la neurohipófisis; la síntesis de vasopresina y oxitocina se realiza en los núcleos supraópticos y paraventriculares del hipotálamo.]"
+              />
+              <p>
+                Cabe mencionar que la VP también es conocida con otros nombres:
+                arginina-vasopresina (AVP) y hormona antidiurética (ADH, por sus
+                siglas en inglés). Los genes de VP y OXT se encuentran en el
+                mismo cromosoma 20 y están organizados de forma consecutiva,
+                separados por una región intergénica corta. A nivel de proteína,
+                la estructura de VP y de OXT es muy similar, ya que ambas son de
+                nueve péptidos y contienen dos residuos de cisteína en las
+                posiciones 1 y 6. La diferencia entre estos péptidos difiere en
+                dos aminoácidos en las posiciones 3 —isoleucina (Ile) en el caso
+                de OXT y fenilalanina (Phe) para VP— y 8 —leucina (Leu) para el
+                caso de OXT y arginina (Arg) para VP—.
+              </p>
+
+              <Figure
+                src="img/cont/4oxvas_t1.png"
+                alt="Se observa la secuencia de aminoácidos de la oxitocina y la vasopresina."
+                title="Diferencias entre los aminoácidos de la oxitocina y la vasopresina"
+                width="w-750"
+                caption="Figura 2. Borrow, Amanda P., Stover, Sally A., Bales, Natalie J. y Handa, Robert J. (2019). <em>Diferencias entre los aminoácidos de la oxitocina y la vasopresina</em> [imagen]. Tomada de Litwack. Gerald. (2019). <em>Hormonal signaling in biology and medicine: comprehensive modern endocrinology</em>, p. 206. [Secuencia de aminoácidos de oxitocina y vasopresina; la oxitocina —lado izquierdo— muestra en azul los aminoácidos que son diferentes a los de la vasopresina en color verde —lado derecho—.]"
+              />
+
+              <p>
+                Tanto la VP como la OXT se unen a diferentes miembros de
+                receptores acoplados a proteínas G —OTR, V1aR, V1bR y V2R—,
+                unidos a G-alfa(q). Estos receptores regulan los niveles de Ca<sup
+                  >2+</sup
+                > intracelular a través de los receptores de IP<sub>3</sub> localizados
+                en el retículo sarcoplásmico, en células de músculo liso, o en el
+                retículo endoplásmico, en células corticotropas de la hipófisis y
+                en otras células como son las neuronas. En las células epiteliales
+                del riñón, la VP activa el receptor V2 a través de G-alfa(s) en la
+                membrana basolateral, lo que resulta en la activación de adenilato-ciclasa
+                e incrementa los niveles de AMP cíclico (AMPc). Esto da lugar a la
+                inserción de la proteína de membrana acuaporina 2 en la membrana apical
+                de la célula, lo que permite que el agua entre en la célula y salga
+                del túbulo renal.
+              </p>
+
+              <p>
+                La expresión de la OXT tiene lugar en las primeras etapas de la
+                vida para favorecer el desarrollo físico y mental, mientras que
+                su posterior disminución, en etapas posteriores de la vida,
+                acompaña el envejecimiento y las enfermedades; asimismo, puede
+                modular el reconocimiento y comportamiento social, el
+                aprendizaje y la memoria, las emociones, la recompensa y otras
+                funciones cerebrales superiores; además, regula la alimentación
+                y la hidratación, el sueño y la vigilia, la nocicepción y la
+                analgesia, el comportamiento sexual, el parto, la lactancia y
+                otros comportamientos instintivos; de la misma forma, la OXT
+                regula el sistema nervioso autónomo y los sentidos somáticos y
+                especializados.
+              </p>
+
+              <p>
+                La VP desempeña un papel fundamental en el control del
+                equilibrio osmótico del organismo, la homeostasis del sodio y el
+                funcionamiento renal; tiene un efecto antidiurético, debido a
+                que aumenta la reabsorción de agua en los túbulos renales,
+                mediante la activación de acuaporinas, lo que concentra la orina
+                y disminuye su volumen; también provoca la contracción de los
+                vasos sanguíneos —vasoconstricción—, lo que aumenta la
+                resistencia vascular periférica y eleva la presión arterial;
+                además, ayuda a recuperar el volumen sanguíneo al ser liberada
+                ante hemorragias o deshidratación. La secreción de VP es
+                regulada principalmente por la osmolaridad plasmática
+                —concentración de sales— y el volumen sanguíneo; sin embargo,
+                hay otros factores que también favorecen la secreción de VP;
+                entre éstos, se incluyen la angiotensina II, el dolor, las
+                náuseas, la hipoglucemia, la nicotina, los opiáceos y ciertos
+                medicamentos.
+              </p>
+
+              <p>
+                La secreción de VP también se ve afectada negativamente por el
+                etanol, los agonistas alfa-adrenérgicos y el péptido
+                natriurético auricular. El efecto inhibidor del etanol ayuda a
+                explicar el aumento de la diuresis que se produce durante los
+                estados de intoxicación, así como el aumento de la pérdida de
+                agua libre; sin una secreción adecuada de VP, los riñones
+                excretan más agua. La deficiencia de VP puede causar diabetes
+                insípida, que genera incapacidad para concentrar la orina, lo
+                que resulta en poliuria —orina excesiva y diluida— y polidipsia
+                —sed intensa—, con riesgo de deshidratación grave e
+                hipernatremia si no se compensa con líquidos.
+              </p>
             </div>
-            <Figure
-              src="img/cont/3vasox_t1.png"
-              alt="Se muestra la hipófisis y las zonas donde se da la secreción de vasopresina y oxitocina."
-              title="Vasopresina y oxitocina"
-              width="w-750"
-              caption="Figura 1. Borrow, Amanda P., Stover, Sally A., Bales, Natalie J. y Handa, Robert J. (2019). <em>Vasopresina y oxitocina</em> [imagen]. Tomada de Litwack, Gerald. (2019). <em>Hormonal signaling in biology and medicine: comprehensive modern endocrinology</em>, p. 204. [Representación del control y de la secreción de vasopresina y oxitocina de la neurohipófisis; la síntesis de vasopresina y oxitocina se realiza en los núcleos supraópticos y paraventriculares del hipotálamo.]"
-            />
-            <p>Cabe mencionar que la VP también es conocida con otros nombres: arginina-vasopresina (AVP) y hormona antidiurética (ADH, por sus siglas en inglés). Los genes de VP y OXT se encuentran en el mismo cromosoma 20 y están organizados de forma consecutiva, separados por una región intergénica corta. A nivel de proteína, la estructura de VP y de OXT es muy similar, ya que ambas son de nueve péptidos y contienen dos residuos de cisteína en las posiciones 1 y 6. La diferencia entre estos péptidos difiere en dos aminoácidos en las posiciones 3 —isoleucina (Ile) en el caso de OXT y fenilalanina (Phe) para VP— y 8 —leucina (Leu) para el caso de OXT y arginina (Arg) para VP—.</p>
-
-            <Figure
-              src="img/cont/4oxvas_t1.png"
-              alt="Se observa la secuencia de aminoácidos de la oxitocina y la vasopresina."
-              title="Diferencias entre los aminoácidos de la oxitocina y la vasopresina"
-              width="w-750"
-              caption="Figura 2. Borrow, Amanda P., Stover, Sally A., Bales, Natalie J. y Handa, Robert J. (2019). <em>Diferencias entre los aminoácidos de la oxitocina y la vasopresina</em> [imagen]. Tomada de Litwack. Gerald. (2019). <em>Hormonal signaling in biology and medicine: comprehensive modern endocrinology</em>, p. 206. [Secuencia de aminoácidos de oxitocina y vasopresina; la oxitocina —lado izquierdo— muestra en azul los aminoácidos que son diferentes a los de la vasopresina en color verde —lado derecho—.]"
-            />
-
-            <p>Tanto la VP como la OXT se unen a diferentes miembros de receptores acoplados a proteínas G —OTR, V1aR, V1bR y V2R—, unidos a G-alfa(q). Estos receptores regulan los niveles de Ca2+ intracelular a través de los receptores de IP3 localizados en el retículo sarcoplásmico, en células de músculo liso, o en el retículo endoplásmico, en células corticotropas de la hipófisis y en otras células como son las neuronas. En las células epiteliales del riñón, la VP activa el receptor V2 a través de G-alfa(s) en la membrana basolateral, lo que resulta en la activación de adenilato-ciclasa e incrementa los niveles de AMP cíclico (AMPc). Esto da lugar a la inserción de la proteína de membrana acuaporina 2 en la membrana apical de la célula, lo que permite que el agua entre en la célula y salga del túbulo renal.</p>
-
-            <p>La expresión de la OXT tiene lugar en las primeras etapas de la vida para favorecer el desarrollo físico y mental, mientras que su posterior disminución, en etapas posteriores de la vida, acompaña el envejecimiento y las enfermedades; asimismo, puede modular el reconocimiento y comportamiento social, el aprendizaje y la memoria, las emociones, la recompensa y otras funciones cerebrales superiores; además, regula la alimentación y la hidratación, el sueño y la vigilia, la nocicepción y la analgesia, el comportamiento sexual, el parto, la lactancia y otros comportamientos instintivos; de la misma forma, la OXT regula el sistema nervioso autónomo y los sentidos somáticos y especializados.</p>
-
-            <p>La VP desempeña un papel fundamental en el control del equilibrio osmótico del organismo, la homeostasis del sodio y el funcionamiento renal; tiene un efecto antidiurético, debido a que aumenta la reabsorción de agua en los túbulos renales, mediante la activación de acuaporinas, lo que concentra la orina y disminuye su volumen; también provoca la contracción de los vasos sanguíneos —vasoconstricción—, lo que aumenta la resistencia vascular periférica y eleva la presión arterial; además, ayuda a recuperar el volumen sanguíneo al ser liberada ante hemorragias o deshidratación. La secreción de VP es regulada principalmente por la osmolaridad plasmática —concentración de sales— y el volumen sanguíneo; sin embargo, hay otros factores que también favorecen la secreción de VP; entre éstos, se incluyen la angiotensina II, el dolor, las náuseas, la hipoglucemia, la nicotina, los opiáceos y ciertos medicamentos.</p>
-
-            <p>La secreción de VP también se ve afectada negativamente por el etanol, los agonistas alfa-adrenérgicos y el péptido natriurético auricular. El efecto inhibidor del etanol ayuda a explicar el aumento de la diuresis que se produce durante los estados de intoxicación, así como el aumento de la pérdida de agua libre; sin una secreción adecuada de VP, los riñones excretan más agua. La deficiencia de VP puede causar diabetes insípida, que genera incapacidad para concentrar la orina, lo que resulta en poliuria —orina excesiva y diluida— y polidipsia —sed intensa—, con riesgo de deshidratación grave e hipernatremia si no se compensa con líquidos.</p>
           </article>
         </section>
       </section>
-            
     </Section>
 
     <Section id="contenido2">
-      <p>Los seres humanos, como los animales, responden a perturbaciones ambientales a través del estrés, lo que les permite adaptarse fisiológicamente al factor estresante para mantener la homeostasis. Un componente fundamental de la respuesta homeostática es el eje hipotálamo-hipófisis-suprarrenal o adrenal (HHS o HHA), un mecanismo neuroendocrino complejo que regula los efectos de los factores estresantes, mediante la regulación de numerosos procesos fisiológicos, como el metabolismo, las respuestas inmunitarias y el sistema nervioso autónomo (SNA).</p>
+      <p>
+        Los seres humanos, como los animales, responden a perturbaciones
+        ambientales a través del estrés, lo que les permite adaptarse
+        fisiológicamente al factor estresante para mantener la homeostasis. Un
+        componente fundamental de la respuesta homeostática es el eje
+        hipotálamo-hipófisis-suprarrenal o adrenal (HHS o HHA), un mecanismo
+        neuroendocrino complejo que regula los efectos de los factores
+        estresantes, mediante la regulación de numerosos procesos fisiológicos,
+        como el metabolismo, las respuestas inmunitarias y el sistema nervioso
+        autónomo (SNA).
+      </p>
 
-      <p>El eje HHA, también conocido como CRH-ACTH-cortisol, es el sistema principal de respuesta al estrés. La hormona adrenocorticotrópica (ACTH, por sus siglas en inglés) tiene una relevancia clínica importante porque regula la producción de cortisol, una hormona con amplios efectos fisiológicos, entre los que se incluyen la supresión de la inflamación, la estimulación de la actividad metabólica y el aumento de la glucosa en sangre, que son componentes fundamentales de la respuesta al estrés. La desregulación de la actividad de la ACTH se asocia con trastornos como el síndrome de Cushing y la insuficiencia suprarrenal primaria. A continuación, se hablará con más detalle de este eje.</p>
+      <p>
+        El eje HHA, también conocido como CRH-ACTH-cortisol, es el sistema
+        principal de respuesta al estrés. La hormona adrenocorticotrópica (ACTH,
+        por sus siglas en inglés) tiene una relevancia clínica importante porque
+        regula la producción de cortisol, una hormona con amplios efectos
+        fisiológicos, entre los que se incluyen la supresión de la inflamación,
+        la estimulación de la actividad metabólica y el aumento de la glucosa en
+        sangre, que son componentes fundamentales de la respuesta al estrés. La
+        desregulación de la actividad de la ACTH se asocia con trastornos como
+        el síndrome de Cushing y la insuficiencia suprarrenal primaria. A
+        continuación, se hablará con más detalle de este eje.
+      </p>
 
       <h3>Hormona liberadora de corticotropina</h3>
-      <p>La <strong>hormona liberadora de corticotropina</strong> (<strong>CRH</strong>, por sus siglas en inglés) se sintetiza en el núcleo paraventricular y ejerce un rol central en la respuesta neuroendocrina y en el comportamiento ante el estrés, ya que dirige la activación del eje hipotálamo-hipófisis-adrenal y actúa como neuromodulador en el sistema nervioso central (SNC), como se puede ver en la figura más adelante. Frente a un estímulo estresante, las neuronas hipotalámicas secretan la CRH que actúa estimulando la síntesis y el procesamiento de <strong>POMC</strong> para generar <strong>corticotropina o la ACTH</strong>. La CRH es un péptido de 41 aminoácidos, producto del rompimiento proteolítico de un precursor de 192 aminoácidos en su extremo carboxilo-terminal, seguido por la amidación de dicho extremo; así, ejerce su acción a través de receptores de siete pasos transmembranales acoplados a proteínas G (GPCR, por sus siglas en inglés), CRHR1 y CRHR2. La estimulación de cualquier CRHR1 o CRHR2 se da a través de su acoplamiento a la proteína Gs, la cual conduce a la activación de la adenilato-ciclasa, estimulando las cascadas de señalización mediadas por AMPc.</p>
+      <p>
+        La <strong>hormona liberadora de corticotropina</strong> (<strong
+          >CRH</strong
+        >, por sus siglas en inglés) se sintetiza en el núcleo paraventricular y
+        ejerce un rol central en la respuesta neuroendocrina y en el
+        comportamiento ante el estrés, ya que dirige la activación del eje
+        hipotálamo-hipófisis-adrenal y actúa como neuromodulador en el sistema
+        nervioso central (SNC), como se puede ver en la figura más adelante.
+        Frente a un estímulo estresante, las neuronas hipotalámicas secretan la
+        CRH que actúa estimulando la síntesis y el procesamiento de <strong
+          >POMC</strong
+        > para generar <strong>corticotropina o la ACTH</strong>. La CRH es un
+        péptido de 41 aminoácidos, producto del rompimiento proteolítico de un
+        precursor de 192 aminoácidos en su extremo carboxilo-terminal, seguido
+        por la amidación de dicho extremo; así, ejerce su acción a través de
+        receptores de siete pasos transmembranales acoplados a proteínas G
+        (GPCR, por sus siglas en inglés), CRHR1 y CRHR2. La estimulación de
+        cualquier CRHR1 o CRHR2 se da a través de su acoplamiento a la proteína
+        Gs, la cual conduce a la activación de la adenilato-ciclasa, estimulando
+        las cascadas de señalización mediadas por AMPc.
+      </p>
 
       <Figure
         src="img/cont/5hipot_t2.jpg"
@@ -175,51 +364,160 @@ import {
       />
 
       <h3>Hormona adrenocorticotrópica</h3>
-      <p>La <strong>ACTH</strong>, también conocida como corticotropina, es una hormona peptídica crucial en la respuesta del cuerpo al estrés. La ACTH es sintetizada en la hipófisis anterior a partir de la proteína precursora POMC. El gen de la hormona es el gen <em>POMC</em>, el cual codifica una proteína de 241 aminoácidos que, a través de la escisión proteolítica, da origen a varias hormonas peptídicas activas, incluida la ACTH. Las células corticotropas son las responsables de producir la ACTH. La síntesis y la liberación de esta hormona es estimulada principalmente por la CRH, que es producida en el hipotálamo y transportada a la hipófisis a través del sistema porta hipofisario. Además de la CRH, otras moléculas, como las catecolaminas, el polipéptido intestinal vasoactivo, el péptido natriurético auricular (ANP, por sus siglas en inglés), la angiotensina II, el polipéptido activador del adenilato-ciclasa hipofisaria y la colecistocinina, también pueden contribuir en la liberación de la ACTH por la hipófisis; asimismo, el estrés, el ejercicio y el ciclo circadiano influyen en su liberación. El receptor de la ACTH es el receptor de la melanocortina tipo 2 (MC2R, por sus siglas en inglés), que se encuentra principalmente en las células de la corteza suprarrenal.</p>
+      <p>
+        La <strong>ACTH</strong>, también conocida como corticotropina, es una
+        hormona peptídica crucial en la respuesta del cuerpo al estrés. La ACTH
+        es sintetizada en la hipófisis anterior a partir de la proteína
+        precursora POMC. El gen de la hormona es el gen <em>POMC</em>, el cual
+        codifica una proteína de 241 aminoácidos que, a través de la escisión
+        proteolítica, da origen a varias hormonas peptídicas activas, incluida
+        la ACTH. Las células corticotropas son las responsables de producir la
+        ACTH. La síntesis y la liberación de esta hormona es estimulada
+        principalmente por la CRH, que es producida en el hipotálamo y
+        transportada a la hipófisis a través del sistema porta hipofisario.
+        Además de la CRH, otras moléculas, como las catecolaminas, el
+        polipéptido intestinal vasoactivo, el péptido natriurético auricular
+        (ANP, por sus siglas en inglés), la angiotensina II, el polipéptido
+        activador del adenilato-ciclasa hipofisaria y la colecistocinina,
+        también pueden contribuir en la liberación de la ACTH por la hipófisis;
+        asimismo, el estrés, el ejercicio y el ciclo circadiano influyen en su
+        liberación. El receptor de la ACTH es el receptor de la melanocortina
+        tipo 2 (MC2R, por sus siglas en inglés), que se encuentra principalmente
+        en las células de la corteza suprarrenal.
+      </p>
 
-      <p>Este receptor es un acoplado a la proteína G-alfa(s). Al unirse la ACTH al MC2R, se desencadena una cascada de señalización intracelular: la unión de la ACTH provoca un cambio conformacional en el receptor, activando la subunidad G-alfa(s), la cual estimula la enzima adenilato-ciclasa que, posteriormente, cataliza la conversión de trifosfato de adenosina (ATP, por sus siglas en inglés) en AMPc, que actúa como un segundo mensajero. El aumento en los niveles de AMPc activa la proteína-cinasa A (PKA). La PKA fosforila varias enzimas y proteínas en la célula, lo que lleva a la activación de la síntesis de hormonas esteroideas.</p>
+      <p>
+        Este receptor es un acoplado a la proteína G-alfa(s). Al unirse la ACTH
+        al MC2R, se desencadena una cascada de señalización intracelular: la
+        unión de la ACTH provoca un cambio conformacional en el receptor,
+        activando la subunidad G-alfa(s), la cual estimula la enzima
+        adenilato-ciclasa que, posteriormente, cataliza la conversión de
+        trifosfato de adenosina (ATP, por sus siglas en inglés) en AMPc, que
+        actúa como un segundo mensajero. El aumento en los niveles de AMPc
+        activa la proteína-cinasa A (PKA). La PKA fosforila varias enzimas y
+        proteínas en la célula, lo que lleva a la activación de la síntesis de
+        hormonas esteroideas.
+      </p>
 
       <section class="contenedor-pin">
         <div class="hoja-pin amarillo">
-          <div class="pin rojo"><div class="shadow"></div><div class="metal"></div><div class="bottom-circle"></div></div>
-          <p>La función principal de la ACTH es estimular la corteza suprarrenal, específicamente la capa fasciculada y reticular, para que produzca y libere glucocorticoides —como el cortisol— y, en menor medida, andrógenos. El cortisol es fundamental para la regulación del metabolismo, la supresión de la respuesta inflamatoria y la respuesta al estrés.</p>
+          <div class="pin rojo">
+            <div class="shadow"></div><div class="metal"></div><div
+              class="bottom-circle"
+            >
+            </div>
+          </div>
+          <p>
+            La función principal de la ACTH es estimular la corteza suprarrenal,
+            específicamente la capa fasciculada y reticular, para que produzca y
+            libere glucocorticoides —como el cortisol— y, en menor medida,
+            andrógenos. El cortisol es fundamental para la regulación del
+            metabolismo, la supresión de la respuesta inflamatoria y la
+            respuesta al estrés.
+          </p>
         </div>
       </section>
 
-      <p>Como puedes darte cuenta, la hormona adrenocorticotrópica es indispensable para el correcto funcionamiento del cuerpo humano; tener una alteración en los niveles de esta hormona puede causar diferentes afecciones. A continuación, se mencionan algunas de ellas y sus causas:</p>
+      <p>
+        Como puedes darte cuenta, la hormona adrenocorticotrópica es
+        indispensable para el correcto funcionamiento del cuerpo humano; tener
+        una alteración en los niveles de esta hormona puede causar diferentes
+        afecciones. A continuación, se mencionan algunas de ellas y sus causas:
+      </p>
 
-      <p>La exposición crónica resultante de los tejidos a los glucocorticoides provoca diversos trastornos, desde la obesidad y la diabetes hasta la hipertensión y la osteoporosis. En ambos casos, el exceso de ACTH estimula los receptores suprarrenales MC2R, lo que provoca una liberación excesiva de glucocorticoides e hiperplasia suprarrenal.</p>
+      <figure class="w-750 mx-auto my-recursos">
+        <div class="border rounded p-4 text-center bg-light">
+          <strong>Placeholder de imagen:</strong> Infografía sobre las afecciones
+          causadas por ACTH.
+        </div>
+        <figcaption>
+          Infografía sobre lo que causa un exceso o deficiencia de ACTH.
+        </figcaption>
+      </figure>
 
-      <p>En resumen, la ACTH es un componente vital del eje HHA. Cualquier disfunción en su producción, ya sea por deficiencia o por exceso, altera el equilibrio hormonal del cuerpo, lo que resulta en condiciones médicas complejas que requieren un diagnóstico y tratamiento precisos.</p>
+      <p>
+        La exposición crónica resultante de los tejidos a los glucocorticoides
+        provoca diversos trastornos, desde la obesidad y la diabetes hasta la
+        hipertensión y la osteoporosis. En ambos casos, el exceso de ACTH
+        estimula los receptores suprarrenales MC2R, lo que provoca una
+        liberación excesiva de glucocorticoides e hiperplasia suprarrenal.
+      </p>
+
+      <p>
+        En resumen, la ACTH es un componente vital del eje HHA. Cualquier
+        disfunción en su producción, ya sea por deficiencia o por exceso, altera
+        el equilibrio hormonal del cuerpo, lo que resulta en condiciones médicas
+        complejas que requieren un diagnóstico y tratamiento precisos.
+      </p>
 
       <h3>Glándula adrenal y síntesis de cortisol</h3>
-      <p>La <strong>glándula adrenal o suprarrenal</strong>, ubicada sobre los riñones, es una glándula endocrina vital que produce una variedad de hormonas esteroideas y catecolaminas; está compuesta por la corteza suprarrenal —externa— y la médula suprarrenal —interna—, que influyen mutuamente en el desarrollo, el crecimiento y la función endocrina.</p>
+      <p>
+        La <strong>glándula adrenal o suprarrenal</strong>, ubicada sobre los
+        riñones, es una glándula endocrina vital que produce una variedad de
+        hormonas esteroideas y catecolaminas; está compuesta por la corteza
+        suprarrenal —externa— y la médula suprarrenal —interna—, que influyen
+        mutuamente en el desarrollo, el crecimiento y la función endocrina.
+      </p>
 
-      <p>La corteza suprarrenal sintetiza hormonas esteroideas a partir del colesterol; se divide en tres zonas, cada una responsable de un grupo de hormonas:</p>
+      <p>
+        La corteza suprarrenal sintetiza hormonas esteroideas a partir del
+        colesterol; se divide en tres zonas, cada una responsable de un grupo de
+        hormonas:
+      </p>
       <ul>
-        <li><strong>Zona glomerular —externa—:</strong> Sintetiza mineralocorticoides; es la aldosterona la más importante; la función de éstos es regular el equilibrio de electrolitos y la presión arterial.</li>
-        <li><strong>Zona fascicular —intermedia—:</strong> Sintetiza glucocorticoides, principalmente el <strong>cortisol</strong>, y son cruciales para la respuesta al estrés, el metabolismo y la supresión de la inflamación.</li>
-        <li><strong>Zona reticular —interna—:</strong> Sintetiza andrógenos suprarrenales como la dehidroepiandrosterona (DHEA); estos andrógenos contribuyen a las características sexuales secundarias.</li>
+        <li>
+          <strong>Zona glomerular —externa—:</strong> Sintetiza mineralocorticoides;
+          es la aldosterona la más importante; la función de éstos es regular el equilibrio
+          de electrolitos y la presión arterial.
+        </li>
+        <li>
+          <strong>Zona fascicular —intermedia—:</strong> Sintetiza glucocorticoides,
+          principalmente el <strong>cortisol</strong>, y son cruciales para la
+          respuesta al estrés, el metabolismo y la supresión de la inflamación.
+        </li>
+        <li>
+          <strong>Zona reticular —interna—:</strong> Sintetiza andrógenos suprarrenales
+          como la dehidroepiandrosterona (DHEA); estos andrógenos contribuyen a las
+          características sexuales secundarias.
+        </li>
       </ul>
 
-      <p>En la zona fascicular, se da la producción y la liberación de cortisol, procesos controlados por la ACTH, mientras que la biosíntesis y la secreción de aldosterona están reguladas por el sistema renina-angiotensina y las concentraciones de potasio circulante. Todas las hormonas de la corteza suprarrenal se derivan del colesterol, como se puede ver en la figura 4 más adelante.</p>
+      <p>
+        En la zona fascicular, se da la producción y la liberación de cortisol,
+        procesos controlados por la ACTH, mientras que la biosíntesis y la
+        secreción de aldosterona están reguladas por el sistema
+        renina-angiotensina y las concentraciones de potasio circulante. Todas
+        las hormonas de la corteza suprarrenal se derivan del colesterol, como
+        se puede ver en la figura 4 más adelante.
+      </p>
 
-      <p>La síntesis y la liberación de cortisol están principalmente impulsadas por el <strong>eje HHA</strong>, que se activa ante la amenaza de un peligro, el dolor, una cirugía, el ejercicio intenso o la ansiedad. El cortisol es conocido como la “hormona del estrés” porque ayuda al cuerpo a movilizar recursos para enfrentar estas situaciones.</p>
+      <p>
+        La síntesis y la liberación de cortisol están principalmente impulsadas
+        por el <strong>eje HHA</strong>, que se activa ante la amenaza de un
+        peligro, el dolor, una cirugía, el ejercicio intenso o la ansiedad. El
+        cortisol es conocido como la “hormona del estrés” porque ayuda al cuerpo
+        a movilizar recursos para enfrentar estas situaciones.
+      </p>
 
       <section class="contenedor-triptico" id="triptico-1">
         <div class="triptico">
           <div class="centro">
             <div class="contenido">
-              <h1>Bloque intermedio</h1>
               <hr />
-              <p>Este patrón contribuye a la regulación del ciclo de sueño-vigilia.</p>
+              <p>
+                Este patrón contribuye a la regulación del ciclo de
+                sueño-vigilia.
+              </p>
             </div>
           </div>
           <div class="derecha">
             <div class="contenido">
-              <h1>Bloque final</h1>
               <hr />
-              <p>En respuesta a la hipoglucemia, el cortisol se libera para aumentar la producción de glucosa y asegurar un suministro de energía constante para el cerebro y otros tejidos.</p>
+              <p>
+                En respuesta a la hipoglucemia, el cortisol se libera para
+                aumentar la producción de glucosa y asegurar un suministro de
+                energía constante para el cerebro y otros tejidos.
+              </p>
             </div>
             <button class="cerrar" title="Cerrar" id="vert">✕</button>
           </div>
@@ -233,10 +531,14 @@ import {
             </div>
             <div class="atras">
               <div class="contenido">
-                <h1>Bloque inicial</h1>
                 <button class="cerrar" title="Cerrar" id="horiz">✕</button>
                 <hr />
-                <p>Los niveles de cortisol en la sangre no son constantes, siguen un ritmo circadiano; son más altos por la mañana —aproximadamente al despertar— y disminuyen gradualmente a lo largo del día, alcanzando su nivel más bajo por la noche.</p>
+                <p>
+                  Los niveles de cortisol en la sangre no son constantes, siguen
+                  un ritmo circadiano; son más altos por la mañana
+                  —aproximadamente al despertar— y disminuyen gradualmente a lo
+                  largo del día, alcanzando su nivel más bajo por la noche.
+                </p>
               </div>
             </div>
           </div>
@@ -251,7 +553,24 @@ import {
         caption="Figura 4. Nicolaides, Nicolas C. y Chrousos, George, P. (2019). <em>Síntesis de cortisol desde la ACTH</em> [imagen]. Tomada de Litwack, Gerald. (2019). <em>Hormonal signaling in biology and medicine: comprehensive modern endocrinology</em>, p. 622. [Ante un estímulo estresante o según el ritmo circadiano, el hipotálamo libera CRH y ésta viaja a la hipófisis anterior, donde estimula las células corticotropas a liberar ACTH. La unión de la ACTH activa una cascada de señalización intracelular, vía Gs, que conduce a la activación de enzimas. La principal enzima activada por la ACTH es colesterol-desmolasa, que convierte el colesterol en pregnenolona. A partir de esta molécula, otras enzimas, como la 17α-hidroxilasa y la 21-hidroxilasa, catalizan una serie de reacciones que, finalmente, sintetizan el cortisol.]"
       />
 
-      <p>El cortisol, al ser una hormona esteroidea liposoluble, no se almacena. Una vez sintetizado, se difunde a través de la membrana celular —no necesita un receptor en la superficie— y es liberado directamente al torrente sanguíneo. El cortisol libre en la sangre se difunde pasivamente a través de la membrana celular. Una vez dentro de la célula, el cortisol se une a su receptor intracelular, el receptor de glucocorticoides (GR, por sus siglas en inglés), que se encuentra principalmente en el citoplasma. La unión del cortisol al GR provoca un cambio conformacional en el receptor, liberándolo de las proteínas chaperonas. El complejo cortisol-receptor se transloca al núcleo de la célula. Dentro del núcleo, el complejo se une a secuencias específicas de ADN llamadas elementos de respuesta a glucocorticoides. Esta unión funciona como un factor de transcripción, lo que aumenta o disminuye la transcripción de genes específicos. Esto modula la síntesis de proteínas y, finalmente, produce los efectos fisiológicos del cortisol, como se puede ver en la siguiente figura:</p>
+      <p>
+        El cortisol, al ser una hormona esteroidea liposoluble, no se almacena.
+        Una vez sintetizado, se difunde a través de la membrana celular —no
+        necesita un receptor en la superficie— y es liberado directamente al
+        torrente sanguíneo. El cortisol libre en la sangre se difunde
+        pasivamente a través de la membrana celular. Una vez dentro de la
+        célula, el cortisol se une a su receptor intracelular, el receptor de
+        glucocorticoides (GR, por sus siglas en inglés), que se encuentra
+        principalmente en el citoplasma. La unión del cortisol al GR provoca un
+        cambio conformacional en el receptor, liberándolo de las proteínas
+        chaperonas. El complejo cortisol-receptor se transloca al núcleo de la
+        célula. Dentro del núcleo, el complejo se une a secuencias específicas
+        de ADN llamadas elementos de respuesta a glucocorticoides. Esta unión
+        funciona como un factor de transcripción, lo que aumenta o disminuye la
+        transcripción de genes específicos. Esto modula la síntesis de proteínas
+        y, finalmente, produce los efectos fisiológicos del cortisol, como se
+        puede ver en la siguiente figura:
+      </p>
 
       <Figure
         src="img/cont/7gluco_t2.png"
@@ -261,20 +580,2061 @@ import {
         caption="Figura 5. Nicolaides, Nicolas C. y Chrousos, George, P. (2019). <em>Señalización de los glucocorticoides —cortisol—</em> [imagen]. Tomada de Litwack, Gerald. (2019). <em>Hormonal signaling in biology and medicine</em>, p. 625. [El cortisol puede atravesar la membrana celular de las células diana y no necesita un receptor en la superficie. El receptor se encuentra en el citoplasma (GR) y se transloca al núcleo, lo que favorece el aumento o la disminución de la transcripción de genes específicos.]"
       />
 
-      <p>El cortisol ejerce un mecanismo de realimentación negativa para regular su propia producción y evitar niveles excesivamente altos que podrían ser perjudiciales. Este sistema de realimentación actúa en varios niveles del eje HHA.</p>
+      <p>
+        El cortisol ejerce un mecanismo de realimentación negativa para regular
+        su propia producción y evitar niveles excesivamente altos que podrían
+        ser perjudiciales. Este sistema de realimentación actúa en varios
+        niveles del eje HHA.
+      </p>
 
       <section class="hoja-bloc">
         <div class="bloc">
           <div class="superior"></div>
           <div class="papel">
-            <p>Los niveles elevados de cortisol en la sangre inhiben la liberación de la CRH por parte del hipotálamo. El cortisol también actúa directamente sobre la hipófisis, al inhibir la liberación de la ACTH.</p>
+            <p>
+              Los niveles elevados de cortisol en la sangre inhiben la
+              liberación de la CRH por parte del hipotálamo. El cortisol también
+              actúa directamente sobre la hipófisis, al inhibir la liberación de
+              la ACTH.
+            </p>
           </div>
         </div>
       </section>
 
-      <p>Estos mecanismos de realimentación aseguran que, una vez que el estrés o la necesidad de cortisol ha pasado, la producción de la hormona disminuya, lo que permite que el cuerpo vuelva a un estado de equilibrio —homeostasis—.</p>
+      <p>
+        Estos mecanismos de realimentación aseguran que, una vez que el estrés o
+        la necesidad de cortisol ha pasado, la producción de la hormona
+        disminuya, lo que permite que el cuerpo vuelva a un estado de equilibrio
+        —homeostasis—.
+      </p>
     </Section>
+    <Section id="contenido3" title="Eje hipotálamo-hipófisis-tiroides">
+      <p>
+        El eje hipotálamo-hipófisis-tiroides (HHT) es un sistema neuroendocrino
+        fundamental que actúa sobre múltiples tejidos esenciales para el
+        crecimiento y el metabolismo. El eje HHT comienza con la secreción de la
+        TRH por parte del hipotálamo, estimula la hipófisis anterior para que
+        libere la hormona estimulante de la tiroides (TSH, por sus siglas en
+        inglés) y culmina con la síntesis y la secreción de hormonas tiroideas
+        —triyodotironina (T<sub>3</sub>) y tiroxina (T<sub>4</sub>)— por parte
+        de la glándula tiroides, las cuales regulan la secreción de TRH y TSH a
+        través de una realimentación negativa. La ausencia o la secreción
+        excesiva de las hormonas de este eje producen alteraciones importantes
+        en el metabolismo. A continuación, se describirán con más detalle la
+        síntesis, la liberación y las funciones de las hormonas TRH, TSH, T<sub
+          >3</sub
+        > y T<sub>4</sub>.
+      </p>
+
+      <h3>Hormona liberadora de tirotropina</h3>
+      <p>
+        La <strong>TRH</strong> fue la primera hormona liberadora hipotalámica aislada
+        y sintetizada en 1969. Anteriormente llamada factor liberador de tirotropina
+        o tiroliberina, es producida principalmente en el hipotálamo, especialmente
+        en las <strong>neuronas parvocelulares</strong>, el <strong
+          >núcleo preóptico supraquiasmático</strong
+        >, el <strong>núcleo dorsomedial</strong> y el <strong
+          >hipotálamo basolateral</strong
+        >. La <strong>TRH</strong> estimula la liberación de <strong
+          >tirotropina</strong
+        > —también conocida como <strong>TSH</strong>— y prolactina de la
+        adenohipófisis o hipófisis anterior, como se puede ver en la figura 6.
+      </p>
+
+      <section class="hoja-espiral">
+        <div class="container">
+          <div class="row">
+            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+              <div class="hoja">
+                <h3>Síntesis de TRH</h3>
+                <p>
+                  La <strong>TRH</strong> se sintetiza en forma de una proteína precursora
+                  de 242 aminoácidos —prepro-TRH—, principalmente en el hipotálamo,
+                  pero también en otros tejidos fuera del cerebro, como las células
+                  b-pancreáticas, las células C de la glándula tiroides, el miocardio,
+                  los órganos reproductores —próstata y testículos—, la médula espinal
+                  y la hipófisis anterior. Durante su trayecto a través del sistema
+                  de endomembranas, este precursor es secuencialmente hidrolizado
+                  hasta obtener el tripéptido de la TRH —glutamato, histidina y prolina,
+                  o bien, Glu-His-Pro-NH<sub>2</sub>—. Por último, el N-terminal
+                  de Glu es convertido en piroglutamato, que es la forma madura
+                  y biológicamente activa —Pyro-Glu-His-Pro-NH<sub>2</sub>—. La
+                  biosíntesis de la TRH es regulada por la hormona tiroidea —T<sub
+                    >3</sub
+                  > y T<sub>4</sub>—, el producto final en el eje HHT, como se
+                  puede ver en la siguiente figura:
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <Figure
+        src="img/cont/8ehht_t3.png"
+        alt="Se observa la ruta de secreción de TRH, TSH, T₃ y T₄."
+        title="Eje hipotálamo-hipófisis-tiroides (HHT)"
+        width="w-750"
+        caption="Figura 6. Rastoldo, Guillaume y Tighilet, Brahim. (2023). <em>Eje hipotálamo-hipófisis-tiroides (HHT)</em> [imagen]. Tomada de https://n9.cl/dkakh. [Las neuronas de los núcleos paraventriculares del hipotálamo sintetizan y secretan TRH, que estimula la liberación de TSH por la adenohipófisis. La TSH se unirá a su receptor de membrana presente en las células foliculares de la tiroides y provocará la síntesis y la liberación de hormonas tiroideas T<sub>3</sub> y T<sub>4</sub>. El punto azul en la sección sagital del diagrama cerebral representa la localización del hipotálamo; el signo de “+” significa estimulación y el de “−” inhibición.]"
+      />
+
+      <p>
+        Los niveles del pro-TRH, así como de su ARN mensajero (ARNm), se
+        modifican específicamente en las neuronas parvocelulares del núcleo
+        paraventricular (NPV) del hipotálamo. A través del sistema porta, la TRH
+        llega a la hipófisis anterior —o adenohipófisis—, donde se une a
+        receptores —TRHR—, los cuales están acoplados a la proteína G-alfa(q),
+        en la membrana plasmática de las células tirotrópicas, lo que ocasiona
+        un incremento en el calcio citoplasmático libre y hace partícipe a la
+        TRH en la síntesis y la secreción de la TSH; además, se estimula la
+        formación del ARNm que codifica para la prolactina. La TRH también puede
+        aumentar la presión arterial y la actividad locomotora espontánea;
+        asimismo, este péptido puede potenciar el efecto excitador de la
+        acetilcolina sobre las neuronas corticales. La TRH, así como las
+        hormonas tiroideas, es responsable de la termorregulación a través del
+        aumento de la oxidación de lípidos intracelulares, la tonicidad y la
+        activación del temblor muscular. Está presente en el páncreas y se ha
+        demostrado que disminuye la absorción de glucosa y xilosa en el
+        intestino.
+      </p>
+
+      <HojasDesordenadas
+        hojas={[
+          {
+            color: "rosa",
+            content: `<p>La TRH tiene un amplio espectro de actividad, con potenciales efectos beneficiosos en diferentes tejidos y órganos; sin embargo, su uso clínico está limitado debido a su principal actividad hormonal y a su escasa estabilidad metabólica, ya que su vida media es de aproximadamente cuatro minutos, por su rápida inactivación enzimática en sangre. Por lo tanto, para superar estas limitaciones, podría ser interesante disponer de análogos de la TRH metabólicamente estables, con una potencia y actividad similares a las de la TRH natural.</p>`,
+          },
+        ]}
+      />
+
+      <Figure
+        src="img/cont/9thc_t3.png"
+        alt="Se observa la estructura química de la TRH."
+        title="Estructura química de la TRH"
+        width="w-750"
+        caption="Figura 7. Wikipedia. (2006). <em>Structural diagram of thyrotropin-releasing hormone</em> [imagen]. Tomada de https://n9.cl/9femcv"
+      />
+
+      <h3>Hormona estimulante de la tiroides</h3>
+      <p>
+        La <strong>TSH</strong>, también conocida como <strong
+          >tirotropina</strong
+        >, es producida por las <strong>células tirotropas</strong> de la hipófisis.
+        La principal función de la TSH es estimular la producción de hormonas tiroideas
+        en la glándula tiroides. La TSH se une al receptor (TSHR), el cual está acoplado
+        a proteínas G-alfa(s). El gen es localizado en el exón 12 del cromosoma 14
+        —en ratones en el cromosoma 12—. El TSHR maduro es una proteína de 744 aminoácidos
+        que se expresa predominantemente en la membrana basolateral de las células
+        foliculares de la tiroides. Una vez liberada la TSH, estimula la producción
+        de las hormonas tiroideas T<sub>3</sub> y T<sub>4</sub>, las cuales, a
+        su vez, regulan negativamente el hipotálamo y la hipófisis para regular
+        su propia producción. A nivel cerebral, las hormonas tiroideas inhiben
+        la expresión del gen <em>TRH</em> —y presumiblemente la liberación de la TRH—,
+        en el núcleo paraventricular. En la hipófisis, T<sub>3</sub> y T<sub
+          >4</sub
+        > inhiben la expresión de la TSH. Otros factores que la regulan son los siguientes:
+      </p>
+
+      <section class="contenedor-lista-desp">
+        <div class="cuadrosAnimados azul">
+          <p class="fadeInDownBig cuadro1">
+            La deficiencia de la hormona del crecimiento (GH, por sus siglas en
+            inglés) se asocia con un aumento de la respuesta de la TSH a la TRH.
+          </p>
+          <p class="animated fadeInDownBig delay-1s cuadro2">
+            Por el contrario, un exceso de GH disminuye la liberación de la TSH
+            basal, pulsátil y estimulada por la TRH, posiblemente debido a la
+            estimulación de la somatostatina hipotalámica por la GH.
+          </p>
+          <p class="animated fadeInDownBig delay-2s cuadro3">
+            La somatostatina se une al receptor en las células tirotropas, para
+            inhibir la secreción de la TSH en humanos y ratas.
+          </p>
+          <p class="animated fadeInDownBig delay-3s cuadro4">
+            El cortisol afecta la secreción circadiana de la TSH; ésta tiene un
+            patrón circadiano de liberación con niveles nocturnos dos veces
+            superiores a los observados durante el día en humanos.
+          </p>
+          <p class="animated fadeInDownBig delay-4s cuadro5">
+            En un estudio en pacientes con insuficiencia suprarrenal, tras la
+            retirada de glucocorticoides, se observa un aumento de la TSH diurna
+            y una abolición de la ritmicidad circadiana en la liberación de
+            ésta. La ritmicidad circadiana normal de la secreción de la TSH se
+            restablece tras el tratamiento con hidrocortisona.
+          </p>
+          <p class="animated fadeInDownBig delay-5s cuadro6">
+            También la dopamina inhibe la secreción basal de la TSH y la
+            estimulada por la TRH.
+          </p>
+        </div>
+      </section>
+
+      <p>
+        La secreción de la TSH está regulada por un sistema de <strong
+          >realimentación negativo</strong
+        > —ver figura 6—. Cuando los niveles de hormonas tiroideas —T<sub>3</sub
+        > y T<sub>4</sub>— en la sangre son bajos, el hipotálamo libera la TRH,
+        que, a su vez, estimula la glándula pituitaria para que libere la TSH.
+        Si los niveles de T<sub>3</sub> y T<sub>4</sub> son altos, se reduce la liberación
+        de la TRH y, por lo tanto, la de la TSH, lo que mantiene un equilibrio hormonal.
+      </p>
+
+      <h3>Glándula tiroides y hormonas tiroideas</h3>
+      <p>
+        La glándula tiroides se ubica en la parte anterior del cuello y es
+        fundamental para el correcto funcionamiento del organismo. Esta glándula
+        produce dos formas principales de <strong
+          >hormonas tiroideas: T<sub>3</sub> y T<sub>4</sub></strong
+        >, las cuales regulan el metabolismo, el crecimiento y el desarrollo.
+        Las hormonas tiroideas se sintetizan a partir del aminoácido tirosina;
+        la estructura consiste en un anillo fenilo, conectado por un enlace éter
+        a una tirosina, pero que actúa predominantemente a través de receptores
+        nucleares, de una manera similar a hormonas derivadas de esteroides.
+      </p>
+
+      <figure class="tabla-informativa-figure">
+        <figcaption class="tabla-informativa-caption text-center">
+          <strong>Tabla 1. Hormonas tiroideas</strong>
+        </figcaption>
+        <div class="tabla-informativa-scroll">
+          <table class="tabla-informativa">
+            <thead><tr><th>Hormona</th><th>Descripción</th></tr></thead>
+            <tbody>
+              <tr
+                ><th>Triyodotironina</th><td
+                  >La <strong>T<sub>3</sub></strong> contiene tres átomos de yodo
+                  en el anillo fenilo; es la forma más activa de la hormona tiroidea
+                  y ejerce la mayoría de los efectos biológicos. Aunque una pequeña
+                  cantidad se produce directamente en la tiroides, la mayor parte
+                  se genera a partir de la desyodación de la T<sub>4</sub> en los
+                  tejidos diana.</td
+                ></tr
+              >
+              <tr
+                ><th>Tiroxina</th><td
+                  >La <strong>T<sub>4</sub></strong> contiene cuatro átomos de yodo
+                  en el anillo fenilo; es la hormona que se produce en mayor cantidad
+                  y se considera una prehormona, ya que es menos activa que la T<sub
+                    >3</sub
+                  >. Se convierte en T<sub>3</sub> en los tejidos periféricos.</td
+                ></tr
+              >
+            </tbody>
+          </table>
+        </div>
+      </figure>
+
+      <p>
+        Además, la glándula tiroides también produce calcitonina, una hormona
+        peptídica que, a diferencia de las hormonas tiroideas, regula el
+        metabolismo del calcio, lo que ayuda a reducir sus niveles en la sangre.
+        Las células responsables de la síntesis de T<sub>3</sub> y T<sub>4</sub> son
+        las células foliculares o tirocitos, que forman estructuras esféricas llamadas
+        folículos tiroideos. Estas células rodean un espacio central lleno de un material
+        gelatinoso conocido como coloide, que es esencial para el almacenamiento de
+        las hormonas. El proceso de síntesis es un ciclo complejo que requiere yodo
+        y el aminoácido tirosina, el cual se lleva a cabo en varios pasos:
+      </p>
+
+      <section
+        class="accordion mx-auto"
+        id="acordeon-vert-1"
+        style="width: 100%; max-width: 100%; margin: 2rem auto;"
+      >
+        <div class="accordion-item">
+          <div class="accordion-item-header">
+            <strong>Sección 1. Captación de yodo</strong><div class="icon">
+              <i class="fas fa-chevron-down"></i>
+            </div>
+          </div>
+          <div class="accordion-item-body">
+            <div class="accordion-item-body-content">
+              <p>
+                Las células foliculares captan activamente el yoduro (I−) del
+                torrente sanguíneo mediante un <strong
+                  >simportador de sodio-yoduro</strong
+                > (<strong>NIS</strong>, por sus siglas en inglés) La única
+                fuente de yodo para la síntesis es mediante la alimentación.
+                Dentro del tirocito, el I− intracelular migra desde la membrana
+                basal hacia la membrana apical. La <strong
+                  >enzima peroxidasa tiroidea</strong
+                > (<strong>TPO</strong>, por sus siglas en inglés) y el H<sub
+                  >2</sub
+                >O<sub>2</sub> oxidan el I− a yodo (I<sub>2</sub>).
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <div class="accordion-item-header">
+            <strong>Sección 2. Síntesis de tiroglobulina</strong><div
+              class="icon"
+            >
+              <i class="fas fa-chevron-down"></i>
+            </div>
+          </div>
+          <div class="accordion-item-body">
+            <div class="accordion-item-body-content">
+              <p>
+                Las células foliculares sintetizan una proteína grande llamada
+                tiroglobulina (Tg) en el retículo endoplásmico rugoso. Esta
+                proteína se secreta en el coloide del folículo.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <div class="accordion-item-header">
+            <strong>Sección 3. Yodación de la tirosina</strong><div
+              class="icon"
+            >
+              <i class="fas fa-chevron-down"></i>
+            </div>
+          </div>
+          <div class="accordion-item-body">
+            <div class="accordion-item-body-content">
+              <p>
+                La enzima TPO une el I<sub>2</sub> a los residuos de tirosina de la
+                Tg en el coloide, formando monoyodotirosina (MIT) y diyodotirosina
+                (DIT), que son hormonas inactivas.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <div class="accordion-item-header">
+            <strong>Sección 4. Acoplamiento</strong><div class="icon">
+              <i class="fas fa-chevron-down"></i>
+            </div>
+          </div>
+          <div class="accordion-item-body">
+            <div class="accordion-item-body-content">
+              <p>
+                La enzima TPO cataliza el acoplamiento de MIT y DIT para formar
+                T<sub>3</sub> y T<sub>4</sub>, aún unidas a la tiroglobulina. La
+                unión de dos DIT crea una T<sub>4</sub>, mientras que la unión
+                de una MIT y una DIT hace una T<sub>3</sub>.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <div class="accordion-item-header">
+            <strong>Sección 5. Síntesis de T<sub>3</sub> y T<sub>4</sub></strong
+            ><div class="icon"><i class="fas fa-chevron-down"></i></div>
+          </div>
+          <div class="accordion-item-body">
+            <div class="accordion-item-body-content">
+              <p>
+                La Tg pasa de nuevo del coloide al tirocito y es digerida por
+                proteasas lisosomales. La MIT y la DIT se desligan de la Tg,
+                pierden el I- y se forman las hormonas activas T<sub>4</sub> —3,5,3’,5’-tetrayodotironina—
+                y T<sub>3</sub> —3,5,3’-triyodotironina—, como se puede ver en la
+                figura 8.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <p>
+        La producción diaria de T<sub>3</sub> es de 30 mg, de los cuales el 20 % es
+        secretado por la glándula tiroides y el 80 % se convierte a partir de T<sub
+          >4</sub
+        > por las desyodasas, en los tejidos periféricos. Hay dos enzimas que convierten
+        la T<sub>4</sub> en su forma activa, es decir, en la T<sub>3</sub>: una
+        es la desyodasa tipo 1 y la desyodasa tipo 2; además, otra enzima
+        llamada desyodasa tipo 3 convierte de T<sub>4</sub> a T<sub>3</sub> reversa
+        —3,3',5'-triyodotironina o rT<sub>3</sub>—, una forma inactiva.
+      </p>
+
+      <Figure
+        src="img/cont/10hormtir_t3.png"
+        alt="Se observa la vía del metabolismo tiroideo."
+        title="Hormonas tiroideas y desyodasas"
+        width="w-750"
+        caption="Figura 8. Liu, Yan-Yun, Milanesi, Ana y Brent, Gregory A. (2019). <em>Hormonas tiroideas y desyodasas</em> [imagen]. Tomada de Litwack, Gerald. (2019). <em>Hormonal signaling in biology and medicine: comprehensive modern endocrinology</em>, p. 488. [Vías del metabolismo tiroideo y vías de activación que muestran la desyodasa tipo 1 y tipo 2, que convierten la T<sub>4</sub> en T<sub>3</sub>, mediante la eliminación de un átomo de yodo del anillo externo; la inactivación se produce por la desyodasa tipo 3, que inactiva la T<sub>3</sub>, para convertirla en T<sub>3</sub> inversa (rT<sub>3</sub>), mediante la eliminación de un anillo interno de yodo.]"
+      />
+
+      <p>
+        Las hormonas tiroideas se almacenan de forma inactiva, unidas a la
+        tiroglobulina, en el coloide. La glándula tiroides tiene una capacidad
+        de almacenamiento de varios meses. Cuando el cuerpo necesita hormonas
+        tiroideas, las células foliculares llevan a cabo una endocitosis en el
+        coloide. Dentro de la célula, las vesículas se fusionan con los
+        lisosomas, donde las enzimas proteasas rompen la tiroglobulina y liberan
+        T<sub>3</sub> y T<sub>4</sub>. Estas hormonas son liposolubles, por lo
+        que atraviesan la membrana basal de la célula folicular y se liberan al
+        torrente sanguíneo. Una vez en la sangre, más del 99 % de las hormonas
+        tiroideas se transportan unidas a proteínas plasmáticas y es la
+        principal la <strong>globulina transportadora de tiroxina</strong> (<strong
+          >TBG</strong
+        >, por sus siglas en inglés).
+      </p>
+
+      <p>
+        Una pequeña fracción de las hormonas permanece libre —no unida— y es
+        esta fracción libre la que es biológicamente activa y puede entrar en
+        las células diana. Las hormonas T<sub>3</sub> y T<sub>4</sub> atraviesan la
+        membrana celular y la membrana nuclear para unirse a los receptores nucleares
+        —TRa y TRb—. Al unirse al receptor en el núcleo, actúan como factores de transcripción,
+        lo que regula la expresión génica, aumentando o disminuyendo la síntesis de
+        proteínas específicas. De esta forma, las hormonas tiroideas regulan una amplia
+        gama de funciones biológicas:
+      </p>
+
+      <section class="contenedor-lista-desp">
+        <div class="cuadrosAnimados azul">
+          <p class="fadeInDownBig cuadro1">
+            Aumentan la tasa metabólica basal, lo que se traduce en un mayor
+            consumo de oxígeno y producción de calor —termogénesis—.
+          </p>
+          <p class="animated fadeInDownBig delay-1s cuadro2">
+            Son esenciales para el desarrollo normal del cerebro, el sistema
+            nervioso y el esqueleto.
+          </p>
+          <p class="animated fadeInDownBig delay-2s cuadro3">
+            Aumentan la frecuencia cardiaca y la fuerza de contracción, lo que
+            incrementa el gasto cardiaco.
+          </p>
+          <p class="animated fadeInDownBig delay-3s cuadro4">
+            Son cruciales para la mielinización, la diferenciación neuronal y la
+            formación de sinapsis.
+          </p>
+          <p class="animated fadeInDownBig delay-4s cuadro5">
+            Tienen un papel en el mantenimiento del ciclo menstrual y la
+            fertilidad.
+          </p>
+          <p class="animated fadeInDownBig delay-5s cuadro6">
+            Regulan el metabolismo de carbohidratos, grasas y proteínas.
+          </p>
+        </div>
+      </section>
+
+      <p>
+        Debido a esto, si las hormonas tiroideas no se producen adecuadamente,
+        pueden surgir algunos desórdenes como el hipotiroidismo y el
+        hipertiroidismo:
+      </p>
+
+      <section class="fichero-hor my-5" id="fichero-hor-2">
+        <section class="fichero-hor-tabs">
+          <button
+            class="fichero-hor-tab fichero-hor-active"
+            data-actab-group="0"
+            data-actab-id="0">Hipotiroidismo</button
+          >
+          <button class="fichero-hor-tab" data-actab-group="0" data-actab-id="1"
+            >Hipertiroidismo</button
+          >
+        </section>
+        <section class="slider"><div class="indicator"></div></section>
+        <section class="fichero-hor-content">
+          <article
+            class="fichero-hor-item fichero-hor-active"
+            data-actab-group="0"
+            data-actab-id="0"
+          >
+            <h4 class="fichero-hor-item__label">
+              Hipotiroidismo<div class="icon">
+                <i class="fas fa-chevron-down"></i>
+              </div>
+            </h4>
+            <div class="fichero-hor-item__container">
+              <p>
+                El hipotiroidismo ocurre cuando la glándula tiroides no produce
+                suficientes hormonas tiroideas —T<sub>3</sub> y T<sub>4</sub>—;
+                como resultado, la hipófisis libera más TSH para intentar
+                estimular la tiroides, lo que lleva a un nivel alto de TSH, como
+                se puede ver en la tabla más adelante. Esto ralentiza el
+                metabolismo del cuerpo ocasionando fatiga crónica; aumento de
+                peso inexplicable y dificultad para perderlo, incluso con una
+                dieta y con ejercicio; e intolerancia al frío, ya que la
+                producción de calor corporal disminuye. A nivel del sistema
+                cardiovascular, baja la frecuencia cardiaca —bradicardia— y
+                aumenta el riesgo de enfermedades cardiacas debido al incremento
+                del colesterol de lipoproteína de baja densidad (LDL, por sus
+                siglas en inglés). También se tienen problemas de memoria,
+                dificultad para concentrarse, depresión, apatía y somnolencia
+                excesiva. Otros síntomas de hipotiroidismo son la hinchazón de
+                cara, ronquera, dolores y calambres musculares y, en mujeres,
+                ciclos menstruales abundantes o irregulares. En casos graves y
+                no tratados, el hipotiroidismo puede llevar a un estado de coma
+                conocido como coma mixedematoso, que es una emergencia médica.
+              </p>
+              <h3>Causas</h3>
+              <ul>
+                <li>
+                  <strong>Tiroiditis de Hashimoto:</strong> Es la causa más común
+                  y una enfermedad autoinmune donde el sistema inmunológico ataca
+                  y destruye las células tiroideas.
+                </li>
+                <li>
+                  <strong>Extirpación de la tiroides:</strong> Ocurre después de una
+                  cirugía por cáncer de tiroides o bocio.
+                </li>
+                <li>
+                  <strong>Tratamiento con yodo radiactivo:</strong> Se usa para tratar
+                  el hipertiroidismo, pero puede dañar la tiroides permanentemente.
+                </li>
+                <li>
+                  <strong>Deficiencia de yodo:</strong> La falta de este mineral en
+                  la dieta es una causa principal en algunas regiones del mundo.
+                </li>
+              </ul>
+              <figure class="tabla-informativa-figure">
+                <div class="tabla-informativa-scroll">
+                  <table class="tabla-informativa tabla-hipotiroidismo">
+                    <thead>
+                      <tr
+                        ><th>Hipotiroidismo</th><th>TSH</th><th
+                          >T<sub>3</sub></th
+                        ><th>T<sub>4</sub></th></tr
+                      >
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <th>Primario</th>
+                        <td
+                          class="tabla-flecha-cell"
+                          aria-label="Disminución de TSH"
+                          ><svg
+                            class="tabla-flecha"
+                            viewBox="0 0 32 48"
+                            aria-hidden="true"
+                            ><path d="M11 2h10v24h7L16 46 4 26h7V2z"
+                            ></path></svg
+                          ></td
+                        >
+                        <td
+                          class="tabla-flecha-cell"
+                          aria-label="Disminución de T3"
+                          ><svg
+                            class="tabla-flecha"
+                            viewBox="0 0 32 48"
+                            aria-hidden="true"
+                            ><path d="M11 2h10v24h7L16 46 4 26h7V2z"
+                            ></path></svg
+                          ></td
+                        >
+                        <td
+                          class="tabla-flecha-cell"
+                          aria-label="Disminución de T4"
+                          ><svg
+                            class="tabla-flecha"
+                            viewBox="0 0 32 48"
+                            aria-hidden="true"
+                            ><path d="M11 2h10v24h7L16 46 4 26h7V2z"
+                            ></path></svg
+                          ></td
+                        >
+                      </tr>
+                      <tr>
+                        <th>Secundario</th>
+                        <td
+                          class="tabla-flecha-cell"
+                          aria-label="Disminución de TSH"
+                          ><svg
+                            class="tabla-flecha"
+                            viewBox="0 0 32 48"
+                            aria-hidden="true"
+                            ><path d="M11 2h10v24h7L16 46 4 26h7V2z"
+                            ></path></svg
+                          ></td
+                        >
+                        <td
+                          class="tabla-flecha-cell"
+                          aria-label="Disminución de T3"
+                          ><svg
+                            class="tabla-flecha"
+                            viewBox="0 0 32 48"
+                            aria-hidden="true"
+                            ><path d="M11 2h10v24h7L16 46 4 26h7V2z"
+                            ></path></svg
+                          ></td
+                        >
+                        <td
+                          class="tabla-flecha-cell"
+                          aria-label="Disminución de T4"
+                          ><svg
+                            class="tabla-flecha"
+                            viewBox="0 0 32 48"
+                            aria-hidden="true"
+                            ><path d="M11 2h10v24h7L16 46 4 26h7V2z"
+                            ></path></svg
+                          ></td
+                        >
+                      </tr>
+                      <tr>
+                        <th>Terciario</th>
+                        <td class="tabla-hipotiroidismo-terciario">
+                          <div
+                            class="tabla-flecha-cell tabla-tsh-flecha"
+                            aria-label="Disminución de TSH"
+                          >
+                            <svg
+                              class="tabla-flecha"
+                              viewBox="0 0 32 48"
+                              aria-hidden="true"
+                              ><path d="M11 2h10v24h7L16 46 4 26h7V2z"
+                              ></path></svg>
+                          </div>
+                          <div class="tabla-trh-celda">
+                            <span>TRH</span><div
+                              class="tabla-flecha-cell"
+                              aria-label="Disminución de TRH"
+                            >
+                              <svg
+                                class="tabla-flecha"
+                                viewBox="0 0 32 48"
+                                aria-hidden="true"
+                                ><path d="M11 2h10v24h7L16 46 4 26h7V2z"
+                                ></path></svg>
+                            </div>
+                          </div>
+                        </td>
+                        <td
+                          class="tabla-flecha-cell"
+                          aria-label="Disminución de T3"
+                          ><svg
+                            class="tabla-flecha"
+                            viewBox="0 0 32 48"
+                            aria-hidden="true"
+                            ><path d="M11 2h10v24h7L16 46 4 26h7V2z"
+                            ></path></svg
+                          ></td
+                        >
+                        <td
+                          class="tabla-flecha-cell"
+                          aria-label="Disminución de T4"
+                          ><svg
+                            class="tabla-flecha"
+                            viewBox="0 0 32 48"
+                            aria-hidden="true"
+                            ><path d="M11 2h10v24h7L16 46 4 26h7V2z"
+                            ></path></svg
+                          ></td
+                        >
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+                <figcaption class="tabla-informativa-caption text-center">
+                  <p>Tabla 2. Tipos de hipotiroidismo</p>
+                  <p>
+                    [El hipotiroidismo primario es debido a un problema en la
+                    tiroides; el secundario se debe a un problema en la
+                    hipófisis; el terciario es a nivel del hipotálamo.]
+                  </p>
+                </figcaption>
+              </figure>
+            </div>
+          </article>
+          <article
+            class="fichero-hor-item"
+            data-actab-group="0"
+            data-actab-id="1"
+          >
+            <h4 class="fichero-hor-item__label">
+              Hipertiroidismo<div class="icon">
+                <i class="fas fa-chevron-down"></i>
+              </div>
+            </h4>
+            <div class="fichero-hor-item__container">
+              <p>
+                Por otro lado, el <strong>hipertiroidismo</strong> se produce cuando
+                la tiroides libera un exceso de hormonas tiroideas —T<sub>3</sub
+                > y T<sub>4</sub>—. En este caso, el cuerpo detecta los altos
+                niveles hormonales y la hipófisis deja de liberar TSH para
+                frenar la actividad tiroidea, lo que resulta en niveles bajos de
+                TSH en sangre, como se puede ver en la tabla 3. Esto acelera el
+                metabolismo y deriva en una sobreestimulación del organismo y
+                pérdida de peso, a pesar de tener un aumento del apetito. La
+                frecuencia cardiaca aumenta —taquicardia—, al igual que la
+                presión arterial. Se presenta intolerancia al calor, aumento de
+                la sudoración, nerviosismo, ansiedad, irritabilidad, temblores
+                en las manos —temblor fino—, insomnio y dificultad para
+                conciliar el sueño, así como debilidad muscular y pérdida de
+                masa ósea que puede llevar a la osteoporosis. La causa más común
+                de hipertiroidismo es la <strong>enfermedad de Graves</strong>,
+                en la cual se pueden presentar exoftalmos —ojos saltones—,
+                debido a la inflamación de los tejidos detrás de los ojos,
+                además de irritación o visión doble.
+              </p>
+              <p>
+                Otros síntomas del aumento de las hormonas tiroideas son el
+                bocio —agrandamiento de la glándula tiroides—, cambios en los
+                patrones intestinales —deposiciones más frecuentes o diarrea— y
+                ciclos menstruales irregulares en mujeres. Una complicación
+                grave y potencialmente mortal del hipertiroidismo es la tormenta
+                tiroidea o crisis tirotóxica, que se caracteriza por una
+                intensificación extrema de los síntomas, fiebre alta, latidos
+                cardiacos muy rápidos, deshidratación y delirio.
+              </p>
+              <h3>Causas</h3>
+              <ul>
+                <li>
+                  Enfermedad de Graves: Es la causa más común de hipertiroidismo
+                  y una enfermedad autoinmune que estimula la tiroides de forma
+                  excesiva.
+                </li>
+                <li>
+                  Nódulos tiroideos hiperactivos: Se trata de tumores benignos
+                  que producen hormonas tiroideas de manera autónoma, sin
+                  control de la TSH.
+                </li>
+                <li>
+                  Exceso de yodo: Una ingesta excesiva puede causar
+                  hipertiroidismo en personas susceptibles.
+                </li>
+              </ul>
+              <figure class="tabla-informativa-figure">
+                <div class="tabla-informativa-scroll">
+                  <table class="tabla-informativa tabla-hipertiroidismo">
+                    <thead>
+                      <tr
+                        ><th>Hipertiroidismo</th><th>TSH</th><th
+                          >T<sub>3</sub></th
+                        ><th>T<sub>4</sub></th></tr
+                      >
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <th>Primario</th>
+                        <td
+                          class="tabla-flecha-cell"
+                          aria-label="Disminución de TSH"
+                          ><svg
+                            class="tabla-flecha"
+                            viewBox="0 0 32 48"
+                            aria-hidden="true"
+                            ><path d="M11 2h10v24h7L16 46 4 26h7V2z"
+                            ></path></svg
+                          ></td
+                        >
+                        <td class="tabla-flecha-cell" aria-label="Aumento de T3"
+                          ><svg
+                            class="tabla-flecha"
+                            viewBox="0 0 32 48"
+                            aria-hidden="true"
+                            ><path d="M11 46h10V22h7L16 2 4 22h7v24z"
+                            ></path></svg
+                          ></td
+                        >
+                        <td class="tabla-flecha-cell" aria-label="Aumento de T4"
+                          ><svg
+                            class="tabla-flecha"
+                            viewBox="0 0 32 48"
+                            aria-hidden="true"
+                            ><path d="M11 46h10V22h7L16 2 4 22h7v24z"
+                            ></path></svg
+                          ></td
+                        >
+                      </tr>
+                      <tr>
+                        <th>Secundario</th>
+                        <td
+                          class="tabla-flecha-cell"
+                          aria-label="Aumento de TSH"
+                          ><svg
+                            class="tabla-flecha"
+                            viewBox="0 0 32 48"
+                            aria-hidden="true"
+                            ><path d="M11 46h10V22h7L16 2 4 22h7v24z"
+                            ></path></svg
+                          ></td
+                        >
+                        <td class="tabla-flecha-cell" aria-label="Aumento de T3"
+                          ><svg
+                            class="tabla-flecha"
+                            viewBox="0 0 32 48"
+                            aria-hidden="true"
+                            ><path d="M11 46h10V22h7L16 2 4 22h7v24z"
+                            ></path></svg
+                          ></td
+                        >
+                        <td class="tabla-flecha-cell" aria-label="Aumento de T4"
+                          ><svg
+                            class="tabla-flecha"
+                            viewBox="0 0 32 48"
+                            aria-hidden="true"
+                            ><path d="M11 46h10V22h7L16 2 4 22h7v24z"
+                            ></path></svg
+                          ></td
+                        >
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+                <figcaption class="tabla-informativa-caption text-center">
+                  <p>Tabla 3. Tipos de hipertiroidismo</p>
+                  <p>
+                    [El hipertiroidismo primario es debido a un problema en la
+                    tiroides; el secundario se debe a un problema en la
+                    hipófisis.]
+                  </p>
+                </figcaption>
+              </figure>
+            </div>
+          </article>
+        </section>
+      </section>
+
+      <p>
+        En resumen, la deficiencia de hormonas tiroideas ralentiza las funciones
+        corporales, mientras que su sobreproducción las acelera. Ambos
+        desequilibrios requieren diagnóstico y tratamiento médico para evitar
+        complicaciones a largo plazo.
+      </p>
+    </Section>
+
     <Activity {...ACTIVITIES_CONFIG.actividad1} />
+
+    <Section id="contenido4" title="Eje hipotálamo-hipófisis-gónadas">
+      <p>
+        El eje hipotálamo-hipófisis-gónadas (HHG) es el sistema neuroendocrino
+        central que regula la reproducción, el desarrollo sexual y la maduración
+        de gametos. El eje HHG constituye la base de la regulación endocrina de
+        la función gonadal. El hipotálamo sintetiza y libera la GnRH que viaja
+        por el sistema porta hipofisario hasta llegar a su receptor para
+        desencadenar una compleja serie de eventos de transducción de señales
+        intracelulares dentro de la célula gonadotropa; estas cascadas de
+        señalización orquestan la respuesta fisiológica general de dichas
+        células a la estimulación con la GnRH, lo que culmina en la síntesis y
+        la liberación de las gonadotropinas, la LH y la FSH, las cuales actúan
+        sobre las gónadas —testículos/ovarios—, produciendo hormonas sexuales
+        —testosterona/estrógenos—, que regulan el sistema mediante
+        realimentación positiva o negativa.
+      </p>
+
+      <h3>Hormona liberadora de gonadotropina</h3>
+      <p>
+        La <strong>GnRH</strong>, también conocida como <strong
+          >hormona liberadora de hormona luteinizante</strong
+        > (<strong>LHRH</strong>, por sus siglas en inglés), es el principal
+        vínculo entre el cerebro y la hipófisis y desempeña un papel clave en el
+        control neuroendocrino de la reproducción en los vertebrados y en la
+        regulación de las funciones gonadales para la síntesis y la liberación
+        de la <strong>LH</strong> y la <strong>FSH</strong>, como se puede ver
+        en la figura 9. Hasta el 2020, se han descrito 30 isoformas
+        estructuralmente diferentes del decapéptido GnRH; sin embargo, cada
+        isoforma de éste tiene secuencias altamente conservadas de aminoácidos,
+        tanto en el N-terminal —Glp-His-Trp-Ser— como en el C-terminal
+        —Pro-Gly-NH<sub>2</sub>—.
+      </p>
+
+      <p>
+        En el cerebro adulto, las distintas isoformas de la GnRH muestran
+        diferentes patrones de expresión, por ejemplo, en el hipotálamo,
+        específicamente en las neuronas del núcleo arcuato y el área preóptica
+        del hipotálamo. La secreción es a través del sistema porta hipofisario
+        de forma pulsátil, un patrón que es crucial para su función fisiológica
+        de estimular la liberación de las hormonas gonadotropinas LH y FSH, por
+        parte de la hipófisis anterior, las cuales, a su vez, controlan la
+        función reproductiva, como se puede ver en la figura 9; sin embargo, la
+        secreción de la GnRH se silencia en la infancia, pero se acentúa en la
+        pubertad, cuando el desarrollo sexual requiere una mayor producción de
+        gonadotropinas y esteroides gonadales; no obstante, la expresión de las
+        GnRH no se limita al cerebro, también se ha encontrado expresión en
+        esplenocitos y linfocitos periféricos, hígado, corazón, músculo
+        esquelético, riñón, placenta, testículos, ovarios y próstata.
+      </p>
+
+      <p>
+        El receptor de la GnRH (GnRHR, por sus siglas en inglés) es un miembro
+        de la superfamilia GPCR del tipo G-alfa(q); tras la unión de la GnRH, se
+        activan los GnRHR; como consecuencia, la enzima fosfolipasa C, unida a
+        la membrana, libera trifosfato de inositol (IP<sub>3</sub>) y
+        diacilglicerol (DAG). El IP<sub>3</sub> induce la liberación de Ca<sup
+          >2+</sup
+        > del retículo endoplásmico, incrementa la concentración de Ca<sup
+          >2+</sup
+        > libre y libera la LH. Por otro lado, el DAG lleva a cabo la activación de
+        la enzima PKC; además, la estimulación del complejo adenilato-ciclasa da lugar
+        a la generación de AMPc. En conjunto, la interacción de Ca<sup>2+</sup>,
+        PKC y AMPc estimula la síntesis y la secreción de LH y FSH.
+      </p>
+
+      <Figure
+        src="img/cont/11ehhg_t4.jpg"
+        alt="Se observa la ruta de creación de las hormonas generadas por el eje hipotálamo-hipófisis-gónadas."
+        title="Eje hipotálamo-hipófisis-gónadas"
+        width="w-750"
+        caption="Figura 9. Rezzani, Rita, Franco, Caterina, Hardeland, Rüdiger y Rodella, Luigi Fabrizio. (2020). <em>Eje hipotálamo-hipófisis-gónadas</em> [imagen]. Tomada de https://n9.cl/u400lp. [La GnRH regula positivamente la actividad de la hipófisis; además, los andrógenos y los estrógenos ejercen una realimentación variable directamente sobre el hipotálamo, lo que permite su correcto funcionamiento; el signo “+” significa estimulación y el de “−” inhibición.]"
+      />
+
+      <h3>Hormona foliculoestimulante y hormona luteinizante</h3>
+      <p>
+        Tanto la <strong>FSH</strong> y la <strong>LH</strong> son liberadas en la
+        circulación sistémica por las <strong>células gonadotrópicas</strong>.
+        Sus principales objetivos son las células de las gónadas, es decir, los
+        testículos y los ovarios.
+      </p>
+
+      <section class="fichero-hor my-5" id="fichero-hor-5">
+        <section class="fichero-hor-tabs">
+          <button
+            class="fichero-hor-tab fichero-hor-active"
+            data-actab-group="0"
+            data-actab-id="0">Hormona foliculoestimulante</button
+          >
+          <button class="fichero-hor-tab" data-actab-group="0" data-actab-id="1"
+            >Hormona luteinizante</button
+          >
+        </section>
+        <section class="slider"><div class="indicator"></div></section>
+        <section class="fichero-hor-content">
+          <article
+            class="fichero-hor-item fichero-hor-active"
+            data-actab-group="0"
+            data-actab-id="0"
+          >
+            <h4 class="fichero-hor-item__label">
+              <strong>Hormona foliculoestimulante</strong><div class="icon">
+                <i class="fas fa-chevron-down"></i>
+              </div>
+            </h4>
+            <div class="fichero-hor-item__container">
+              <p>
+                La FSH es una glicoproteína que actúa sobre las células diana
+                gonadales al regular la gametogénesis. En el ovario, la FSH
+                regula la foliculogénesis, la selección de ovocitos y la
+                síntesis de hormonas esteroideas sexuales, lo que prepara el
+                tracto reproductivo para la fecundación, la implantación y el
+                embarazo. En el hombre, esta gonadotropina interviene en el
+                desarrollo testicular y la espermatogénesis. La hormona es
+                secretada por las células gonadotrópicas de la hipófisis, tras
+                ser regulada de forma pulsátil por la GnRH, y actúa sobre la
+                superficie de las células diana localizadas en las gónadas de
+                machos y hembras, donde se desencadenan señales ligadas a la
+                proliferación celular y la apoptosis inducida por la hormona. El
+                receptor de FSH (FSHR) es una proteína madura de 678
+                aminoácidos, el cual es codificado por un gen de 10 exones,
+                situado en el cromosoma 2 humano —cromosoma 17 en ratones—. El
+                FSHR se expresa predominantemente en las células de la granulosa
+                de los folículos ováricos y en las <strong
+                  >células de Sertoli</strong
+                > de los túbulos seminíferos testiculares. Estudios más recientes
+                han descrito la expresión del FSHR en tejidos extragonadales, como
+                los osteoclastos óseos, los monocitos, la placenta en desarrollo,
+                el hígado, las células endoteliales de la vena umbilical, el útero
+                y algunos tumores.
+              </p>
+            </div>
+          </article>
+          <article
+            class="fichero-hor-item"
+            data-actab-group="0"
+            data-actab-id="1"
+          >
+            <h4 class="fichero-hor-item__label">
+              <strong>Hormona luteinizante</strong><div class="icon">
+                <i class="fas fa-chevron-down"></i>
+              </div>
+            </h4>
+            <div class="fichero-hor-item__container">
+              <p>
+                En los hombres, la LH se une a su receptor de la hormona
+                luteinizante/gonadotropina coriónica (LHCGR), en las células
+                intersticiales de Leydig, para promover la producción de
+                testosterona. La LH estimula la fosforilación y la activación de
+                la proteína reguladora aguda esteroidogénica (StAR), que
+                facilita el transporte del colesterol desde la membrana
+                mitocondrial externa a la interna.
+              </p>
+              <p>
+                El LHCGR, que une tanto a la LH como a la gonadotropina
+                coriónica (CG), es codificado por un gen de 11 exones situado en
+                el cromosoma 2 humano —cromosoma 17 en ratones—. El LHCGR maduro
+                tiene una longitud de 673 aminoácidos. En las mujeres, se
+                expresa en las células de la teca y de la granulosa mural del
+                ovario, así como en el cuerpo lúteo. En los hombres, se expresa
+                en las células de Leydig intersticiales de los testículos.
+                También se ha descrito la expresión del LHCGR fuera de las
+                gónadas.
+              </p>
+            </div>
+          </article>
+        </section>
+      </section>
+
+      <p>
+        La transducción de la señal inducida por la FSH está mediada por el
+        receptor acoplado a la proteína G-alfa(s) específico de la FSH (FSHR),
+        en las células de Sertoli. La unión de FSH a su receptor conduce
+        principalmente al aumento intracelular del AMPc y a la activación de la
+        PKA; esta última actúa como regulador principal del metabolismo celular
+        y de la producción de esteroides sexuales; además de la señalización
+        convencional G-alfa(s)/AMPc/PKA, se ha demostrado que tanto la LH como
+        la FSH se acoplan a proteínas G-alfa(q), lo que conduce a la activación
+        de la vía de la PKC, que interviene en la expansión del cúmulo, la
+        maduración meiótica de los ovocitos y la modulación de la producción de
+        progesterona en el ovario.
+      </p>
+      <p>
+        La LH y la FSH están reguladas por hormonas y factores paracrinos
+        procedentes del cerebro, la hipófisis y las gónadas. Los estrógenos y la
+        testosterona, producidos por los ovarios y los testículos,
+        respectivamente, ejercen realimentación negativa sobre la hipófisis y el
+        hipotálamo, regulando la secreción de la LH y la FSH; además, la
+        síntesis de la FSH está regulada de forma intensa y selectiva por
+        proteínas de la familia del factor de crecimiento transformante (TGF,
+        por sus siglas en inglés), activinas e inhibinas. Los efectos
+        estimulantes de las activinas —o ligandos similares a éstas— se
+        antagonizan al menos de dos maneras, mediante la acción de las inhibinas
+        y las folistatinas. En roedores, las células de la granulosa ovárica
+        producen tanto inhibina A como B, mientras que las células de Sertoli
+        testiculares producen exclusivamente inhibina B. En humanos, la inhibina
+        B es un producto de los folículos en crecimiento durante la fase
+        folicular del ciclo menstrual, mientras que la inhibina A es producida
+        principalmente por el cuerpo lúteo durante la fase lútea del ciclo. Las
+        inhibinas funcionan como hormonas endocrinas que se liberan desde las
+        gónadas y viajan hasta la hipófisis para suprimir la producción de la
+        FSH, mediante la unión competitiva a los receptores de activina tipo II,
+        en las células gonadotrópicas.
+      </p>
+
+      <figure class="w-750 mx-auto my-recursos">
+        <div class="border rounded p-4 text-center bg-light">
+          <strong>Placeholder de imagen:</strong> Infografía con datos sobre la FSH
+          y la LH.
+        </div>
+        <figcaption>
+          Se observa una infografía con datos sobre la FSH y la LH.
+        </figcaption>
+      </figure>
+
+      <p>
+        En resumen, la FSH y la LH son las dos hormonas clave que dirigen la
+        compleja maquinaria de la reproducción en ambos sexos al asegurar la
+        maduración de las células reproductivas —óvulos y espermatozoides— y la
+        regulación del ciclo hormonal necesario para la fertilidad.
+      </p>
+      <p>
+        Los desórdenes relacionados con la FSH y la LH suelen deberse a una
+        producción anormal en la hipófisis o a una falta de respuesta en las
+        gónadas —ovarios y testículos—. Estas condiciones afectan principalmente
+        la función reproductiva y el desarrollo sexual. La mayoría de los
+        desórdenes se clasifica como hipogonadismo, que puede ser primario o
+        secundario, y se refiere a la disminución de la función de las gónadas.
+        Se diagnostica con base en los niveles de FSH y LH, que indican si el
+        problema se origina en las gónadas o en la hipófisis.
+      </p>
+
+      <section class="fichero-hor my-5" id="fichero-hor-6">
+        <section class="fichero-hor-tabs">
+          <button
+            class="fichero-hor-tab fichero-hor-active"
+            data-actab-group="0"
+            data-actab-id="0">Hipogonadismo primario</button
+          >
+          <button class="fichero-hor-tab" data-actab-group="0" data-actab-id="1"
+            >Hipogonadismo secundario</button
+          >
+        </section>
+        <section class="slider"><div class="indicator"></div></section>
+        <section class="fichero-hor-content">
+          <article
+            class="fichero-hor-item fichero-hor-active"
+            data-actab-group="0"
+            data-actab-id="0"
+          >
+            <h4 class="fichero-hor-item__label">
+              <strong>Hipogonadismo primario —o hipergonadotrópico—</strong><div
+                class="icon"
+              >
+                <i class="fas fa-chevron-down"></i>
+              </div>
+            </h4>
+            <div class="fichero-hor-item__container">
+              <p>
+                En este caso, el problema reside en las gónadas, que no
+                responden adecuadamente a las FSH y a las LH. Como resultado, la
+                hipófisis produce cantidades elevadas de estas hormonas para
+                intentar estimular los ovarios o los testículos, lo que eleva
+                los niveles en sangre.
+              </p>
+
+              <figure class="tabla-informativa-figure">
+                <div class="tabla-informativa-scroll">
+                  <table class="tabla-informativa">
+                    <thead
+                      ><tr
+                        ><th>En mujeres puede causar:</th><th
+                          >En hombres puede causar:</th
+                        ></tr
+                      ></thead
+                    >
+                    <tbody>
+                      <tr>
+                        <td
+                          ><ul>
+                            <li>
+                              Síndrome de Turner —un trastorno genético—, fallo
+                              ovárico prematuro y daños a los ovarios por
+                              quimioterapia, radioterapia o enfermedades
+                              autoinmunes.
+                            </li><li>
+                              <strong>Síntomas:</strong> Ausencia de menstruación
+                              —amenorrea—, falta de desarrollo de los caracteres sexuales
+                              secundarios —como el desarrollo de los senos—, infertilidad
+                              y, a largo plazo, riesgo de osteoporosis.
+                            </li>
+                          </ul></td
+                        >
+                        <td
+                          ><ul>
+                            <li>
+                              Síndrome de Klinefelter —un trastorno genético—,
+                              testículos no descendidos, orquitis por paperas,
+                              traumatismos o tumores testiculares.
+                            </li><li>
+                              <strong>Síntomas:</strong> Desarrollo incompleto de
+                              los caracteres sexuales masculinos, testículos pequeños,
+                              bajo conteo de espermatozoides o ausencia de ellos,
+                              infertilidad y, en algunos casos, desarrollo de tejido
+                              mamario —ginecomastia—.
+                            </li>
+                          </ul></td
+                        >
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+
+                <figcaption class="tabla-informativa-caption text-center">
+                  <strong
+                    >Tabla 4. Exceso de FSH y LH en mujeres y hombres</strong>
+                </figcaption>
+              </figure>
+            </div>
+          </article>
+          <article
+            class="fichero-hor-item"
+            data-actab-group="0"
+            data-actab-id="1"
+          >
+            <h4 class="fichero-hor-item__label">
+              <strong>Hipogonadismo secundario —o hipogonadotrópico—</strong
+              ><div class="icon"><i class="fas fa-chevron-down"></i></div>
+            </h4>
+            <div class="fichero-hor-item__container">
+              <p>
+                Aquí, el problema se origina en la hipófisis o el hipotálamo,
+                que no producen suficiente FSH y LH. Esto provoca una falta de
+                estimulación de las gónadas y puede ocasionar:
+              </p>
+              <ul>
+                <li>
+                  Síndrome de Kallmann: Un trastorno genético que causa la falta
+                  de liberación de la hormona que estimula la hipófisis —GnRH—,
+                  lo que lleva a la deficiencia de FSH y LH.
+                </li>
+                <li>
+                  También se asocia con la ausencia del sentido del olfato
+                  —anosmia—.
+                </li>
+                <li>
+                  Tumores hipofisarios: Tumores en la glándula pituitaria pueden
+                  interferir con la producción de FSH y LH.
+                </li>
+                <li>
+                  Enfermedades crónicas, desnutrición, estrés severo o ejercicio
+                  físico excesivo.
+                </li>
+                <li>Los síntomas varían dependiendo del sexo:</li>
+              </ul>
+              <figure class="tabla-informativa-figure">
+                <div class="tabla-informativa-scroll">
+                  <table class="tabla-informativa">
+                    <thead
+                      ><tr><th>En mujeres:</th><th>En hombres:</th></tr></thead
+                    >
+                    <tbody
+                      ><tr
+                        ><td
+                          >Ausencia de menstruación —amenorrea—, infertilidad y,
+                          en la pubertad, falta de desarrollo sexual.</td
+                        ><td
+                          >Disminución de la libido, disfunción eréctil,
+                          infertilidad y, en la pubertad, retraso en el
+                          desarrollo de los caracteres sexuales.</td
+                        ></tr
+                      ></tbody
+                    >
+                  </table>
+                </div>
+
+                <figcaption class="tabla-informativa-caption text-center">
+                  <strong
+                    >Tabla 5. Deficiencia de FSH y LH en mujeres y hombres</strong>
+                </figcaption>
+              </figure>
+            </div>
+          </article>
+        </section>
+      </section>
+
+      <p>
+        El <strong>exceso de FSH y LH</strong> suele ser un indicativo de que las
+        gónadas no están funcionando correctamente, como en el caso del hipogonadismo
+        primario. Se trata de un intento del cerebro por compensar la falta de respuesta
+        de los órganos sexuales; no obstante, en raras ocasiones, un tumor en la glándula
+        pituitaria puede producir directamente un exceso de estas hormonas, aunque
+        esto es menos común.
+      </p>
+
+      <h3>Síntesis hormonal en gónadas: testículos y ovarios</h3>
+      <p>
+        Las gónadas sintetizan hormonas esteroideas a partir del colesterol. Las
+        principales hormonas producidas por estos órganos son los andrógenos,
+        los estrógenos y la progesterona.
+      </p>
+      <p>
+        La principal hormona producida por los testículos es la testosterona,
+        fundamental para el desarrollo del sistema reproductivo masculino, la
+        maduración de los espermatozoides y el desarrollo de los caracteres
+        sexuales secundarios, como el engrosamiento de la voz, el vello corporal
+        y el aumento de la masa muscular. Curiosamente, la testosterona también
+        se produce en los ovarios femeninos, pero en niveles mucho más
+        reducidos; además, los testículos producen la hormona peptídica
+        inhibina, que inhibe la secreción de la FSH, por parte de la glándula
+        pituitaria anterior.
+      </p>
+      <p>
+        Las principales hormonas producidas por los ovarios son los estrógenos,
+        entre los que se incluyen el estradiol, el estriol y la estrona, los
+        cuales desempeñan un papel importante en numerosos procesos
+        fisiológicos, entre ellos el desarrollo del sistema reproductivo
+        femenino, la regulación del ciclo menstrual, el desarrollo de las
+        características sexuales secundarias femeninas y el mantenimiento del
+        embarazo. Otra hormona ovárica importante es la progesterona, que
+        contribuye a la regulación del ciclo menstrual y es fundamental para
+        preparar el cuerpo para el embarazo, así como para mantenerlo; además,
+        las células de la granulosa de los folículos ováricos producen inhibina,
+        que, al igual que en los hombres, inhibe la secreción de la FSH. A
+        continuación, se verá con detalle la síntesis en los testículos y en los
+        ovarios.
+      </p>
+
+      <section class="fichero-hor my-5" id="fichero-hor-3">
+        <section class="fichero-hor-tabs">
+          <button
+            class="fichero-hor-tab fichero-hor-active"
+            data-actab-group="0"
+            data-actab-id="0">Síntesis en los testículos</button
+          ><button
+            class="fichero-hor-tab"
+            data-actab-group="0"
+            data-actab-id="1">Síntesis en los ovarios</button>
+        </section>
+        <section class="slider"><div class="indicator"></div></section>
+        <section class="fichero-hor-content">
+          <article
+            class="fichero-hor-item fichero-hor-active"
+            data-actab-group="0"
+            data-actab-id="0"
+          >
+            <h4 class="fichero-hor-item__label">
+              Síntesis en los testículos<div class="icon">
+                <i class="fas fa-chevron-down"></i>
+              </div>
+            </h4><div class="fichero-hor-item__container">
+              <p>
+                La producción de hormonas en los testículos está controlada por
+                el eje HHG. Las hormonas esteroideas en los testículos,
+                principalmente la <strong>testosterona</strong>, es controlada
+                por la <strong>LH</strong> y la <strong>FSH</strong>, ambas
+                producidas en la hipófisis. La LH se une a receptores en la
+                membrana de las <strong>células de Leydig</strong>, lo que
+                activa la vía de señalización del AMPc; éste activa la PKA, que
+                fosforila diversas enzimas necesarias para la síntesis de
+                testosterona a partir del colesterol, como se puede ver en la
+                figura 10. Por su parte, la FSH actúa sobre las <strong
+                  >células de Sertoli</strong
+                > al estimular la producción de proteínas, como la proteína de unión
+                a andrógenos (ABP, por sus siglas en inglés) y la inhibina. La FSH
+                se une con receptores acoplados a la proteína G, activando la vía
+                de la adenilato-ciclasa que aumenta los niveles de AMPc y PKA. La
+                testosterona de las células de Leydig es esencial para la espermatogénesis,
+                y las células de Sertoli brindan el soporte y el ambiente adecuado
+                para que se lleve a cabo este proceso.
+              </p>
+              <Figure
+                src="img/cont/12test_t4.png"
+                alt="Se observa la estructura del colesterol, la cual se transforma en testosterona."
+                title="Esteroidogénesis testicular"
+                width="w-750"
+                caption="Figura 10. Zakharian, Eleonora. (2019). <em>Esteroidogénesis testicular</em> [imagen]. Tomada de Litwack, Gerald. (2019). <em>Hormonal signaling in biology and medicine: comprehensive modern endocrinology</em>, p. 558. [La vía de esteroidogénesis en los testículos se lleva a cabo mediante varias enzimas, para producir testosterona a partir de colesterol. La testosterona se metaboliza posteriormente en DHT, mediante la 5α-reductasa (5α-R), o en estradiol, mediante la aromatasa (ARO).]"
+              />
+              <p>
+                La testosterona, al ser una hormona esteroidea, se difunde
+                libremente a través de la membrana celular de las células de
+                Leydig y es liberada al torrente sanguíneo. La inhibina, al ser
+                una proteína, se libera de forma regulada por las células de
+                Sertoli. La testosterona penetra la membrana celular de las
+                células diana —musculares o prostáticas— y se une a su <strong
+                  >receptor androgénico (RA)</strong
+                > intracelular. Este complejo hormona-receptor se transloca al núcleo,
+                donde se une a secuencias de ADN específicas para modular la transcripción
+                de genes. Esto da lugar a los efectos fisiológicos de la testosterona,
+                como el desarrollo de características sexuales masculinas secundarias
+                y el anabolismo muscular.
+              </p><p>
+                Aquí, el principal mecanismo es la <strong
+                  >realimentación negativa</strong
+                >. Los altos niveles de testosterona en la sangre inhiben la
+                liberación de la GnRH en el hipotálamo y la secreción de LH y
+                FSH en la hipófisis; además, los altos niveles de inhibina
+                actúan sobre la hipófisis para inhibir específicamente la
+                secreción de FSH.
+              </p>
+            </div>
+          </article>
+          <article
+            class="fichero-hor-item"
+            data-actab-group="0"
+            data-actab-id="1"
+          >
+            <h4 class="fichero-hor-item__label">
+              Síntesis en los ovarios<div class="icon">
+                <i class="fas fa-chevron-down"></i>
+              </div>
+            </h4><div class="fichero-hor-item__container">
+              <p>
+                La producción de hormonas en los ovarios también está regulada
+                por el eje HHG y varía a lo largo del ciclo menstrual. La
+                síntesis de estrógenos y progesterona es un proceso coordinado
+                entre las <strong>células de la teca</strong> y las <strong
+                  >de la granulosa</strong
+                >, bajo la influencia de la LH y la FSH, como se puede ver en la
+                figura 11. Al respecto, la síntesis pasa por dos fases:
+              </p>
+              <ul>
+                <li>
+                  <p>
+                    <strong>Fase folicular:</strong> Al inicio del ciclo, la FSH estimula
+                    el crecimiento de los folículos ováricos y la proliferación de las
+                    células de la granulosa. La LH actúa sobre las células de la teca
+                    para que produzcan andrógenos —principalmente androstenodiona—, a
+                    partir del colesterol, vía la activación del sistema del AMPc. Posteriormente,
+                    la FSH estimula la actividad de la enzima <strong
+                      >aromatasa</strong
+                    > en las células de la granulosa, que convierte los andrógenos provenientes
+                    de las células de la teca en <strong>estrógenos</strong>. El
+                    estrógeno se libera en el torrente sanguíneo, lo que promueve el
+                    crecimiento del endometrio y el folículo dominante.
+                  </p>
+                  <Figure
+                    src="img/cont/13estro_t4.png"
+                    alt="Se observan estrógenos ováricos sintetizados por las células de la teca y de la granulosa."
+                    title="Síntesis de los estrógenos ováricos"
+                    width="w-750"
+                    caption="Figura 11. Hobeika, Elie, Armouti, Mara, Kala, Hamsini Sudheer y Stocco, Carlos. (2019). <em>Síntesis de los estrógenos ováricos</em> [imagen]. Tomada de Litwack, Gerald. (2019). <em>Hormonal signaling in biology and medicine: comprehensive modern endocrinology</em>, p. 567. [Los estrógenos ováricos son sintetizados por células de la teca y de la granulosa.]"
+                  />
+
+                </li>
+                <li>
+                  <p>
+                    <strong>Fase lútea:</strong> Tras la ovulación, el folículo residual
+                    se transforma en el <strong>cuerpo lúteo</strong>, que es
+                    mantenido por la LH. Las células de la granulosa y la teca del
+                cuerpo lúteo sintetizan grandes cantidades de <strong
+                  >progesterona</strong
+                > y, en menor medida, de estrógenos. La progesterona es crucial para
+                mantener un útero preparado para la implantación de un posible embrión.
+              </p>
+            </div>
+          </article>
+        </section>
+      </section>
+      <p>
+        La producción de hormonas gonadales está finamente regulada por un
+        sistema de <strong>realimentación negativa</strong> que involucra el hipotálamo,
+        la hipófisis y las gónadas. Los niveles elevados de testosterona y estrógeno
+        ejercen un efecto de realimentación negativa en la hipófisis y el hipotálamo,
+        lo que inhibe la liberación de LH, FSH y GnRH. En los hombres, las células
+        de Sertoli también secretan inhibina, que inhibe selectivamente la producción
+        de FSH en la hipófisis; sin embargo, un pico de estrógenos en la fase folicular
+        tardía del ciclo menstrual de la mujer ejerce una <strong
+          >realimentación positiva</strong
+        > sobre el hipotálamo e hipófisis, lo que desencadena un aumento masivo de
+        LH —pico de LH— y FSH, lo cual causa la ovulación.
+      </p>
+    </Section>
+
+    <Section id="contenido5" title="Eje hipotálamo-hipofisario-somatotrópico">
+      <p>
+        El eje hipotálamo-hipofisario-somatotrópico también es conocido como eje
+        hipotálamico-hipofisario-crecimiento. En este eje se produce la GHRH, la
+        cual regula el crecimiento, el desarrollo tisular y el metabolismo
+        mediante la secreción de la GH; esta hormona, producida por las células
+        somatotropas de la hipófisis, se considera el principal regulador del
+        desarrollo somático y participa, directa e indirectamente, en el
+        metabolismo de carbohidratos y lípidos, como se puede ver en la figura
+        12. La producción de la GH por la hipófisis está regulada principalmente
+        por los efectos de la GHRH y la SST. Por otro lado, la prolactina es una
+        hormona polipeptídica, con una estructura molecular similar a la GH, que
+        se caracteriza por una composición proteica conservada en forma de
+        hélices; es responsable de la lactancia, el desarrollo mamario y cientos
+        de otras funciones necesarias para mantener la homeostasis. Tanto la GH
+        como la PRL derivan de un gen común y comparten muchas características
+        que sugieren que deben analizarse de forma conjunta. A continuación, se
+        hablará más sobre ellas.
+      </p>
+
+      <h3>Somatostatina</h3>
+      <p>
+        Esta hormona fue descubierta como un tetrapéptido en 1973 y recibió el
+        nombre de factor inhibidor de la hormona de crecimiento hipotalámica o
+        factor inhibidor de la liberación de somatotropina (SRIF, por sus siglas
+        en inglés). La SST biológicamente activa es un péptido cíclico de 14
+        —SST-14— o 28 —SST-28— aminoácidos; un enlace disulfuro entre residuos
+        de cisteína mantiene la estructura cíclica. Las dos formas se producen a
+        partir de un precursor codificado por el gen de la SST-11. La SST-14 es
+        la forma predominante en el cerebro, el hipotálamo —núcleo preóptico,
+        paraventricular y periventricular— y el páncreas, mientras que la SST-28
+        es producida principalmente por las células enteroendocrinas
+        intestinales. La SST exhibe acciones neuroendocrinas, neuromoduladoras y
+        gastrointestinales a través de la unión con receptores SST que
+        pertenecen a la familia de GPCR.
+      </p>
+
+      <p>
+        La SST ejerce sus efectos a través de GPCR específicos. Se han clonado y
+        caracterizado al menos cinco subtipos distintos de receptores de SST,
+        designados sst1-sst5. Todos los subtipos del receptor de SST están
+        acoplados a la adenilato-ciclasa a través de una proteína G inhibitoria
+        (Gi). La activación del receptor provoca una reducción de la acumulación
+        de AMPc; además, la ocupación de algunos subtipos de receptores por
+        agonistas provoca la activación de canales iónicos —por ejemplo, canales
+        de potasio— y la movilización del calcio intracelular.
+      </p>
+
+      <h3>Hormona liberadora de la hormona del crecimiento</h3>
+      <p>
+        La <strong>GHRH</strong> es un péptido hipotalámico secretado por el núcleo
+        arcuato del hipotálamo que estimula la síntesis y la liberación de la GH en
+        la hipófisis; asimismo, estimula la síntesis y la proliferación de las células
+        somatotropas hipofisarias y se sintetiza como un precursor de preprohormona
+        de 108 aminoácidos, cuya secuencia señal N-terminal se escinde enzimáticamente
+        para generar la forma activa de 44 aminoácidos de la GHRH; además, se ha encontrado
+        en las estructuras del sistema límbico, la corteza cerebral y la región posterior
+        del cerebro, así como en el sistema nervioso periférico, el tracto gastrointestinal,
+        las glándulas suprarrenales, la tiroides, los pulmones y los riñones.
+      </p>
+
+      <section class="container contenedor-folder">
+        <div class="folder azul">
+          <div class="caratula">
+            <h3>Secreción de GHRH</h3>
+            <p>
+              La GHRH se secreta también de forma pulsátil aproximadamente cada
+              tres horas y con mayor frecuencia durante el sueño.
+            </p>
+            <div class="vermas"><p>Ver más</p></div>
+          </div>
+          <div class="contenido">
+            <h2>Contenido</h2>
+            <p>
+              La liberación pulsátil de la GHRH depende de la edad. Existe un
+              patrón de dimorfismo sexual, particularmente en la pubertad,
+              cuando su función se vuelve menos sensible a la testosterona. La
+              realimentación de la GH sobre las neuronas de la GHRH también
+              disminuye considerablemente con el envejecimiento. La GHRH también
+              puede regular el sueño; en concreto, puede aumentar la duración
+              del sueño de ondas lentas e inhibir la secreción de ACTH y
+              cortisol.
+            </p>
+          </div>
+        </div>
+      </section>
+      <p>
+        El receptor de la GHRH de tipo hipofisario es un GPCR que, en rata
+        y humano, tiene 423 aminoácidos de longitud. Tras la unión de la
+        GHRH a sus receptores, se activa la adenilato-ciclasa para elevar
+        el AMPc y el aumento de estos niveles acrecienta el Ca<sup>2+</sup
+        > intracelular, lo que induce la liberación de GH. El aumento de AMPc
+        también estimula la PKA para activar la proteína de unión del elemento
+        de respuesta al AMPc —CREB—, que hace crecer la transcripción de los
+        genes <em>GH1</em> y <em>GHRHR</em>. La GH actúa tanto directa, a
+        través de sus propios receptores, como indirectamente, mediante la
+        producción inducida del factor de crecimiento similar a la
+        insulina 1 (IGF-1, por sus siglas en inglés), como se puede ver en
+        la siguiente figura:
+      </p>
+
+      <Figure
+        src="img/cont/14ghrh_t5.png"
+        alt="Se observan los efectos metabólicos y los órganos en los que actúa la GH y la GHRH."
+        title="Regulación hipotalámica-hipofisaria-periférica de la secreción de GH"
+        width="w-750"
+        caption="Figura 12. Ergun, Berrin y Wajnrajch, Michael P. (2025). <em>Regulación hipotalámica-hipofisaria-periférica de la secreción de GH</em> [imagen]. Tomada de https://n9.cl/rblgi. [La GHRH y la somatostatina controlan principalmente la síntesis y la secreción de GH por los somatotropos hipofisarios; la GH estimula, sobre todo, en el hígado, la secreción de IGF-1, que actúa de forma autocrina, paracrina y endocrina en diferentes tejidos somáticos para controlar diversos procesos fisiológicos, como la síntesis de proteínas, la proliferación celular y el metabolismo; el signo “+” significa estimulación y el de “−” inhibición.]"
+      />
+
+      <h3>Hormona del crecimiento y prolactina</h3>
+      <p>
+        Tanto la GH como la prolactina son producidas por células especializadas
+        del lóbulo anterior de la hipófisis, denominadas somatotrofas y
+        lactotrofas, respectivamente. Ambas hormonas comparten muchas
+        características comunes que sugieren que deben considerarse en paralelo.
+        Las hormonas tienen un origen evolutivo común, al igual que sus
+        respectivos receptores, por lo que existe la posibilidad de que se
+        produzca una interacción entre estos dos ejes hormonales.
+      </p>
+
+      <p>
+        Es importante conocer la estructura general de la GH y la prolactina
+        debido a que son dos hormonas pleiotrópicas que regulan una amplia gama
+        de funciones fisiológicas; además, estas dos hormonas, al igual que sus
+        receptores, comparten orígenes evolutivos comunes, por lo que no es de
+        extrañar que tanto las estructuras de las hormonas como las de sus
+        receptores sean similares ni que la acción de las hormonas esté mediada
+        por vías intracelulares comunes y que haya algunas células capaces de
+        secretar ambas hormonas. Por ello, a continuación, se habla de la
+        estructura de cada una de ellas:
+      </p>
+
+      <section class="fichero-hor my-5" id="fichero-hor-4">
+        <section class="fichero-hor-tabs">
+          <button
+            class="fichero-hor-tab fichero-hor-active"
+            data-actab-group="0"
+            data-actab-id="0">Estructura de la GH</button
+          ><button
+            class="fichero-hor-tab"
+            data-actab-group="0"
+            data-actab-id="1">Estructura de la prolactina</button>
+        </section>
+        <section class="slider"><div class="indicator"></div></section>
+        <section class="fichero-hor-content">
+          <article
+            class="fichero-hor-item fichero-hor-active"
+            data-actab-group="0"
+            data-actab-id="0"
+          >
+            <h4 class="fichero-hor-item__label">
+              Estructura de la GH<div class="icon">
+                <i class="fas fa-chevron-down"></i>
+              </div>
+            </h4><div class="fichero-hor-item__container">
+              <p>
+                La GH bovina se aisló por primera vez en 1944, pero fue hasta
+                1971 cuando se publicó la secuencia de aminoácidos para la GH
+                humana. La isoforma predominante de la GH hipofisaria es una
+                cadena peptídica de 191 aminoácidos con dos puentes disulfuro,
+                con una masa aproximada de 22 kDa. El gen que codifica la GH
+                tiene cinco exones que pueden empalmarse alternativamente para
+                producir otras dos isoformas conocidas de la GH, que se producen
+                en la hipófisis: una isoforma de 20 kDa y otra de 17.5 kDa que
+                parece producirse debido a una deficiencia congénita aislada de
+                la GH tipo II. La GH que se verá específicamente en este caso es
+                la isoforma de 22 kDa producida por la hipófisis.
+              </p>
+            </div>
+          </article>
+          <article
+            class="fichero-hor-item"
+            data-actab-group="0"
+            data-actab-id="1"
+          >
+            <h4 class="fichero-hor-item__label">
+              Estructura de la prolactina<div class="icon">
+                <i class="fas fa-chevron-down"></i>
+              </div>
+            </h4><div class="fichero-hor-item__container">
+              <p>
+                La estructura primaria de la prolactina fue descrita un año
+                antes que la GH y se observó su similitud estructural con la GH
+                y el lactógeno placentario humano (HPL, por sus siglas en
+                inglés). Aunque la homología de la secuencia de aminoácidos no
+                es alta, la ubicación de dos de los puentes disulfuro en la
+                prolactina es la misma que en la GH y el HPL. La prolactina
+                humana madura es una cadena peptídica de 199 aminoácidos con
+                tres puentes disulfuro y una masa de aproximadamente 23 kDa;
+                además, su estructura terciaria es similar a la de la GH; es
+                decir, también tiene cuatro hélices alfa antiparalelas
+                dispuestas en un haz helicoidal girado hacia la izquierda.
+                Existen tres variantes de prolactina que se obtienen a partir de
+                la escisión proteolítica de la prolactina madura de 23 kDa: 22,
+                16 y 14 kDa. Las isoformas de escisión proteolítica de 16 y 14
+                kDa, denominadas vasoinhibinas, carecen del extremo C-terminal,
+                por lo que se unen al receptor de la prolactina (PRLR) de forma
+                muy débil, lo que resultará en la prolactina madura de 23 kDa
+                producida por los lactotrofos de la hipófisis anterior; además
+                de esta escisión proteolítica, la prolactina también puede
+                modificarse mediante glicosilación, fosforilación, sulfatación y
+                desamidación. Se ha demostrado que el AMPc y el calcio
+                intracelular son reguladores importantes de la expresión del gen <em
+                  >PRL</em
+                > y median los efectos inhibidores de la dopamina y los efectos estimulantes
+                de factores como la hormona liberadora de tirotrofina.
+              </p>
+            </div>
+          </article>
+        </section>
+      </section>
+
+      <p>
+                La GH puede regular la expresión del gen <em>GHR</em> en el hígado,
+                ya que la hipofisectomía reduce el número de GHR en el hígado. En
+                general, la expresión hepática del GHR es mayor en las mujeres que
+                en los hombres, ya que el estrógeno aumenta y la testosterona disminuye
+                la expresión. La expresión hepática del GHR aumenta durante el embarazo.
+                Los glucocorticoides y la nutrición también pueden tener efectos directos
+                sobre la expresión del GHR y su reducción podría contribuir a la resistencia
+                ante la GH que se observa en la desnutrición.
+              </p><p>
+                Por otro lado, el <em>PRLR</em> tiene 598 aminoácidos. Tanto en humanos
+                como en ratones, el empalme alternativo del gen PRLR da lugar a varias
+                isoformas diferentes del receptor. Tanto el GHR como el PRLR pertenecen
+                a la clase 1 de la familia de receptores de citocinas.
+              </p><p>
+                Aunque existen similitudes en la estructura general entre el GHR
+                y el PRLR, hay diferencias importantes y es en el dominio
+                intracelular donde se producen. El dominio transmembrana del
+                PRLR no parece tener la estructura rígida del GHR, que parece
+                ser fundamental para la activación de la señalización del GHR.
+                Los dominios intracelulares son similares, ya que ambos tienen
+                motivos Box-1 y Box-2, así como colas largas y desorganizadas
+                que se cree son importantes en el reclutamiento del transductor
+                de señales y activador de la transcripción (STAT, por sus siglas
+                en inglés); sin embargo, el PRLR también tiene varios dominios
+                de interacción lipídica. Los dominios largos e intrínsecamente
+                desordenados dentro de la cola del PRLR producen estructuras
+                transitorias muy diferentes a las del GHR y se cree que esto es
+                importante en sus diferentes funciones.
+              </p><p>
+                La activación del GHR y el PRLR da lugar a la interacción de las
+                dos regiones intracelulares de los dímeros del receptor. El
+                cambio conformacional que se produce al unirse el ligando a los
+                dos receptores da lugar a un reposicionamiento de las regiones
+                transmembranales de los dos receptores entre sí, lo que, a su
+                vez, provoca una realineación estructural de las regiones
+                intracelulares: la consecuencia es la transfosforilación de las
+                proteínas cinasa Jano 2 (JAK2). Como resultado de la
+                transfosforilación de JAK2, se pueden activar o modular, al
+                menos, tres vías de señalización intracelular para el GHR y el
+                PRLR:
+              </p><ol class="lista-numerada">
+                <li>La vía JAK-STAT</li><li>La vía PI3K</li><li>La vía MAPK</li>
+              </ol>
+
+      <p>
+        Existen tres clases de reguladores negativos tanto del GHR como del
+        PRLR: la familia de proteínas supresoras de la señalización de citocinas
+        (SOCS), la proteína tirosina fosfatasa y el inhibidor proteico del STAT
+        activado (PIAS). La GHRH, sintetizada y liberada por las células
+        neuroendocrinas del hipotálamo, es el principal factor que impulsa la
+        proliferación de las células somatotróficas: en ratones con pérdida del
+        receptor funcional de la GHRH (GHRHR), se produce una hipoplasia
+        somatotrófica grave, mientras que los animales transgénicos con
+        sobreproducción global de GHRH presentan hiperplasia somatotrófica.
+        Otros factores que pueden aumentar la proliferación de lactotrofos
+        incluyen elementos hipofisarios paracrinos o autocrinos, como la
+        galanina, el factor de crecimiento nervioso y el de crecimiento
+        transformante alfa.
+      </p>
+
+      <p>
+        Dos factores hipotalámicos son los principales responsables de la
+        regulación de la función somatotrófica, incluida la secreción hormonal:
+        la GHRH y la SST, con acciones estimulantes e inhibidoras,
+        respectivamente, sobre la secreción de GH. Los efectos de estas dos
+        neurohormonas, GHRH y SST, sobre los somatotrofos se producen
+        principalmente a través de las concentraciones intracelulares de AMPc,
+        como resultado de la activación de sus respectivos receptores acoplados
+        a proteínas G. El aumento de AMPc en respuesta a la GHRH da lugar a
+        mayores niveles de proliferación, expresión génica y secreción de los
+        somatotrofos. Se ha descrito que varios neuromoduladores —como la
+        serotonina— y neuropéptidos —como el neuropéptido Y, la galanina, la
+        hormona liberadora de corticotropina y los péptidos derivados de la
+        proopiomelanocortina— modulan las actividades de las neuronas de la GHRH
+        y de la SST y, por lo tanto, pueden mediar la regulación central de la
+        secreción de GH. También la liberación de GH es modificada por factores
+        periféricos que regulan la ingesta de alimentos y el metabolismo.
+      </p>
+
+      <section class="contenedor-triptico" id="triptico-2">
+        <div class="triptico">
+          <div class="centro">
+            <div class="contenido">
+              <h1>Bloque 2</h1><hr /><p>
+                Asimismo, los ácidos grasos libres tienen un efecto inhibidor
+                sobre la secreción de GH al reducir la respuesta somatotrófica a
+                la estimulación de la GHRH, así como posibles efectos a nivel
+                del hipotálamo.
+              </p>
+            </div>
+          </div><div class="derecha">
+            <div class="contenido">
+              <h1>Bloque 3</h1><hr /><p>
+                Una excepción a los efectos supresores del aumento de nutrientes
+                sobre la secreción de GH son los efectos de las altas
+                concentraciones plasmáticas de aminoácidos —en particular,
+                lisina y arginina—, que estimulan específicamente la secreción
+                de GH.
+              </p>
+            </div><button class="cerrar" title="Cerrar" id="vert">✕</button>
+          </div><div class="izquierda">
+            <div class="adelante">
+              <div class="contenido">
+                <h1><strong>Inhibición y secreción de grelina</strong></h1><hr
+                /><p>
+                  La grelina es secretada principalmente por células endocrinas
+                  especializadas del estómago, por lo que se puede decir que el
+                  estómago es un potente estimulador de la secreción de GH.
+                </p><button class="mostrar" title="Ver más">Ver más</button>
+              </div>
+            </div><div class="atras">
+              <div class="contenido">
+                <h1>Bloque 1</h1><button
+                  class="cerrar"
+                  title="Cerrar"
+                  id="horiz">✕</button
+                ><hr /><p>
+                  En general, el exceso de nutrientes en circulación se asocia
+                  con concentraciones circulantes más bajas de GH, lo que
+                  sugiere que inhiben su liberación.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <p>
+        Existe un alto nivel de secreción basal de prolactina por parte de los
+        lactotrofos, impulsada por la entrada de calcio a través de los canales
+        de calcio dependientes del voltaje (VGCC, por sus siglas en inglés),
+        que, a su vez, son estimulados por altos niveles de actividad eléctrica
+        espontánea.
+      </p>
+
+      <section class="contenedor-triptico" id="triptico-3">
+        <div class="triptico">
+          <div class="centro">
+            <div class="contenido">
+              <h1>Bloque 2</h1><hr /><p>
+                Se han identificado varios factores que modifican la secreción
+                de prolactina hipofisaria. Varios de ellos son factores
+                hipotalámicos: la SST y la calcitonina se han identificado como
+                inhibidores de la secreción, mientras que la hormona liberadora
+                de tirotropina, la OXT, el péptido intestinal vasoactivo (VIP,
+                por sus siglas en inglés) y la galanina se han identificado como
+                posibles estimuladores de la secreción de prolactina.
+              </p>
+            </div>
+          </div><div class="derecha">
+            <div class="contenido">
+              <h1>Bloque 3</h1><hr /><p>
+                El VIP y la galanina también se producen en la propia hipófisis
+                y pueden incluirse en una amplia lista de factores que pueden
+                ser reguladores autocrinos o paracrinos de la secreción de
+                lactotrofos.
+              </p>
+            </div><button class="cerrar" title="Cerrar" id="vert">✕</button>
+          </div><div class="izquierda">
+            <div class="adelante">
+              <div class="contenido">
+                <h1>
+                  <strong>Inhibición y secreción de prolactina</strong>
+                </h1><hr /><p>
+                  El principal factor que inhibe la secreción de prolactina es
+                  la <strong>dopamina</strong>, un neurotransmisor producido por
+                  poblaciones de neuronas del hipotálamo que, en conjunto, se
+                  describen como las neuronas dopaminérgicas neuroendocrinas.
+                </p><button class="mostrar" title="Ver más">Ver más</button>
+              </div>
+            </div><div class="atras">
+              <div class="contenido">
+                <h1>Bloque 1</h1><button
+                  class="cerrar"
+                  title="Cerrar"
+                  id="horiz">✕</button
+                ><hr /><p>
+                  La dopamina se transporta a la hipófisis anterior desde la
+                  eminencia media a través de la circulación porta o a través de
+                  una vía corta, desde la hipófisis posterior. Las células
+                  lactotrofas expresan el D2R y es la estimulación de este
+                  receptor acoplado a la proteína Gi lo que altera las
+                  actividades de los VGCC, para inhibir la secreción de
+                  prolactina.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <h3>Funciones de la hormona del crecimiento y la prolactina</h3>
+      <p>
+        La GH y la prolactina tienen diferentes funciones en el cuerpo humano;
+        además, pueden causar serios desórdenes fisiológicos, dependiendo de la
+        cantidad que se produzca de cada una de ellas. A continuación, se
+        presenta más información detallada sobre esto:
+      </p>
+
+      <section class="acordeon-horizontal" id="acordeon-horizontal-2">
+        <div class="etiquetas">
+          <label for="radioGH1" id="img1"
+            ><div class="seccion" id="sec1">
+              <div class="titulo">
+                <strong>Funciones de la hormona del crecimiento</strong><div
+                  class="icon"
+                >
+                  <i class="fas fa-chevron-down"></i>
+                </div>
+              </div><div class="fondo">
+                <img
+                  src="img/cont/15gh_t5.jpg"
+                  alt="Funciones de la hormona del crecimiento"
+                />
+              </div><div class="info">
+                <p>
+                  La hormona del crecimiento o somatotropina es esencial para el
+                  crecimiento y el desarrollo en niñas, niños y adolescentes,
+                  pero también desempeña un papel vital en el metabolismo de las
+                  personas adultas. Sus principales funciones son:
+                </p><p>
+                  <strong>Crecimiento corporal:</strong> Estimula el crecimiento de
+                  casi todos los tejidos del cuerpo, incluyendo huesos y cartílagos,
+                  y promueve la síntesis de proteínas; además, aumenta la masa muscular
+                  a través de la hiperplasia y promueve la retención de calcio para
+                  la mineralización ósea.
+                </p><p>
+                  <strong
+                    >Metabolismo de carbohidratos, lípidos y proteínas:</strong
+                  > Tiene un efecto antiinsulínico, lo que significa que reduce el
+                  consumo de glucosa por parte de los tejidos y aumenta los niveles
+                  de glucosa en sangre —glucemia—. También promueve la producción
+                  de glucosa en el hígado —gluconeogénesis— y favorece la movilización
+                  de ácidos grasos del tejido adiposo —lipólisis— para que puedan
+                  ser usados como fuente de energía, lo que contribuye a la reducción
+                  de grasa corporal. Asimismo, aumenta la síntesis de proteínas en
+                  la mayoría de las células, fomentando la captación de aminoácidos
+                  y la regeneración celular.
+                </p><p>
+                  <strong>Regulación de IGF-1:</strong> Estimula al hígado a producir
+                  el IGF-1, que es el principal mediador de muchos de sus efectos
+                  de crecimiento.
+                </p><p>
+                  <strong>Regulación de la homeostasis:</strong> Tiene un efecto en
+                  el balance electrolítico de sodio, calcio y fosfatos, así como en
+                  el balance hídrico.
+                </p>
+              </div>
+            </div></label
+          >
+          <label for="radioGH2" id="img2"
+            ><div class="seccion" id="sec2">
+              <div class="titulo">
+                <strong
+                  >Desórdenes por deficiencia de la hormona del crecimiento</strong
+                ><div class="icon"><i class="fas fa-chevron-down"></i></div>
+              </div><div class="fondo">
+                <img
+                  src="img/cont/15gh_t5.jpg"
+                  alt="Deficiencia de la hormona del crecimiento"
+                />
+              </div><div class="info">
+                <p>
+                  Los desórdenes de la GH se manifiestan de manera distinta en
+                  la niñez y la adultez debido a que sus funciones metabólicas
+                  varían con la edad:
+                </p><p>
+                  <strong>En la niñez:</strong> La falta de GH es la causa principal
+                  del enanismo hipofisiario. Las niñas y los niños que lo padecen
+                  tienen una tasa de crecimiento muy lenta, lo que resulta en una
+                  baja estatura, aunque las proporciones corporales son normales.
+                  Otros síntomas pueden incluir una apariencia más joven de la cara,
+                  un cuerpo con más grasa de lo habitual y un retraso en la pubertad.
+                </p><p>
+                  <strong>En la adultez:</strong> Como el crecimiento óseo ya ha terminado,
+                  la deficiencia de GH no afecta la estatura; sin embargo, puede provocar
+                  cambios en la composición corporal, como un aumento de la grasa
+                  visceral —alrededor de los órganos—, disminución de la masa muscular,
+                  baja densidad ósea y fatiga crónica.
+                </p>
+              </div>
+            </div></label
+          >
+          <label for="radioGH3" id="img3"
+            ><div class="seccion" id="sec3">
+              <div class="titulo">
+                <strong
+                  >Desórdenes por exceso de la hormona del crecimiento</strong
+                ><div class="icon"><i class="fas fa-chevron-down"></i></div>
+              </div><div class="fondo">
+                <img
+                  src="img/cont/15gh_t5.jpg"
+                  alt="Exceso de la hormona del crecimiento"
+                />
+              </div><div class="info">
+                <p>
+                  <strong>En la niñez:</strong> El exceso de GH antes de que los huesos
+                  hayan completado su crecimiento causa gigantismo. Esto se caracteriza
+                  por un crecimiento desproporcionado, lo que resulta en una estatura
+                  significativamente superior a la media.
+                </p><p>
+                  <strong>En la adultez:</strong> Un exceso de GH en la edad adulta,
+                  generalmente por un tumor benigno en la hipófisis llamado adenoma,
+                  causa acromegalia. A diferencia del gigantismo, donde el crecimiento
+                  es vertical, la acromegalia se manifiesta con un crecimiento anormal
+                  y desproporcionado de las extremidades —manos y pies—, la mandíbula
+                  y otras estructuras faciales. También puede causar dolores de cabeza,
+                  problemas de visión, sudoración excesiva y enfermedades cardiovasculares.
+                </p>
+              </div>
+            </div></label
+          >
+          <label for="radioGH4" id="img4"
+            ><div class="seccion" id="sec4">
+              <div class="titulo">
+                <strong>Funciones de la prolactina</strong><div class="icon">
+                  <i class="fas fa-chevron-down"></i>
+                </div>
+              </div><div class="fondo">
+                <img
+                  src="img/cont/16prl_t5.png"
+                  alt="Funciones de la prolactina"
+                />
+              </div><div class="info">
+                <p>
+                  La prolactina, también conocida como hormona lactogénica,
+                  tiene como función principal la producción de leche, pero
+                  también interviene en otros procesos del organismo. Sus
+                  funciones fisiológicas más importantes son:
+                </p><p>
+                  <strong>Producción de leche —lactancia—:</strong> Es la función
+                  más conocida. Después del parto, la prolactina estimula las glándulas
+                  mamarias para que produzcan leche. La succión del pezón por el bebé
+                  actúa como un estímulo que mantiene la secreción de esta hormona.
+                </p><p>
+                  <strong>Función reproductiva:</strong> Tiene un efecto inhibitorio
+                  sobre la secreción de gonadotropinas, lo que puede suprimir la ovulación
+                  en mujeres que amamantan. En hombres, niveles altos de prolactina
+                  pueden afectar el deseo sexual y la fertilidad.
+                </p><p>
+                  <strong>Regulación de la glándula mamaria:</strong> Contribuye al
+                  desarrollo de las glándulas mamarias durante la pubertad y el embarazo,
+                  preparándolas para la lactancia.
+                </p><p>
+                  <strong>Balance de agua y electrolitos:</strong> Tiene participación
+                  en la osmorregulación.
+                </p><p>
+                  <strong>Función inmunológica:</strong> Actúa como un inmunomodulador
+                  y se ha relacionado con ciertos procesos de autoinmunidad.
+                </p><p>
+                  <strong>Comportamiento maternal:</strong> Se cree que influye en
+                  el comportamiento y el instinto maternal.
+                </p>
+              </div>
+            </div></label
+          >
+          <label for="radioGH5" id="img5"
+            ><div class="seccion" id="sec5">
+              <div class="titulo">
+                <strong>Desórdenes por deficiencia de prolactina</strong><div
+                  class="icon"
+                >
+                  <i class="fas fa-chevron-down"></i>
+                </div>
+              </div><div class="fondo">
+                <img
+                  src="img/cont/16prl_t5.png"
+                  alt="Deficiencia de prolactina"
+                />
+              </div><div class="info">
+                <p>
+                  Su principal consecuencia conocida, una condición rara, es la
+                  incapacidad para producir leche materna después del parto, un
+                  trastorno conocido como agalactia; a menudo, la deficiencia de
+                  prolactina es el resultado de un daño en la glándula
+                  pituitaria, como el que ocurre en el síndrome de Sheehan, una
+                  complicación posparto.
+                </p>
+              </div>
+            </div></label
+          >
+          <label for="radioGH6" id="img6"
+            ><div class="seccion" id="sec6">
+              <div class="titulo">
+                <strong>Desórdenes por exceso de prolactina</strong><div
+                  class="icon"
+                >
+                  <i class="fas fa-chevron-down"></i>
+                </div>
+              </div><div class="fondo">
+                <img src="img/cont/16prl_t5.png" alt="Exceso de prolactina" />
+              </div><div class="info">
+                <p>
+                  <strong>Hiperprolactinemia:</strong> Ésta es la disfunción más común
+                  de la prolactina y se caracteriza por niveles elevados de la hormona
+                  en la sangre; a menudo, es causada por un tumor benigno en la glándula
+                  pituitaria llamado prolactinoma.
+                </p><p>
+                  <strong>En mujeres:</strong> Los altos niveles de prolactina inhiben
+                  la producción de hormonas sexuales, lo que lleva a la interrupción
+                  o a la irregularidad del ciclo menstrual —amenorrea—. También puede
+                  causar galactorrea —producción de leche fuera del embarazo o de
+                  la lactancia— e infertilidad.
+                </p><p>
+                  <strong>En hombres:</strong> El exceso de prolactina reduce los
+                  niveles de testosterona, lo que puede provocar una disminución de
+                  la libido, disfunción eréctil, infertilidad y, en algunos casos,
+                  crecimiento de las mamas —ginecomastia—.
+                </p><p>
+                  Además, los prolactinomas grandes pueden presionar los nervios
+                  ópticos, lo que causa problemas de visión y dolores de cabeza
+                  tanto en hombres como en mujeres.
+                </p>
+              </div>
+            </div></label
+          >
+        </div>
+        <div class="inputs">
+          <div class="radios">
+            <input type="radio" name="gh-acordeon" id="radioGH1" checked /><i
+            ></i>
+          </div><div class="radios">
+            <input type="radio" name="gh-acordeon" id="radioGH2" /><i></i>
+          </div><div class="radios">
+            <input type="radio" name="gh-acordeon" id="radioGH3" /><i></i>
+          </div><div class="radios">
+            <input type="radio" name="gh-acordeon" id="radioGH4" /><i></i>
+          </div><div class="radios">
+            <input type="radio" name="gh-acordeon" id="radioGH5" /><i></i>
+          </div><div class="radios">
+            <input type="radio" name="gh-acordeon" id="radioGH6" /><i></i>
+          </div>
+        </div>
+      </section>
+    </Section>
+
+    <Section id="conclusiones" title="Conclusiones">
+      <p>
+        Hasta el momento, has aprendido mucho sobre la estructura, la síntesis y
+        la acción de las hormonas hipotalámicas e hipofisarias y de las
+        glándulas. Las hormonas ejercen sus efectos fisiológicos al actuar sobre
+        receptores en la membrana celular, en la mitocondria y en el núcleo y
+        entran a la célula blanco principalmente por transportadores de
+        membrana. En el núcleo, las hormonas se unen a los receptores unidos a
+        los genes diana para influir en el crecimiento, el metabolismo, la
+        termogénesis y en la función de los sistemas cardiovascular,
+        reproductor, nervioso y digestivo. En condiciones normales, la
+        regulación de las hormonas ocurre a varios niveles del eje
+        hipotálamo-hipófisis-glándula. La deficiencia o exceso de estas
+        hormonas, los defectos de sus transportadores o a nivel de los
+        receptores producen alteraciones que son muy críticas en los primeros
+        años de vida, la adolescencia y la etapa adulta. Por último, conocer los
+        ejes neuroendocrinos —ejes hipotálamo-hipófisis-glándulas— es
+        fundamental porque constituyen el sistema de comunicación biológica
+        central que integra el sistema nervioso con el endocrino, lo que permite
+        al organismo responder y adaptarse a cambios internos y ambientales.
+      </p>
+    </Section>
+
     <!-- Actividad 2 -->
     <Activity {...ACTIVITIES_CONFIG.actividad2} />
 

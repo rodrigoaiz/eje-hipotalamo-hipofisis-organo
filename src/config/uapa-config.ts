@@ -31,24 +31,11 @@ export const UAPA_CONFIG = {
   
   // Colaboradores opcionales (solo aparecen en Hero, NO en "Cómo citar")
   collaborators: [
-    "Lilia E. Macedo de la Concha",
-    "Edith Tapia Rangel",
-    "Adriana Robles Cabrera",
-    "Julieta Garduño Torres",
-    "Juan Luis Becerril Gutiérrez",
-    "Cristina Huerta Mendoza",
-    "Adela Amellali Rios Herrera",
-    "Elisa Campero Malo",
-    "María Quetzali García López",
-    "Edgar Isaac Navarro Martínez",
-    "Brenda Gómez Sánchez",
-    "Joel Villamar Chulin",
-    "Juan de Dios Fuentes Reyes"
   ] as string[],
   
   // Hero
   hero: {
-    imageSrc: "img/portada.jpg",
+    imageSrc: "img/cont/portada.jpeg",
     imageCaption: "ScienceDirect. (2021). <em>The hypothalamic–pituitary–target organ axes</em> [imagen]. Tomada de https://n9.cl/7mqic3"
   },
   
@@ -83,7 +70,7 @@ export const UAPA_CONFIG = {
   // Modo de producción: true = CUAED, false = SUAyED
   // CUAED: muestra sección CUAED en footer, NO muestra tools menu ni modal de créditos
   // SUAyED: NO muestra sección CUAED, SÍ muestra tools menu y modal de créditos
-  isCuaed: true,
+  isCuaed: false,
 
   // Funcionalidades opcionales
   enableLatex: false, // Si true, carga KaTeX para renderizar ecuaciones LaTeX
