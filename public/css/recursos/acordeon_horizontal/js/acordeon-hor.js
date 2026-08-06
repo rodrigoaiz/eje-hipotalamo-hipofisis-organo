@@ -1,11 +1,11 @@
 function acordeonHorizontal(idAcordeon) {
 	const numSecciones = document.querySelectorAll('section.acordeon-horizontal#' + idAcordeon + ' div.seccion');
-	const raiz = document.documentElement;
-	raiz.style.setProperty('--numSec', numSecciones.length);
-
 	const etiquetas = document.querySelectorAll('section.acordeon-horizontal#' + idAcordeon + ' .etiquetas > label');
 
 	const inputs = document.querySelectorAll('section.acordeon-horizontal#' + idAcordeon + ' input');
+	if (!etiquetas.length || !inputs.length) return;
+	const raiz = document.documentElement;
+	raiz.style.setProperty('--numSec', numSecciones.length);
 	let nInput = inputs.length;
 
 	function seleccionado() {
@@ -25,6 +25,7 @@ function acordeonHorizontal(idAcordeon) {
 			seleccionado();
 		});
 	});
+	seleccionado();
 	const accordionItemHeaders = document.querySelectorAll('section.acordeon-horizontal#' + idAcordeon + ' div.seccion .titulo');
 	accordionItemHeaders.forEach(accordionItemHeader => {
 		accordionItemHeader.addEventListener('click', event => {
