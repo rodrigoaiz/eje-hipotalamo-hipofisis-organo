@@ -1,156 +1,64 @@
-﻿var reactivos = [
-	{
-		Q: "El acto <em>jurídico</em> es..."
-		, A: [
-			{ opcion: "Una <em>manifestación</em> de voluntad encaminada (con la intención) a generar consecuencias de derecho.", correcta: true, retro: "Correcto <em>cursiva</em>" },
-			{ opcion: "Un acto humano.", correcta: false, retro: "Incorrecto. Recuerde que el acto jurídico siempre debe contar con el ánimo de generar consecuencias jurídicas." },
-			{ opcion: "Una manifestación de la voluntad.", correcta: false, retro: "Incorrecto. Recuerde que el acto jurídico siempre debe contar con el ánimo de generar consecuencias jurídicas." }
-		]
-		,
-		F: [
-			"Retroalimentación para reactivo 1 correcto",
-			"Retroalimentación para reactivo 1 incorrecto"
-		]
-	},
-	{
-		Q: "Los delitos son actos jurídicos."
-		, A: [
-			{ opcion: "Falso, porque son hechos jurídicos lícitos ya que hay voluntad, mas no ánimo, de asumir las consecuencias jurídicas.", correcta: false, retro: "Incorrecto. Recuerde que en el hecho jurídico ilícito nunca existirá el ánimo de generar consecuencias jurídicas." },
-			{ opcion: "Verdadero, pues son ejecutados por los seres humanos y producen consecuencias jurídicas.", correcta: false, retro: "Incorrecto. Recuerde que en el hecho jurídico ilícito nunca existirá el ánimo de generar consecuencias jurídicas." },
-			{ opcion: "Falso, porque son hechos jurídicos ilícitos ya que hay voluntad, más no ánimo, de asumir las consecuencias jurídicas.", correcta: true, retro: "Correcto." },
-			{ opcion: "Verdadero, pues producen consecuencias jurídicas.", correcta: false, retro: "Incorrecto. Recuerde que en el hecho jurídico ilícito nunca existirá el ánimo de generar consecuencias jurídicas." }
-		]
-		,
-		F: [
-			"Retroalimentación para reactivo 2 correcto",
-			"Retroalimentación para reactivo 2 incorrecto"
-		]
-	},
-	{
-		Q: "Los elementos de existencia son: "
-		, A: [
-			{ opcion: "Sujeto, consentimiento y forma.", correcta: false, retro: "Incorrecto. Recuerde que sin sujeto, voluntad o consentimiento, objeto ni solemnidad, el acto no nace a la vida jurídica." },
-			{ opcion: "Sujeto, voluntad o consentimiento, objeto y solemnidad.", correcta: true, retro: "Correcto." },
-			{ opcion: "Voluntad o consentimiento, capacidad y licitud.", correcta: false, retro: "Incorrecto. Recuerde que sin sujeto, voluntad o consentimiento, objeto ni solemnidad, el acto no nace a la vida jurídica." },
-			{ opcion: "Voluntad o consentimiento, objeto y solemnidad.", correcta: false, retro: "Incorrecto. Recuerde que sin sujeto, voluntad o consentimiento, objeto ni solemnidad, el acto no nace a la vida jurídica." }
-		]
-		,
-		F: [
-			"Retroalimentación para reactivo 3 correcto",
-			"Retroalimentación para reactivo 3 incorrecto"
-		]
-	},
-	{
-		Q: "El objeto directo de un acto jurídico consiste en..."
-		, A: [
-			{ opcion: "Crear, extinguir, modificar y transmitir derechos y obligaciones.", correcta: true, retro: "Correcto. " },
-			{ opcion: "La conducta positiva o negativa.", correcta: false, retro: "Incorrecto. Recuerde que el objeto directo consiste en crear, extinguir, modificar y transmitir derechos y obligaciones." },
-			{ opcion: "Un bien mueble o inmueble.", correcta: false, retro: "Incorrecto. Recuerde que el objeto directo consiste en crear, extinguir, modificar y transmitir derechos y obligaciones." },
-			{ opcion: "Crear y extinguir.", correcta: false, retro: "Incorrecto. Recuerde que el objeto directo consiste en crear, extinguir, modificar y transmitir derechos y obligaciones." }
-		]
-		,
-		F: [
-			"Retroalimentación para reactivo 4 correcto",
-			"Retroalimentación para reactivo 4 incorrecto"
-		]
-	},
-	{
-		Q: "Los convenios, a diferencia de los contratos..."
-		, A: [
-			{ opcion: "Extinguen o modifican derechos y obligaciones.", correcta: true, retro: "Correcto." },
-			{ opcion: "Extinguen, modifican y crean derechos y obligaciones.", correcta: false, retro: "Incorrecto. Recuerde que un convenio, en estricto sentido, siempre extingue o modifica." },
-			{ opcion: "Extinguen, crean, modifican y transmiten derechos y obligaciones.", correcta: false, retro: "Incorrecto. Recuerde que un convenio, en estricto sentido, siempre extingue o modifica." },
-			{ opcion: "Crean y extinguen derechos y obligaciones.", correcta: false, retro: "Incorrecto. Recuerde que un convenio, en estricto sentido, siempre extingue o modifica." }
-		]
-		,
-		F: [
-			"Retroalimentación para reactivo 5 correcto",
-			"Retroalimentación para reactivo 5 incorrecto"
-		]
-	},
-	{
-		Q: "Los elementos de validez del acto jurídico son:"
-		, A: [
-			{ opcion: "Capacidad, nombre, domicilio, estado civil, patrimonio.", correcta: false, retro: "Incorrecto. Recuerde que los elementos de validez son capacidad, licitud en el objeto motivo o fin, formalidad y ausencia de vicios." },
-			{ opcion: "Nombre, capacidad, estado civil, domicilio, nacionalidad y patrimonio.", correcta: false, retro: "Incorrecto. Recuerde que los elementos de validez son capacidad, licitud en el objeto motivo o fin, formalidad y ausencia de vicios." },
-			{ opcion: "Capacidad, licitud en el objeto, motivo o fin, formalidad y ausencia de vicios del consentimiento.", correcta: true, retro: "Correcto." },
-			{ opcion: "Vicios del consentimiento y licitud.", correcta: false, retro: "Incorrecto. Recuerde que los elementos de validez son capacidad, licitud en el objeto motivo o fin, formalidad y ausencia de vicios." }
-		]
-		,
-		F: [
-			"Retroalimentación para reactivo 6 correcto",
-			"Retroalimentación para reactivo 6 incorrecto"
-		]
-	},
-	{
-		Q: "Los vicios del consentimiento son:"
-		, A: [
-			{ opcion: "Alevosía y ventaja.", correcta: false, retro: "Incorrecto. Recuerde que los vicios de la voluntad son dolo, mala fe, violencia física o moral, lesión y error." },
-			{ opcion: "Mala fe y lesión.", correcta: false, retro: "Incorrecto. Recuerde que los vicios de la voluntad son dolo, mala fe, violencia física o moral, lesión y error." },
-			{ opcion: "Malevolencia.", correcta: false, retro: "Incorrecto. Recuerde que los vicios de la voluntad son dolo, mala fe, violencia física o moral, lesión y error." },
-			{ opcion: "Dolo, mala fe, violencia física o moral, lesión y error.", correcta: true, retro: "Correcto." }
-		]
-		,
-		F: [
-			"Retroalimentación para reactivo 7 correcto",
-			"Retroalimentación para reactivo 7 incorrecto"
-		]
-	},
-	{
-		Q: "Serie de requisitos que la Ley exige para llevar a cabo un acto jurídico, es un elemento de validez:"
-		, A: [
-			{ opcion: "Trámites.", correcta: false, retro: "Incorrecto. Denominamos <em>formalidad</em> a la serie de requisitos para llevar a cabo un acto jurídico." },
-			{ opcion: "Forma.", correcta: false, retro: "Incorrecto. Denominamos <em>formalidad</em> a la serie de requisitos para llevar a cabo un acto jurídico." },
-			{ opcion: "Formalidad.", correcta: true, retro: "Correcto." },
-			{ opcion: "Solemnidad.", correcta: false, retro: "Incorrecto. Denominamos <em>formalidad</em> a la serie de requisitos para llevar a cabo un acto jurídico." }
-		]
-		,
-		F: [
-			"Retroalimentación para reactivo 8 correcto",
-			"Retroalimentación para reactivo 8 incorrecto"
-		]
-	},
-	{
-		Q: "Convalidar quiere decir..."
-		, A: [
-			{ opcion: "Ratificar.", correcta: false, retro: "Incorrecto. Recuerde, convalidar quiere decir subsanar y confirmar." },
-			{ opcion: "Aceptar.", correcta: false, retro: "Incorrecto. Recuerde, convalidar quiere decir subsanar y confirmar." },
-			{ opcion: "Realizar un nuevo acto jurídico.", correcta: false, retro: "Incorrecto. Recuerde, convalidar quiere decir subsanar y confirmar." },
-			{ opcion: "Confirmar el acto y subsanar el requisito de validez del cual carecía.", correcta: true, retro: "Correcto." }
-		]
-		,
-		F: [
-			"Retroalimentación para reactivo 9 correcto",
-			"Retroalimentación para reactivo 9 incorrecto"
-		]
-	},
-	{
-		Q: "La inexistencia es..."
-		, A: [
-			{ opcion: "Imprescriptible.", correcta: false, retro: "Incorrecto. Recuerde que la inexistencia se caracteriza porque las partes no pueden expresar que están conformes con el acto jurídico inexistente y que asumen sus consecuencias (inconvalidable), no se hace válida con el tiempo (imprescriptible), además la invoca cualquier persona perjudicada." },
-			{ opcion: "Convalidable, imprescriptible, puede ser invocada por cualquier persona perjudicada.", correcta: false, retro: "Incorrecto. Recuerde que la inexistencia se caracteriza porque las partes no pueden expresar que están conformes con el acto jurídico inexistente y que asumen sus consecuencias (inconvalidable), no se hace válida con el tiempo (imprescriptible), además la invoca cualquier persona perjudicada." },
-			{ opcion: "Inconvalidable, imprescriptible y puede ser invocada por cualquier persona perjudicada.", correcta: true, retro: "Correcto." },
-			{ opcion: "Prescriptible, convalidable y la pueden invocar sólo las partes.", correcta: false, retro: "Incorrecto. Recuerde que la inexistencia se caracteriza porque las partes no pueden expresar que están conformes con el acto jurídico inexistente y que asumen sus consecuencias (inconvalidable), no se hace válida con el tiempo (imprescriptible), además la invoca cualquier persona perjudicada." }
-		]
-		,
-		F: [
-			"Retroalimentación para reactivo 10 correcto",
-			"Retroalimentación para reactivo 10 incorrecto"
-		]
-	},
-	// ,
-	// {
-	// 	Q: ""
-	// 	, A: [
-	// 		{ opcion: "", correcta: false, retro: "" },
-	// 		{ opcion: "", correcta: false, retro: "" },
-	// 		{ opcion: "", correcta: false, retro: "" },
-	// 		{ opcion: "", correcta: false, retro: "" }
-	// 	]
-	// 	,
-	// 	F: [
-	// 		"",
-	// 		""
-	// 	]
-	// }
-];
+var bancoSeleccionado = new URLSearchParams(window.location.search).get("banco") || "autoevaluacion";
+
+function conFormato(texto) {
+	return texto.replace(/T([34])\b/g, "T<sub>$1</sub>");
+}
+
+function reactivo(pregunta, opciones, correcta, retros) {
+	return {
+		Q: conFormato(pregunta),
+		A: opciones.map(function (opcion, indice) {
+			return { opcion: conFormato(opcion), correcta: indice === correcta, retro: conFormato(retros[indice]) };
+		}),
+		F: ["Respuesta correcta.", "Revisa la realimentación de la opción seleccionada."]
+	};
+}
+
+var bancosReactivos = {
+	actividad1: [
+		reactivo("¿Cuál es el principal mecanismo a través del cual el hipotálamo controla la liberación de hormonas de la hipófisis anterior?", ["Por vía directa de nervios, desde el hipotálamo a la hipófisis anterior.", "El sistema porta hipotalámico-hipofisario.", "Difusión simple de hormonas a través del líquido cefalorraquídeo.", "Secreción de hormonas directamente al torrente sanguíneo sistémico."], 1, ["Incorrecta: la comunicación nerviosa es la vía principal para la neurohipófisis, no para la hipófisis anterior.", "Correcta: este sistema de vasos sanguíneos transporta las hormonas hipotalámicas a la hipófisis anterior.", "Incorrecta: las hormonas viajan por vasos sanguíneos específicos, no por el líquido cefalorraquídeo.", "Incorrecta: las hormonas hipotalámicas no se vierten en la circulación general para actuar sobre la hipófisis."]),
+		reactivo("En el eje HHA, ¿qué hormona es liberada por el hipotálamo en respuesta al estrés?", ["Hormona adrenocorticotrópica (ACTH).", "Cortisol.", "Hormona liberadora de corticotropina (CRH).", "Aldosterona."], 2, ["Incorrecta: la ACTH es liberada por la hipófisis.", "Incorrecta: el cortisol es liberado por las glándulas suprarrenales.", "Correcta: el hipotálamo libera CRH para iniciar la respuesta al estrés.", "Incorrecta: la aldosterona se regula principalmente mediante el sistema renina-angiotensina-aldosterona."]),
+		reactivo("La realimentación negativa en el eje HHA es mediada principalmente por:", ["La inhibición de la ACTH por parte de la CRH.", "La inhibición de la CRH por parte de la ACTH.", "La supresión de la ACTH y la CRH por niveles elevados de cortisol.", "La estimulación de la producción de cortisol por la ACTH."], 2, ["Incorrecta: la CRH estimula la liberación de ACTH.", "Incorrecta: es una realimentación de lazo corto, pero no la principal.", "Correcta: el cortisol elevado reduce la secreción de CRH y ACTH.", "Incorrecta: describe estimulación, no realimentación negativa."]),
+		reactivo("Una persona presenta fatiga crónica, pérdida de peso, hiperpigmentación, cortisol bajo y ACTH elevada. ¿Cuál es la patología más probable?", ["Síndrome de Cushing.", "Insuficiencia adrenal secundaria.", "Enfermedad de Addison —insuficiencia adrenal primaria—.", "Hiperaldosteronismo."], 2, ["Incorrecta: el síndrome de Cushing se caracteriza por exceso de cortisol.", "Incorrecta: en la insuficiencia secundaria la ACTH suele estar baja junto con el cortisol.", "Correcta: el daño suprarrenal disminuye el cortisol y aumenta compensatoriamente la ACTH.", "Incorrecta: se relaciona con aldosterona, no con cortisol."]),
+		reactivo("En un hipotiroidismo primario, ¿cómo esperarías encontrar los niveles de TSH y T4?", ["TSH baja y T4 alta.", "TSH baja y T4 baja.", "TSH alta y T4 baja.", "TSH normal y T4 baja."], 2, ["Incorrecta: esta combinación indica hipertiroidismo primario.", "Incorrecta: es típica del hipotiroidismo secundario o central.", "Correcta: la tiroides no produce suficiente T4 y la hipófisis aumenta la TSH.", "Incorrecta: la TSH casi siempre se altera ante un problema de producción de T4."]),
+		reactivo("Un tumor hipofisario que produce TSH en exceso de manera autónoma, ¿qué efecto tendría?", ["Disminuirían T3/T4 y causaría hipertiroidismo primario.", "Aumentarían T3/T4 y causaría hipertiroidismo primario.", "Aumentarían T3/T4 y causaría hipertiroidismo secundario.", "Disminuirían T3/T4 y causaría hipertiroidismo secundario."], 2, ["Incorrecta: la TSH elevada incrementa T3/T4.", "Incorrecta: el origen está en la hipófisis, por lo que es secundario.", "Correcta: el exceso de TSH eleva T3/T4 y causa hipertiroidismo secundario o central.", "Incorrecta: la sobreproducción de TSH no disminuye las hormonas tiroideas."]),
+		reactivo("¿Qué zona de la corteza suprarrenal produce principalmente cortisol?", ["Zona glomerular.", "Zona fasciculada.", "Zona reticular.", "Médula suprarrenal."], 1, ["Incorrecta: la zona glomerular produce mineralocorticoides.", "Correcta: la zona fasciculada sintetiza la mayor parte del cortisol en respuesta a ACTH.", "Incorrecta: la zona reticular produce andrógenos suprarrenales.", "Incorrecta: la médula produce catecolaminas."]),
+		reactivo("La molécula precursora de la cual se sintetiza el cortisol es:", ["Colesterol.", "Glucosa.", "Aminoácidos.", "Ácidos grasos."], 0, ["Correcta: todas las hormonas esteroideas, incluido el cortisol, se sintetizan a partir del colesterol.", "Incorrecta: la glucosa es un sustrato energético, no un precursor esteroideo.", "Incorrecta: los aminoácidos no son precursores directos de hormonas esteroideas.", "Incorrecta: los ácidos grasos no son precursores directos de hormonas esteroideas."]),
+		reactivo("El cortisol ejerce su acción al unirse a un receptor:", ["De membrana celular.", "Acoplado a proteína G.", "De canal iónico.", "Intracelular."], 3, ["Incorrecta: los receptores de membrana son típicos de hormonas hidrofílicas.", "Incorrecta: los GPCR son receptores de membrana con segundos mensajeros.", "Incorrecta: el cortisol no actúa abriendo canales iónicos.", "Correcta: por ser lipofílico, atraviesa la membrana y se une a receptores intracelulares."]),
+		reactivo("¿Qué proteína es esencial para almacenar yodo y sintetizar hormonas tiroideas dentro de la tiroides?", ["Albúmina.", "Insulina.", "Glucagón.", "Tiroglobulina."], 3, ["Incorrecta: la albúmina es una proteína de transporte sanguíneo.", "Incorrecta: la insulina es una hormona pancreática.", "Incorrecta: el glucagón es una hormona pancreática.", "Correcta: la tiroglobulina se almacena en el coloide y sirve de andamio para sintetizar T3 y T4."])
+	],
+	actividad2: [
+		reactivo("¿Cuál es la hormona hipotalámica clave que regula la liberación de FSH y LH?", ["Hormona liberadora de corticotropina (CRH).", "Hormona liberadora de tirotropina (TRH).", "Dopamina.", "Hormona liberadora de gonadotropinas (GnRH)."], 3, ["Incorrecta: la CRH regula ACTH.", "Incorrecta: la TRH regula principalmente TSH.", "Incorrecta: la dopamina inhibe principalmente la prolactina.", "Correcta: la GnRH controla la síntesis y liberación de FSH y LH."]),
+		reactivo("¿Qué patrón de secreción de GnRH es esencial para una función reproductiva normal?", ["Secreción continua y estable.", "Pulsos de alta frecuencia en la mañana.", "Descarga única al final del día.", "Secreción en pulsos intermitentes y rítmicos."], 3, ["Incorrecta: la secreción continua desensibiliza los receptores hipofisarios.", "Incorrecta: la secreción no se limita a las mañanas.", "Incorrecta: se requiere secreción pulsátil a lo largo del día.", "Correcta: los pulsos de GnRH mantienen la función normal del eje HHG."]),
+		reactivo("¿Cuál es la función principal de la FSH en los testículos?", ["Estimular las células de Leydig para producir testosterona.", "Regular la presión arterial.", "Estimular la espermatogénesis en los túbulos seminíferos.", "Inducir la eyaculación."], 2, ["Incorrecta: esa es principalmente una función de la LH.", "Incorrecta: la FSH no regula la presión arterial.", "Correcta: actúa sobre células de Sertoli y apoya la espermatogénesis.", "Incorrecta: la eyaculación involucra los sistemas nerviosos somático y autónomo."]),
+		reactivo("En el eje HHG, la realimentación negativa a hipófisis e hipotálamo es mediada principalmente por:", ["FSH y LH.", "GnRH y GnIH.", "Estrógenos, progesterona y testosterona.", "Inhibina y activina."], 2, ["Incorrecta: FSH y LH estimulan las gónadas.", "Incorrecta: regulan la hipófisis, pero no son las hormonas finales del eje.", "Correcta: las hormonas gonadales inhiben GnRH, FSH y LH mediante realimentación negativa.", "Incorrecta: regulan selectivamente FSH, no la realimentación global."]),
+		reactivo("Además de los testículos, ¿qué glándula produce una pequeña cantidad de andrógenos?", ["Páncreas.", "Tiroides.", "Hipófisis.", "Glándulas suprarrenales."], 3, ["Incorrecta: el páncreas produce insulina y glucagón.", "Incorrecta: la tiroides regula principalmente el metabolismo.", "Incorrecta: la hipófisis produce gonadotropinas, no andrógenos.", "Correcta: las suprarrenales producen andrógenos débiles como DHEA."]),
+		reactivo("Los receptores de hormonas esteroideas como estrógenos y andrógenos se localizan principalmente en:", ["La membrana celular.", "El núcleo celular.", "Las mitocondrias.", "El citoplasma y el núcleo."], 3, ["Incorrecta: los receptores de membrana son comunes para hormonas peptídicas.", "Incorrecta: muchos receptores se localizan primero en el citoplasma y se translocan al núcleo.", "Incorrecta: las mitocondrias no son el sitio principal de esta señalización.", "Correcta: son receptores intracelulares localizados en citoplasma o núcleo."]),
+		reactivo("¿Qué hormona hipotalámica estimula la liberación de GH?", ["Somatostatina (GHIH).", "Hormona liberadora de corticotropina (CRH).", "Hormona liberadora de hormona del crecimiento (GHRH).", "Prolactina."], 2, ["Incorrecta: la somatostatina inhibe GH.", "Incorrecta: la CRH estimula ACTH.", "Correcta: la GHRH viaja a la hipófisis anterior y estimula GH.", "Incorrecta: la prolactina es secretada por la hipófisis anterior."]),
+		reactivo("¿Qué tipo de célula de la hipófisis anterior produce GH?", ["Somatotropo.", "Gonadotropo.", "Corticotropo.", "Tirotropo."], 0, ["Correcta: los somatotropos sintetizan y secretan GH.", "Incorrecta: los gonadotropos producen FSH y LH.", "Incorrecta: los corticotropos producen ACTH.", "Incorrecta: las tirotropas producen TSH."]),
+		reactivo("¿Cuál es la función principal de la prolactina?", ["Estimular el crecimiento óseo.", "Regular la presión arterial.", "Promover la producción de leche en las glándulas mamarias.", "Controlar el ciclo menstrual."], 2, ["Incorrecta: la GH es la principal hormona del crecimiento óseo.", "Incorrecta: la presión arterial se regula por otras hormonas y sistemas.", "Correcta: la prolactina es clave para la lactogénesis.", "Incorrecta: el ciclo menstrual depende del eje gonadal."]),
+		reactivo("¿Qué hormona hipotalámica inhibe la secreción de prolactina?", ["Hormona liberadora de tirotropina (TRH).", "Dopamina.", "Oxitocina.", "GHRH."], 1, ["Incorrecta: la TRH puede estimular prolactina.", "Correcta: la dopamina es el principal regulador negativo de la prolactina.", "Incorrecta: la oxitocina participa en eyección de leche y contracciones uterinas.", "Incorrecta: la GHRH estimula GH."]),
+		reactivo("En el sistema de realimentación de GH, ¿qué hormonas inhiben principalmente su secreción?", ["GHRH.", "Cortisol.", "GHIH e IGF-1.", "Insulina."], 2, ["Incorrecta: la GHRH es el principal estimulante.", "Incorrecta: el cortisol puede modular GH, pero no es el principal inhibidor.", "Correcta: la somatostatina y el IGF-1 forman un bucle de realimentación negativa.", "Incorrecta: la insulina no es la principal hormona de realimentación negativa de GH."])
+	],
+	autoevaluacion: [
+		reactivo("¿Cuál es la función principal del hipotálamo en el eje hipotálamo-hipófisis-tiroides?", ["Liberar T3 y T4 directamente a la circulación.", "Producir TSH que actúa sobre el hipotálamo.", "Secretar TRH, que estimula a la hipófisis para producir TSH.", "Inhibir la producción de hormonas tiroideas."], 2, ["Incorrecta: T3 y T4 se producen en la tiroides.", "Incorrecta: la TSH la produce la hipófisis.", "Correcta: el hipotálamo inicia el eje al liberar TRH.", "Incorrecta: el hipotálamo inicia la cascada de estimulación."]),
+		reactivo("¿Qué hormona secreta la hipófisis anterior en el eje HHA?", ["Cortisol.", "ACTH que estimula las glándulas suprarrenales.", "CRH.", "Cortisol para mantener la homeostasis."], 1, ["Incorrecta: el cortisol es suprarrenal.", "Correcta: la ACTH hipofisaria estimula la corteza suprarrenal.", "Incorrecta: la CRH se produce en el hipotálamo.", "Incorrecta: el cortisol no lo produce la hipófisis."]),
+		reactivo("¿Cuáles son las hormonas gonadotrópicas liberadas por la hipófisis?", ["Estradiol y progesterona.", "Testosterona.", "FSH y LH en ambos sexos.", "Prolactina."], 2, ["Incorrecta: son hormonas sexuales, no gonadotropinas.", "Incorrecta: es un andrógeno gonadal.", "Correcta: FSH y LH regulan la función gonadal en ambos sexos.", "Incorrecta: se relaciona principalmente con la lactancia."]),
+		reactivo("Una deficiencia de ADH resultaría en:", ["Aumento de sed y micción —poliuria y polidipsia—.", "Aumento de peso y letargo.", "Piel oscura y debilidad muscular.", "Crecimiento excesivo de manos y pies."], 0, ["Correcta: la deficiencia impide concentrar la orina y causa diabetes insípida.", "Incorrecta: son síntomas más característicos de hipotiroidismo.", "Incorrecta: son signos más característicos de insuficiencia suprarrenal primaria.", "Incorrecta: son signos de acromegalia por exceso de GH."]),
+		reactivo("Un adenoma no funcionante que destruye células productoras de TSH conduciría a:", ["Hipertiroidismo primario.", "Hipotiroidismo secundario —central—.", "Enfermedad de Graves.", "Bocio multinodular tóxico."], 1, ["Incorrecta: el hipertiroidismo primario tiene origen tiroideo.", "Correcta: sin TSH, la tiroides no produce suficiente T3 y T4.", "Incorrecta: Graves es una causa autoinmune de hipertiroidismo primario.", "Incorrecta: es una causa de hipertiroidismo primario."]),
+		reactivo("¿Qué hallazgo indica insuficiencia suprarrenal primaria?", ["Aumento de cortisol después de ACTH.", "Supresión de cortisol después de dexametasona.", "Cortisol basal bajo con ACTH elevada.", "Cortisol basal alto con ACTH baja."], 2, ["Incorrecta: sugiere respuesta suprarrenal conservada.", "Incorrecta: esta prueba se usa para síndrome de Cushing.", "Correcta: el cortisol bajo elimina la realimentación negativa y eleva ACTH.", "Incorrecta: sugiere exceso de cortisol o supresión hipofisaria."]),
+		reactivo("La VP liberada por la neurohipófisis tiene como función principal:", ["Estimular producción hepática de glucosa.", "Aumentar la reabsorción de agua en los riñones.", "Promover excreción de sodio.", "Disminuir la presión arterial."], 1, ["Incorrecta: esa función corresponde a otras hormonas, como glucagón.", "Correcta: aumenta la permeabilidad al agua y concentra la orina.", "Incorrecta: su función principal es la reabsorción de agua.", "Incorrecta: puede elevar la presión en ciertas condiciones."]),
+		reactivo("¿Cómo se describe mejor la relación jerárquica del eje hipotálamo-hipófisis-órgano?", ["El hipotálamo estimula directamente a los órganos diana.", "El hipotálamo controla la hipófisis y ésta controla glándulas periféricas.", "Los órganos diana controlan al hipotálamo.", "Todas las hormonas se producen en el mismo órgano."], 1, ["Incorrecta: la mayoría de órganos diana reciben señal hipofisaria.", "Correcta: es una cadena de control con realimentación negativa.", "Incorrecta: existe realimentación, pero el control principal es descendente.", "Incorrecta: las hormonas se producen en distintos niveles del eje."]),
+		reactivo("Las hormonas tiroideas T3 y T4 se unen a receptores localizados en:", ["La membrana celular.", "El citoplasma sin moverse al núcleo.", "Las mitocondrias.", "El núcleo, donde actúan como factores de transcripción."], 3, ["Incorrecta: es típico de hormonas peptídicas.", "Incorrecta: sus receptores actúan principalmente en el núcleo.", "Incorrecta: su acción principal no es mitocondrial.", "Correcta: regulan la expresión génica mediante receptores nucleares."]),
+		reactivo("¿Qué enzima convierte andrógenos como la testosterona en estrógenos?", ["17-β-hidroxiesteroide-deshidrogenasa.", "5-α-reductasa.", "Aromatasa.", "Colesterol desmolasa."], 2, ["Incorrecta: interconvierte androstenodiona/testosterona y estrona/estradiol.", "Incorrecta: convierte testosterona en DHT.", "Correcta: la aromatasa convierte andrógenos en estrógenos.", "Incorrecta: cataliza el primer paso de síntesis esteroidea desde colesterol."]),
+		reactivo("¿Qué hormona es responsable de la maduración folicular y la espermatogénesis?", ["FSH en ambos casos.", "Estrógeno y testosterona.", "LH en ambos casos.", "Prolactina y GH."], 0, ["Correcta: FSH participa en la maduración folicular y la espermatogénesis.", "Incorrecta: son hormonas finales, no las gonadotropinas que inician estos procesos.", "Incorrecta: LH participa en ovulación y testosterona, no en ambos procesos descritos.", "Incorrecta: no son reguladores gonadales primarios."]),
+		reactivo("Las hormonas esteroideas no se almacenan en vesículas porque:", ["Son demasiado grandes.", "Son liposolubles y se difunden tras sintetizarse.", "Sus enzimas sólo se activan con estrés.", "Requieren proteínas transportadoras para liberarse."], 1, ["Incorrecta: son moléculas pequeñas lipofílicas.", "Correcta: difunden a través de la membrana celular una vez sintetizadas.", "Incorrecta: se sintetizan según estímulos hormonales, no sólo estrés.", "Incorrecta: las proteínas transportadoras actúan en sangre, no en la liberación celular."]),
+		reactivo("La pubertad se desencadena por:", ["Andrógenos suprarrenales.", "Maduración hipofisaria para secretar GnRH.", "Aumento de estrógeno y testosterona.", "Aumento de la secreción pulsátil de GnRH hipotalámica."], 3, ["Incorrecta: los andrógenos suprarrenales no inician el eje.", "Incorrecta: la GnRH es hipotalámica.", "Incorrecta: es una consecuencia, no el desencadenante.", "Correcta: el despertar pulsátil del eje HHG inicia la pubertad."]),
+		reactivo("La GH ejerce la mayoría de sus efectos anabólicos indirectamente mediante:", ["Testosterona.", "Glucagón.", "Hormonas tiroideas.", "IGF-1."], 3, ["Incorrecta: no es el principal mediador de GH.", "Incorrecta: tiene un efecto metabólico catabólico.", "Incorrecta: regulan metabolismo basal, no median directamente GH.", "Correcta: IGF-1 hepático media los efectos de crecimiento de GH."]),
+		reactivo("Un prolactinoma produciría típicamente:", ["Prolactina alta, supresión del eje gonadal, amenorrea e infertilidad.", "GH alta y prolactina baja.", "Prolactina alta y dopamina baja.", "Prolactina baja y dopamina alta."], 0, ["Correcta: el exceso de prolactina inhibe GnRH y reduce FSH/LH.", "Incorrecta: un prolactinoma produce prolactina, no GH.", "Incorrecta: la dopamina baja puede causar hiperprolactinemia, pero no define un prolactinoma.", "Incorrecta: es la condición opuesta."]),
+		reactivo("El receptor de GH es del tipo:", ["Asociado con proteína G.", "Intracelular o nuclear.", "Con tirosina-cinasa intrínseca.", "Asociado con una tirosina-cinasa, como JAK/STAT."], 3, ["Incorrecta: los GPCR no son el receptor de GH.", "Incorrecta: los receptores nucleares son para esteroides y tiroideas.", "Incorrecta: la cinasa no es parte integral del receptor.", "Correcta: el receptor activa JAK2 y proteínas STAT."]),
+		reactivo("GH y prolactina son estructuralmente similares; ambas son:", ["Hormonas peptídicas de una sola cadena.", "Hormonas esteroideas.", "Hormonas derivadas de aminoácidos.", "Producidas por la hipófisis posterior."], 0, ["Correcta: ambas son hormonas peptídicas de una sola cadena.", "Incorrecta: no son hormonas esteroideas.", "Incorrecta: no derivan de un solo aminoácido, son péptidos completos.", "Incorrecta: ambas se producen en la hipófisis anterior."])
+	]
+};
+
+var reactivos = bancosReactivos[bancoSeleccionado] || bancosReactivos.autoevaluacion;

@@ -1,11 +1,12 @@
 ﻿/* configuracion
 */
-var maxIntentos = 2;                 // número de intentos máximo para resolver el ejercicio
-var siguienteIntentoBlanco = true; // 
+var maxIntentos = 99;                // Intentos ilimitados indicados en el guión.
+var siguienteIntentoBlanco = true;
 
-var elementosPorSegmento = 2; // elementos por segmento limita la visiblidad
+var esAutoevaluacion = bancoSeleccionado === "autoevaluacion";
+var elementosPorSegmento = esAutoevaluacion ? 10 : 5;
 var elementosPorSegmentoMovil = 1;
-var reactivosMostrar = 4;            // número de reactivos a mostrar
+var reactivosMostrar = esAutoevaluacion ? 10 : 5;
 if (reactivos.length < reactivosMostrar) {
 	reactivosMostrar = reactivos.length;
 }
@@ -15,9 +16,9 @@ var mezclarPreguntas = true;         // true: mezcla preguntas; false NO mezcla 
 var mezclarRespuestas = true;        // true: mezcla respuestas; false NO mezcla respuestas
 var mezclarPorIntentos = true;
 
-var mostrarRetroIndividual = false;  // true: muestra retro por pregunta individual; false: NO muestra retro por pregunta individual
-var mostrarRetroOpcionRespuesta = !mostrarRetroIndividual;  // Por cada arroba, true: muestra; false: NO muestra
-var mostrarRetroFinal = true;       // true: muestra retro por aciertos; false: NO muestra retro
+var mostrarRetroIndividual = true;   // Muestra la retroalimentación de la opción seleccionada.
+var mostrarRetroOpcionRespuesta = true;
+var mostrarRetroFinal = esAutoevaluacion; // Sólo el guión de autoevaluación define retroalimentación general.
 
 var ponerNumeral = true;     // Para poner o agregar numeros secuenciales al inicio de las las preguntas...
 var ponerNumeroPreguntas = false; // cuantos preguntas son?, no necesariamente cuantas son visibles...
@@ -31,11 +32,10 @@ var carruselContinuo = false; // si se quiere que los botonos previo y proximo n
 
 var flechaArriba = false;          // true: muestra la flecha-arriba para moverse rápidamente al principio del recurso; false: no lo muestra
 
-var retroCal = [ 
-	{LimInf: 0, LimSup: 5, Mensaje: ["¡Vaya! Parece que no es suficiente.", "Insufficient"]}
-	,{LimInf: 6, LimSup: 7, Mensaje: ["¡Esfuérzate más!", "Work harder"]}
-	,{LimInf: 8, LimSup: 9, Mensaje: ["¡Sigue esforzándote!", "Sufficient"]}
-	,{LimInf: 10, LimSup: 10, Mensaje: ["¡Felicidades!", "Excellent"]}
+var retroCal = [
+	{LimInf: 0, LimSup: 5, Mensaje: ["¡Intenta de nuevo! Parece que no todo lo visto en la unidad te quedó claro; repásala nuevamente para reforzar conocimientos y realiza un nuevo intento.", ""]},
+	{LimInf: 6, LimSup: 8, Mensaje: ["¡Bien! Reconoces la importancia del eje hipotálamo-hipófisis, pero puedes repasar la unidad nuevamente para dominar el tema.", ""]},
+	{LimInf: 9, LimSup: 10, Mensaje: ["¡Excelente! Dominas muy bien todo lo visto en la unidad; logras reconocer la gran importancia del adecuado funcionamiento del eje hipotálamo-hipófisis.", ""]}
 ];
 
 var textoRetroGeneral= '';//'Texto independiente de calificacion'; no importando la calificación se puede poner un texto extra, '' para dejar en blanco
@@ -52,4 +52,4 @@ var debug = false;
 
 var verLongitud = false;  //true:ver longitud del texto ; false:omitir
 
-var califXaciertos = false;   // true: se evalua por número de aciertos;  false: se evalua sobre 10
+var califXaciertos = true;    // La retroalimentación del guión se define por número de aciertos.
