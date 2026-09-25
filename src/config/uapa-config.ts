@@ -52,14 +52,15 @@ export const UAPA_CONFIG = {
           { label: "Eje hipotálamo-hipófisis-adrenal", href: "#contenido2" },
           { label: "Eje hipotálamo-hipófisis-tiroides", href: "#contenido3" },
           { label: "Eje hipotálamo-hipófisis-gónadas", href: "#contenido4" },
-          { label: "Eje hipotálamo-hipofisario-somatotrópico", href: "#contenido5" }
+          { label: "Eje hipotálamo-hipofisario-somatotrópico", href: "#contenido5" },
+          { label: "Conclusiones", href: "#conclusiones" }
         ]
       },
       {
         label: "Actividades",
         children: [
-          { label: "Actividad 1. Identificando las funciones de los ejes HHA y HHT, así como de las hormonas que producen", href: "#actividad1" },
-          { label: "Actividad 2. Reconociendo las funciones del eje HHG y de las hormonas que produce", href: "#actividad2" }
+          { label: "Actividad 1", href: "#actividad1" },
+          { label: "Actividad 2", href: "#actividad2" }
         ]
       },
       { label: "Autoevaluación", href: "#autoevaluacion1" },

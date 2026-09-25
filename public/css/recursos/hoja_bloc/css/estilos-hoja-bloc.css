@@ -1,12 +1,8 @@
 section.hoja-bloc {
 	--color-curso: #0099ff;
 	font-family: Gotham, 'Open Sans', sans-serif;
-	-webkit-user-select: none;
-	-khtml-user-select: none;
-	-moz-user-select: -moz-none;
-	-ms-user-select: none;
-	-o-user-select: none;
-	user-select: none;
+	-webkit-user-select: text;
+	user-select: text;
 }
 
 section.hoja-bloc .bloc {
@@ -27,10 +23,14 @@ section.hoja-bloc .bloc .superior {
 
 section.hoja-bloc .bloc .papel {
 	--paper-color: #f1ede9;
-	--paper-line: #94acd4;
+	/* Las líneas conservan la referencia visual del bloc sin competir con el texto. */
+	--paper-line: rgba(148, 172, 212, 0.45);
+	/* El desplazamiento sitúa cada línea sobre la base de un renglón de 32 px. */
+	--paper-line-offset: 11px;
 	height: 100%;
 	padding: 1.5em;
 	background: repeating-linear-gradient(var(--paper-color), var(--paper-color) 31px, var(--paper-line) 31px, var(--paper-line) 32px);
+	background-position: 0 var(--paper-line-offset);
 	line-height: 32px;
 	outline: 0;
 }

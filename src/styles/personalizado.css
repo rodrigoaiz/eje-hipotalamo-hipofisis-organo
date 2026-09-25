@@ -1,4 +1,36 @@
 @charset "UTF-8";
+
+/* Información complementaria con una figura asociada. */
+.trh-destacado {
+    max-width: 850px;
+    margin: 3rem auto;
+    padding: clamp(1.5rem, 4vw, 2.5rem);
+    background-color: #f7f4f1;
+    border: 1px solid rgba(0, 153, 255, 0.22);
+    border-radius: 14px;
+}
+
+.trh-destacado > p {
+    margin-bottom: 0;
+}
+
+.trh-destacado .trh-destacado__figure {
+    margin: 1.75rem auto 0;
+}
+
+@media (min-width: 992px) {
+    .trh-destacado {
+        display: grid;
+        grid-template-columns: minmax(0, 1.15fr) minmax(280px, 0.85fr);
+        gap: clamp(2rem, 4vw, 3rem);
+        align-items: start;
+        max-width: 1100px;
+    }
+
+    .trh-destacado .trh-destacado__figure {
+        margin: 0;
+    }
+}
 /* CSS Document */
 
 /* 
@@ -150,19 +182,48 @@ main figcaption,
 }
 
 /* Tabla informativa reutilizable */
-.tabla-informativa-figure {
+.tabla-informativa-contenedor {
     margin: 2.75rem auto 2.25rem;
     max-width: 1120px;
+    min-width: 0;
     width: 100%;
 }
 
 .tabla-informativa-scroll {
+    min-width: 0;
+    max-width: 100%;
+    width: 100%;
     overflow-x: auto;
+    overflow-y: hidden;
     -webkit-overflow-scrolling: touch;
+    overscroll-behavior-x: contain;
+    scrollbar-color: #47777f #edf3f3;
+    scrollbar-width: thin;
+    touch-action: pan-x pan-y;
+    user-select: text;
     border: 1px solid #c8d7d9;
     border-radius: 8px;
     background: #fff;
     box-shadow: 0 10px 24px rgba(25, 55, 62, 0.08);
+}
+
+.tabla-informativa-scroll:focus-visible {
+    outline: 3px solid #305e73;
+    outline-offset: 3px;
+}
+
+.tabla-informativa-scroll::-webkit-scrollbar {
+    height: 12px;
+}
+
+.tabla-informativa-scroll::-webkit-scrollbar-track {
+    background: #edf3f3;
+}
+
+.tabla-informativa-scroll::-webkit-scrollbar-thumb {
+    background: #47777f;
+    border: 3px solid #edf3f3;
+    border-radius: 999px;
 }
 
 .tabla-informativa {
@@ -274,7 +335,7 @@ main figcaption,
 }
 
 @media (max-width: 991px) {
-    .tabla-informativa-figure {
+    .tabla-informativa-contenedor {
         margin: 2.25rem 0;
     }
 
@@ -309,6 +370,65 @@ main figcaption,
 
     .tabla-informativa thead th:first-child {
         z-index: 3;
+    }
+
+    /* Las tablas de dos columnas se leen mejor apiladas que con desplazamiento. */
+    .tabla-informativa.tabla-hormonas-tiroideas,
+    .tabla-informativa.tabla-dos-columnas {
+        min-width: 0;
+        table-layout: auto;
+    }
+
+    .tabla-hormonas-tiroideas thead,
+    .tabla-dos-columnas thead {
+        display: none;
+    }
+
+    .tabla-hormonas-tiroideas,
+    .tabla-dos-columnas,
+    .tabla-hormonas-tiroideas tbody,
+    .tabla-dos-columnas tbody,
+    .tabla-hormonas-tiroideas tr,
+    .tabla-dos-columnas tr,
+    .tabla-hormonas-tiroideas th,
+    .tabla-hormonas-tiroideas td {
+        display: block;
+        width: 100%;
+    }
+
+    .tabla-dos-columnas td {
+        display: block;
+        width: 100%;
+    }
+
+    .tabla-hormonas-tiroideas tbody tr + tr {
+        border-top: 1px solid #c8d7d9;
+    }
+
+    .tabla-informativa.tabla-hormonas-tiroideas tbody th {
+        position: static;
+        width: 100%;
+        box-shadow: none;
+    }
+
+    .tabla-hormonas-tiroideas tbody td {
+        border-top: 0;
+    }
+
+    .tabla-dos-columnas tbody td + td {
+        border-top: 1px solid #c8d7d9;
+    }
+
+    .tabla-dos-columnas tbody td::before {
+        content: attr(data-label);
+        display: block;
+        margin: -0.75rem -0.7rem 0.75rem;
+        padding: 0.65rem 0.7rem;
+        background: #d8e8ea;
+        color: #14272b;
+        font-family: 'Raleway', Helvetica, Arial, sans-serif;
+        font-weight: 700;
+        line-height: 1.2;
     }
 }
 
