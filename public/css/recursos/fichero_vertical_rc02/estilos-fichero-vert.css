@@ -51,6 +51,17 @@ section.fichero-vert[id^='fichero-vert-'] {
 
 section.fichero-vert[id^='fichero-vert-'] .fichero-vert-tabs {
 	width: 195px;
+	flex: 0 0 195px;
+}
+
+section.fichero-vert[id^='fichero-vert-'] .fichero-vert-content {
+	flex: 1 1 0;
+	min-width: 0;
+}
+
+section.fichero-vert[id^='fichero-vert-'] .fichero-vert-item,
+section.fichero-vert[id^='fichero-vert-'] .fichero-vert-item__container {
+	min-width: 0;
 }
 
 section.fichero-vert[id^='fichero-vert-'] .fichero-vert-tabs :focus {

@@ -1,24 +1,26 @@
 ﻿/* configuracion
 */
-var maxIntentos = 99;                // Intentos ilimitados indicados en el guión.
+var configuracionBancoActivo = bancoContenidoActivo && bancoContenidoActivo.configuracion ? bancoContenidoActivo.configuracion : {};
+var instruccionesBanco = bancoContenidoActivo ? bancoContenidoActivo.instrucciones : "";
+var maxIntentos = configuracionBancoActivo.intentosMaximos === null ? 99 : (configuracionBancoActivo.intentosMaximos || 99); // 99 representa intentos ilimitados en este motor.
 var siguienteIntentoBlanco = true;
 
 var esAutoevaluacion = bancoSeleccionado === "autoevaluacion";
-var elementosPorSegmento = esAutoevaluacion ? 10 : 5;
+var elementosPorSegmento = configuracionBancoActivo.reactivosAMostrar || (esAutoevaluacion ? 10 : 5);
 var elementosPorSegmentoMovil = 1;
-var reactivosMostrar = esAutoevaluacion ? 10 : 5;
+var reactivosMostrar = configuracionBancoActivo.reactivosAMostrar || (esAutoevaluacion ? 10 : 5);
 if (reactivos.length < reactivosMostrar) {
 	reactivosMostrar = reactivos.length;
 }
 var total = reactivosMostrar;
 
-var mezclarPreguntas = true;         // true: mezcla preguntas; false NO mezcla preguntas, RAAR a partir de jun 12,18 mezcla todos los reactivos
-var mezclarRespuestas = true;        // true: mezcla respuestas; false NO mezcla respuestas
+var mezclarPreguntas = configuracionBancoActivo.mezclarReactivos !== false; // true: mezcla preguntas; false NO mezcla preguntas
+var mezclarRespuestas = configuracionBancoActivo.mezclarRespuestas !== false; // true: mezcla respuestas; false NO mezcla respuestas
 var mezclarPorIntentos = true;
 
 var mostrarRetroIndividual = true;   // Muestra la retroalimentación de la opción seleccionada.
 var mostrarRetroOpcionRespuesta = true;
-var mostrarRetroFinal = esAutoevaluacion; // Sólo el guión de autoevaluación define retroalimentación general.
+var mostrarRetroFinal = configuracionBancoActivo.mostrarRetroalimentacionFinal === undefined ? esAutoevaluacion : configuracionBancoActivo.mostrarRetroalimentacionFinal;
 
 var ponerNumeral = true;     // Para poner o agregar numeros secuenciales al inicio de las las preguntas...
 var ponerNumeroPreguntas = false; // cuantos preguntas son?, no necesariamente cuantas son visibles...
@@ -32,11 +34,11 @@ var carruselContinuo = false; // si se quiere que los botonos previo y proximo n
 
 var flechaArriba = false;          // true: muestra la flecha-arriba para moverse rápidamente al principio del recurso; false: no lo muestra
 
-var retroCal = [
-	{LimInf: 0, LimSup: 5, Mensaje: ["¡Intenta de nuevo! Parece que no todo lo visto en la unidad te quedó claro; repásala nuevamente para reforzar conocimientos y realiza un nuevo intento.", ""]},
-	{LimInf: 6, LimSup: 8, Mensaje: ["¡Bien! Reconoces la importancia del eje hipotálamo-hipófisis, pero puedes repasar la unidad nuevamente para dominar el tema.", ""]},
-	{LimInf: 9, LimSup: 10, Mensaje: ["¡Excelente! Dominas muy bien todo lo visto en la unidad; logras reconocer la gran importancia del adecuado funcionamiento del eje hipotálamo-hipófisis.", ""]}
-];
+var retroCal = bancoContenidoActivo && Array.isArray(bancoContenidoActivo.retroalimentacionGeneral)
+	? bancoContenidoActivo.retroalimentacionGeneral.map(function (rango) {
+		return { LimInf: rango.min, LimSup: rango.max, Mensaje: [rango.texto, ""] };
+	})
+	: [];
 
 var textoRetroGeneral= '';//'Texto independiente de calificacion'; no importando la calificación se puede poner un texto extra, '' para dejar en blanco
 

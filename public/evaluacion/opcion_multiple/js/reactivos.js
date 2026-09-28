@@ -15,6 +15,9 @@ var recorreSegmentos = 1; // por lo menos existe el primer segmento o sea el uni
 var esMobil = false;
 
 jq360(document).ready(function () {//RAAR Sep 13,18: Aqui arrancamos, me traigo esto de index.html
+	if (instruccionesBanco) {
+		jq360(".instrucciones").text(instruccionesBanco);
+	}
 	if (window.name == "movil") { // validacion para el portal en DIONE
 		esMobil = true;
 	}

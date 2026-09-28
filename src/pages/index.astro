@@ -34,7 +34,6 @@ import {
     "nota-pin",
     "triptico",
     "hoja-bloc",
-    "acordeon-horizontal",
     "hoja-espiral",
     "lista-desplegable",
     "folder-contenidos",
@@ -1101,6 +1100,12 @@ import {
                   aria-label="Tabla 2. Tipos de hipotiroidismo"
                 >
                   <table class="tabla-informativa tabla-hipotiroidismo">
+                    <colgroup>
+                      <col class="tabla-hipotiroidismo__tipo" />
+                      <col />
+                      <col />
+                      <col />
+                    </colgroup>
                     <thead>
                       <tr
                         ><th>Hipotiroidismo</th><th>TSH</th><th
@@ -1113,12 +1118,12 @@ import {
                         <th>Primario</th>
                         <td
                           class="tabla-flecha-cell"
-                          aria-label="Disminución de TSH"
+                          aria-label="Aumento de TSH"
                           ><svg
                             class="tabla-flecha"
                             viewBox="0 0 32 48"
                             aria-hidden="true"
-                            ><path d="M11 2h10v24h7L16 46 4 26h7V2z"
+                            ><path d="M11 46h10V22h7L16 2 4 22h7v24z"
                             ></path></svg
                           ></td
                         >
@@ -1279,7 +1284,7 @@ import {
               </p>
               <p>
                 Otros síntomas del aumento de las hormonas tiroideas son el
-                bocio —agrandamiento de la glándula tiroides—, cambios en los
+                <strong>bocio</strong> —agrandamiento de la glándula tiroides—, cambios en los
                 patrones intestinales —deposiciones más frecuentes o diarrea— y
                 ciclos menstruales irregulares en mujeres. Una complicación
                 grave y potencialmente mortal del hipertiroidismo es la tormenta
@@ -1639,32 +1644,31 @@ import {
         problema se origina en las gónadas o en la hipófisis.
       </p>
 
-      <section class="fichero-hor my-5" id="fichero-hor-6">
-        <section class="fichero-hor-tabs">
+      <section class="fichero-vert my-5 mx-auto" id="fichero-vert-6">
+        <section class="fichero-vert-tabs">
           <button
-            class="fichero-hor-tab fichero-hor-active"
+            class="fichero-vert-tab fichero-vert-active"
             data-actab-group="0"
-            data-actab-id="0">Hipogonadismo primario</button
+            data-actab-id="0">Hipogonadismo primario —o hipergonadotrópico—</button
           >
-          <button class="fichero-hor-tab" data-actab-group="0" data-actab-id="1"
-            >Hipogonadismo secundario</button
+          <button class="fichero-vert-tab" data-actab-group="0" data-actab-id="1"
+            >Hipogonadismo secundario —o hipogonadotrópico—</button
           >
         </section>
-        <section class="slider"><div class="indicator"></div></section>
-        <section class="fichero-hor-content">
+        <section class="fichero-vert-content">
           <article
-            class="fichero-hor-item fichero-hor-active"
+            class="fichero-vert-item fichero-vert-active"
             data-actab-group="0"
             data-actab-id="0"
           >
-            <h4 class="fichero-hor-item__label">
+            <h4 class="fichero-vert-item__label">
               <strong>Hipogonadismo primario —o hipergonadotrópico—</strong><div
                 class="icon"
               >
                 <i class="fas fa-chevron-down"></i>
               </div>
             </h4>
-            <div class="fichero-hor-item__container">
+            <div class="fichero-vert-item__container">
               <p>
                 En este caso, el problema reside en las gónadas, que no
                 responden adecuadamente a las FSH y a las LH. Como resultado, la
@@ -1733,15 +1737,15 @@ import {
             </div>
           </article>
           <article
-            class="fichero-hor-item"
+            class="fichero-vert-item"
             data-actab-group="0"
             data-actab-id="1"
           >
-            <h4 class="fichero-hor-item__label">
+            <h4 class="fichero-vert-item__label">
               <strong>Hipogonadismo secundario —o hipogonadotrópico—</strong
               ><div class="icon"><i class="fas fa-chevron-down"></i></div>
             </h4>
-            <div class="fichero-hor-item__container">
+            <div class="fichero-vert-item__container">
               <p>
                 Aquí, el problema se origina en la hipófisis o el hipotálamo,
                 que no producen suficiente FSH y LH. Esto provoca una falta de
@@ -1873,12 +1877,12 @@ import {
                 el eje HHG. Las hormonas esteroideas en los testículos,
                 principalmente la <strong>testosterona</strong>, es controlada
                 por la <strong>LH</strong> y la <strong>FSH</strong>, ambas
-                producidas en la hipófisis. La LH se une a receptores en la
+                producidas en la hipófisis. La <strong>LH</strong> se une a receptores en la
                 membrana de las <strong>células de Leydig</strong>, lo que
                 activa la vía de señalización del AMPc; éste activa la PKA, que
                 fosforila diversas enzimas necesarias para la síntesis de
                 testosterona a partir del colesterol, como se puede ver en la
-                figura 10. Por su parte, la FSH actúa sobre las <strong
+                figura 10. Por su parte, la <strong>FSH</strong> actúa sobre las <strong
                   >células de Sertoli</strong
                 > al estimular la producción de proteínas, como la proteína de unión
                 a andrógenos (ABP, por sus siglas en inglés) y la inhibina. La FSH
@@ -1978,9 +1982,9 @@ import {
       </section>
       <p>
         La producción de hormonas gonadales está finamente regulada por un
-        sistema de <strong>realimentación negativa</strong> que involucra el hipotálamo,
+        sistema de realimentación que involucra el hipotálamo,
         la hipófisis y las gónadas. Los niveles elevados de testosterona y estrógeno
-        ejercen un efecto de realimentación negativa en la hipófisis y el hipotálamo,
+        ejercen un efecto de <strong>realimentación negativa</strong> en la hipófisis y el hipotálamo,
         lo que inhibe la liberación de LH, FSH y GnRH. En los hombres, las células
         de Sertoli también secretan inhibina, que inhibe selectivamente la producción
         de FSH en la hipófisis; sin embargo, un pico de estrógenos en la fase folicular
@@ -2063,7 +2067,6 @@ import {
             <div class="vermas"><p>Ver más</p></div>
           </div>
           <div class="contenido">
-            <h2>Contenido</h2>
             <p>
               La liberación pulsátil de la GHRH depende de la edad. Existe un
               patrón de dimorfismo sexual, particularmente en la pubertad,
@@ -2287,7 +2290,7 @@ import {
         <div class="triptico">
           <div class="centro">
             <div class="contenido">
-              <h1>Bloque 2</h1><hr /><p>
+              <hr /><p>
                 Asimismo, los ácidos grasos libres tienen un efecto inhibidor
                 sobre la secreción de GH al reducir la respuesta somatotrófica a
                 la estimulación de la GHRH, así como posibles efectos a nivel
@@ -2296,7 +2299,7 @@ import {
             </div>
           </div><div class="derecha">
             <div class="contenido">
-              <h1>Bloque 3</h1><hr /><p>
+             <hr /><p>
                 Una excepción a los efectos supresores del aumento de nutrientes
                 sobre la secreción de GH son los efectos de las altas
                 concentraciones plasmáticas de aminoácidos —en particular,
@@ -2307,7 +2310,7 @@ import {
           </div><div class="izquierda">
             <div class="adelante">
               <div class="contenido">
-                <h1><strong>Inhibición y secreción de grelina</strong></h1><hr
+                <hr
                 /><p>
                   La grelina es secretada principalmente por células endocrinas
                   especializadas del estómago, por lo que se puede decir que el
@@ -2316,7 +2319,7 @@ import {
               </div>
             </div><div class="atras">
               <div class="contenido">
-                <h1>Bloque 1</h1><button
+                <button
                   class="cerrar"
                   title="Cerrar"
                   id="horiz">✕</button
@@ -2343,7 +2346,7 @@ import {
         <div class="triptico">
           <div class="centro">
             <div class="contenido">
-              <h1>Bloque 2</h1><hr /><p>
+              <hr /><p>
                 Se han identificado varios factores que modifican la secreción
                 de prolactina hipofisaria. Varios de ellos son factores
                 hipotalámicos: la SST y la calcitonina se han identificado como
@@ -2355,7 +2358,7 @@ import {
             </div>
           </div><div class="derecha">
             <div class="contenido">
-              <h1>Bloque 3</h1><hr /><p>
+              <hr /><p>
                 El VIP y la galanina también se producen en la propia hipófisis
                 y pueden incluirse en una amplia lista de factores que pueden
                 ser reguladores autocrinos o paracrinos de la secreción de
@@ -2376,7 +2379,7 @@ import {
               </div>
             </div><div class="atras">
               <div class="contenido">
-                <h1>Bloque 1</h1><button
+               <button
                   class="cerrar"
                   title="Cerrar"
                   id="horiz">✕</button
@@ -2403,23 +2406,30 @@ import {
         presenta más información detallada sobre esto:
       </p>
 
-      <section class="accordion" id="acordeon-vert-2">
-          <div class="accordion-item">
-            <div class="accordion-item-header"><strong>Funciones de la hormona del crecimiento</strong><div class="icon"><i class="fas fa-chevron-down"></i></div></div>
-            <div class="accordion-item-body"><div class="accordion-item-body-content">
-              <div class="imagenPie"><img src="img/cont/15gh_t5.jpg" alt="Funciones de la hormona del crecimiento" /></div>
+      <section class="fichero-hor my-5" id="fichero-hor-6">
+        <section class="fichero-hor-tabs">
+          <button class="fichero-hor-tab fichero-hor-active" data-actab-group="0" data-actab-id="0">Funciones de la hormona del crecimiento</button>
+          <button class="fichero-hor-tab" data-actab-group="0" data-actab-id="1">Desórdenes por deficiencia o exceso de la hormona del crecimiento</button>
+          <button class="fichero-hor-tab" data-actab-group="0" data-actab-id="2">Funciones de la prolactina</button>
+          <button class="fichero-hor-tab" data-actab-group="0" data-actab-id="3">Desórdenes por deficiencia o exceso de prolactina</button>
+        </section>
+        <section class="slider"><div class="indicator"></div></section>
+        <section class="fichero-hor-content">
+          <article class="fichero-hor-item fichero-hor-active" data-actab-group="0" data-actab-id="0" style="--fichero-fondo: url('/img/cont/15gh_t5.jpg')">
+            <h4 class="fichero-hor-item__label">Funciones de la hormona del crecimiento<div class="icon"><i class="fas fa-chevron-down" aria-hidden="true"></i></div></h4>
+            <div class="fichero-hor-item__container">
                 <p>
                   La hormona del crecimiento o somatotropina es esencial para el
                   crecimiento y el desarrollo en niñas, niños y adolescentes,
                   pero también desempeña un papel vital en el metabolismo de las
                   personas adultas. Sus principales funciones son:
-                </p><p>
+                </p><ul class="lista-ul"><li>
                   <strong>Crecimiento corporal:</strong> Estimula el crecimiento de
                   casi todos los tejidos del cuerpo, incluyendo huesos y cartílagos,
                   y promueve la síntesis de proteínas; además, aumenta la masa muscular
                   a través de la hiperplasia y promueve la retención de calcio para
                   la mineralización ósea.
-                </p><p>
+                </li><li>
                   <strong
                     >Metabolismo de carbohidratos, lípidos y proteínas:</strong
                   > Tiene un efecto antiinsulínico, lo que significa que reduce el
@@ -2431,49 +2441,44 @@ import {
                   de grasa corporal. Asimismo, aumenta la síntesis de proteínas en
                   la mayoría de las células, fomentando la captación de aminoácidos
                   y la regeneración celular.
-                </p><p>
+                </li><li>
                   <strong>Regulación de IGF-1:</strong> Estimula al hígado a producir
                   el IGF-1, que es el principal mediador de muchos de sus efectos
                   de crecimiento.
-                </p><p>
+                </li><li>
                   <strong>Regulación de la homeostasis:</strong> Tiene un efecto en
                   el balance electrolítico de sodio, calcio y fosfatos, así como en
                   el balance hídrico.
-                </p>
-            </div></div></div>
-          <div class="accordion-item">
-            <div class="accordion-item-header"><strong>Desórdenes por deficiencia de la hormona del crecimiento</strong><div class="icon"><i class="fas fa-chevron-down"></i></div></div>
-            <div class="accordion-item-body"><div class="accordion-item-body-content">
-              <div class="imagenPie"><img src="img/cont/15gh_t5.jpg" alt="Deficiencia de la hormona del crecimiento" /></div>
+                </li></ul>
+            </div>
+          </article>
+          <article class="fichero-hor-item" data-actab-group="0" data-actab-id="1" style="--fichero-fondo: url('/img/cont/15gh_t5.jpg')">
+            <h4 class="fichero-hor-item__label">Desórdenes por deficiencia o exceso de la hormona del crecimiento<div class="icon"><i class="fas fa-chevron-down" aria-hidden="true"></i></div></h4>
+            <div class="fichero-hor-item__container">
                 <p>
                   Los desórdenes de la GH se manifiestan de manera distinta en
                   la niñez y la adultez debido a que sus funciones metabólicas
                   varían con la edad:
-                </p><p>
+                </p><h3>Por deficiencia:</h3><ul class="lista-ul"><li>
                   <strong>En la niñez:</strong> La falta de GH es la causa principal
                   del enanismo hipofisiario. Las niñas y los niños que lo padecen
                   tienen una tasa de crecimiento muy lenta, lo que resulta en una
                   baja estatura, aunque las proporciones corporales son normales.
                   Otros síntomas pueden incluir una apariencia más joven de la cara,
                   un cuerpo con más grasa de lo habitual y un retraso en la pubertad.
-                </p><p>
+                </li><li>
                   <strong>En la adultez:</strong> Como el crecimiento óseo ya ha terminado,
                   la deficiencia de GH no afecta la estatura; sin embargo, puede provocar
                   cambios en la composición corporal, como un aumento de la grasa
                   visceral —alrededor de los órganos—, disminución de la masa muscular,
                   baja densidad ósea y fatiga crónica.
-                </p>
-            </div></div></div>
-          <div class="accordion-item">
-            <div class="accordion-item-header"><strong>Desórdenes por exceso de la hormona del crecimiento</strong><div class="icon"><i class="fas fa-chevron-down"></i></div></div>
-            <div class="accordion-item-body"><div class="accordion-item-body-content">
-              <div class="imagenPie"><img src="img/cont/15gh_t5.jpg" alt="Exceso de la hormona del crecimiento" /></div>
-                <p>
+                </li></ul>
+                <h3>Por exceso:</h3><ul class="lista-ul"><li>
                   <strong>En la niñez:</strong> El exceso de GH antes de que los huesos
                   hayan completado su crecimiento causa gigantismo. Esto se caracteriza
                   por un crecimiento desproporcionado, lo que resulta en una estatura
                   significativamente superior a la media.
-                </p><p>
+                </li><li>
                   <strong>En la adultez:</strong> Un exceso de GH en la edad adulta,
                   generalmente por un tumor benigno en la hipófisis llamado adenoma,
                   causa acromegalia. A diferencia del gigantismo, donde el crecimiento
@@ -2481,46 +2486,47 @@ import {
                   y desproporcionado de las extremidades —manos y pies—, la mandíbula
                   y otras estructuras faciales. También puede causar dolores de cabeza,
                   problemas de visión, sudoración excesiva y enfermedades cardiovasculares.
-                </p>
-            </div></div></div>
-          <div class="accordion-item">
-            <div class="accordion-item-header"><strong>Funciones de la prolactina</strong><div class="icon"><i class="fas fa-chevron-down"></i></div></div>
-            <div class="accordion-item-body"><div class="accordion-item-body-content">
-              <div class="imagenPie"><img src="img/cont/16prl_t5.png" alt="Funciones de la prolactina" /></div>
+                </li></ul>
+            </div>
+          </article>
+          <article class="fichero-hor-item" data-actab-group="0" data-actab-id="2" style="--fichero-fondo: url('/img/cont/16prl_t5.png')">
+            <h4 class="fichero-hor-item__label">Funciones de la prolactina<div class="icon"><i class="fas fa-chevron-down" aria-hidden="true"></i></div></h4>
+            <div class="fichero-hor-item__container">
                 <p>
                   La prolactina, también conocida como hormona lactogénica,
                   tiene como función principal la producción de leche, pero
                   también interviene en otros procesos del organismo. Sus
                   funciones fisiológicas más importantes son:
-                </p><p>
+                </p><ul class="lista-ul"><li>
                   <strong>Producción de leche —lactancia—:</strong> Es la función
                   más conocida. Después del parto, la prolactina estimula las glándulas
                   mamarias para que produzcan leche. La succión del pezón por el bebé
                   actúa como un estímulo que mantiene la secreción de esta hormona.
-                </p><p>
+                </li><li>
                   <strong>Función reproductiva:</strong> Tiene un efecto inhibitorio
                   sobre la secreción de gonadotropinas, lo que puede suprimir la ovulación
                   en mujeres que amamantan. En hombres, niveles altos de prolactina
                   pueden afectar el deseo sexual y la fertilidad.
-                </p><p>
+                </li><li>
                   <strong>Regulación de la glándula mamaria:</strong> Contribuye al
                   desarrollo de las glándulas mamarias durante la pubertad y el embarazo,
                   preparándolas para la lactancia.
-                </p><p>
+                </li><li>
                   <strong>Balance de agua y electrolitos:</strong> Tiene participación
                   en la osmorregulación.
-                </p><p>
+                </li><li>
                   <strong>Función inmunológica:</strong> Actúa como un inmunomodulador
                   y se ha relacionado con ciertos procesos de autoinmunidad.
-                </p><p>
+                </li><li>
                   <strong>Comportamiento maternal:</strong> Se cree que influye en
                   el comportamiento y el instinto maternal.
-                </p>
-            </div></div></div>
-          <div class="accordion-item">
-            <div class="accordion-item-header"><strong>Desórdenes por deficiencia de prolactina</strong><div class="icon"><i class="fas fa-chevron-down"></i></div></div>
-            <div class="accordion-item-body"><div class="accordion-item-body-content">
-              <div class="imagenPie"><img src="img/cont/16prl_t5.png" alt="Deficiencia de prolactina" /></div>
+                </li></ul>
+            </div>
+          </article>
+          <article class="fichero-hor-item" data-actab-group="0" data-actab-id="3" style="--fichero-fondo: url('/img/cont/16prl_t5.png')">
+            <h4 class="fichero-hor-item__label">Desórdenes por deficiencia o exceso de prolactina<div class="icon"><i class="fas fa-chevron-down" aria-hidden="true"></i></div></h4>
+            <div class="fichero-hor-item__container">
+                <h3>Por deficiencia:</h3>
                 <p>
                   Su principal consecuencia conocida, una condición rara, es la
                   incapacidad para producir leche materna después del parto, un
@@ -2529,36 +2535,36 @@ import {
                   pituitaria, como el que ocurre en el síndrome de Sheehan, una
                   complicación posparto.
                 </p>
-            </div></div></div>
-          <div class="accordion-item">
-            <div class="accordion-item-header"><strong>Desórdenes por exceso de prolactina</strong><div class="icon"><i class="fas fa-chevron-down"></i></div></div>
-            <div class="accordion-item-body"><div class="accordion-item-body-content">
-              <div class="imagenPie"><img src="img/cont/16prl_t5.png" alt="Exceso de prolactina" /></div>
+                <h3>Por exceso:</h3>
                 <p>
                   <strong>Hiperprolactinemia:</strong> Ésta es la disfunción más común
                   de la prolactina y se caracteriza por niveles elevados de la hormona
                   en la sangre; a menudo, es causada por un tumor benigno en la glándula
                   pituitaria llamado prolactinoma.
-                </p><p>
+                </p><ul class="lista-ul"><li>
                   <strong>En mujeres:</strong> Los altos niveles de prolactina inhiben
                   la producción de hormonas sexuales, lo que lleva a la interrupción
                   o a la irregularidad del ciclo menstrual —amenorrea—. También puede
                   causar galactorrea —producción de leche fuera del embarazo o de
                   la lactancia— e infertilidad.
-                </p><p>
+                </li><li>
                   <strong>En hombres:</strong> El exceso de prolactina reduce los
                   niveles de testosterona, lo que puede provocar una disminución de
                   la libido, disfunción eréctil, infertilidad y, en algunos casos,
                   crecimiento de las mamas —ginecomastia—.
-                </p><p>
+                </li></ul><p>
                   Además, los prolactinomas grandes pueden presionar los nervios
                   ópticos, lo que causa problemas de visión y dolores de cabeza
                   tanto en hombres como en mujeres.
                 </p>
-            </div></div></div>
+            </div>
+          </article>
+        </section>
         </section>
       </section>
     </Section>
+    
+    <Activity {...ACTIVITIES_CONFIG.actividad2} />
 
     <Section id="conclusiones" title="Conclusiones">
       <p>
@@ -2584,7 +2590,6 @@ import {
     </Section>
 
     <!-- Actividad 2 -->
-    <Activity {...ACTIVITIES_CONFIG.actividad2} />
 
     <!-- Autoevaluación -->
     <SelfAssessment {...ASSESSMENTS_CONFIG.autoevaluacion1} />

@@ -372,6 +372,18 @@ main figcaption,
         z-index: 3;
     }
 
+    .tabla-informativa.tabla-hipotiroidismo {
+        min-width: 620px;
+    }
+
+    .tabla-hipotiroidismo col:first-child {
+        width: 28%;
+    }
+
+    .tabla-hipotiroidismo col:not(:first-child) {
+        width: 24%;
+    }
+
     /* Las tablas de dos columnas se leen mejor apiladas que con desplazamiento. */
     .tabla-informativa.tabla-hormonas-tiroideas,
     .tabla-informativa.tabla-dos-columnas {
