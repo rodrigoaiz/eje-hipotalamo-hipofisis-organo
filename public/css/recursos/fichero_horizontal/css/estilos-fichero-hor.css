@@ -230,6 +230,16 @@ section.fichero-hor[id^='fichero-hor-'] .fichero-hor-content ol {
 }
 
 /* Las imágenes del Word quedan como fondo solo en este fichero. */
+section.fichero-hor#fichero-hor-6 .fichero-hor-item[data-actab-id='0'],
+section.fichero-hor#fichero-hor-6 .fichero-hor-item[data-actab-id='1'] {
+	--fichero-fondo: url('../../../../img/cont/15gh_t5.jpg');
+}
+
+section.fichero-hor#fichero-hor-6 .fichero-hor-item[data-actab-id='2'],
+section.fichero-hor#fichero-hor-6 .fichero-hor-item[data-actab-id='3'] {
+	--fichero-fondo: url('../../../../img/cont/16prl_t5.png');
+}
+
 section.fichero-hor#fichero-hor-6 .fichero-hor-item__container {
 	background-color: #fff;
 	background-image: linear-gradient(rgb(255 255 255 / 88%), rgb(255 255 255 / 88%)), var(--fichero-fondo);
